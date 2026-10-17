@@ -357,6 +357,8 @@ const stations = await client.Station().list()
 
 This SDK includes the opt-in `test` transport and the project-owned `envelope` guard, enabled by default. The guard rejects missing/incorrect `items` containers and non-object station records before conversion. It is not full field-schema validation. No automatic retry, cache or timeout feature is enabled.
 
+Use the default or map-style `feature` options to retain the guard. The advanced array form defines an explicit feature order: include `{ name: 'envelope', active: true }` in that array, otherwise the guard is not installed even though merged options can still show it as active.
+
 Activate a feature by name in the client options, alongside the options shown
 above:
 

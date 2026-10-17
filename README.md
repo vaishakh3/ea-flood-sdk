@@ -47,6 +47,8 @@ No API account, credential, payment, database or service deployment is required.
 
 The default envelope guard rejects malformed successful list/load containers with `response_envelope_invalid` and rejects empty lookup IDs before sending. It preserves unknown fields but does not validate every station field. Explicit offline test mode uses synthetic fixtures and bypasses this guard; the independent contract suite exercises it through the normal response pipeline. `direct()` deliberately returns the unvalidated provider envelope; HTTP failures may omit `err`, so check `ok`, `status` and `data`. Invalid arguments may reject. There are no automatic retries or default deadlines; pass a fresh `AbortSignal.timeout(15000)` per request, as above.
 
+Use the default or map-style `feature` options to retain the guard. The advanced array form defines an explicit feature order: include `{ name: 'envelope', active: true }` in that array, otherwise the guard is not installed even though merged options can still show it as active.
+
 `npm run test:live:edges` makes two additional bounded GETs: an empty zero-limit listing and a deliberately nonexistent station that must return 404. No write requests are made.
 
 ## What was verified
@@ -56,7 +58,7 @@ On 17 October 2026, in a Linux cloud workspace using Node 24.19.0:
 - All 804 public `voxgig-sdk` repository names were checked; no Environment Agency flood-monitoring SDK was found. `global-flood-sdk` wraps Open-Meteo, a different API.
 - The actual pinned scaffold and generator ran successfully.
 - Generated TypeScript suite: 212 passed, 0 failed, 9 skipped. Skips cover optional features not generated here; the original scaffold selected the `test` feature; final QA adds the default envelope guard.
-- The original seven contracts passed; final QA expands this to 40 independent contract, error-path and documentation tests, including malformed envelopes, HTTP failures, cancellation and timeout handling.
+- The original seven contracts passed; final QA expands this to 41 independent contract, error-path and documentation tests, including malformed envelopes, HTTP failures, cancellation and timeout handling.
 - Final live generated-client listing and lookup returned HTTP 200 and consistent station IDs. A zero-limit list returned []; a nonexistent station correctly rejected an HTML 404. The exact root README example also ran live with exit code 0.
 - OpenAPI validation, consumer type checks and the exact-customization scaffold check passed. Raw doctor deliberately reports one reviewed configuration-fragment fork; it is not a clean upstream match. Repeat generation was byte-identical across 100 target source/test/doc/manifest files.
 - One live rerun timed out after 15 seconds; its repeat passed. All outcomes are retained in `evidence/`.

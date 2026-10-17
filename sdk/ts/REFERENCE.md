@@ -209,6 +209,8 @@ The `test` transport is opt-in. The project-owned `envelope` guard is enabled by
 The array form of \`feature\` is significant: several features wrap the
 transport, and the order you list them in is the order they nest.
 
+Use the default or map-style `feature` options to retain the guard. The advanced array form defines an explicit feature order: include `{ name: 'envelope', active: true }` in that array, otherwise the guard is not installed even though merged options can still show it as active.
+
 #### `test`
 
 Test transport.

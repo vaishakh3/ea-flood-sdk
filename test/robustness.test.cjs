@@ -80,3 +80,13 @@ test('direct deliberately preserves unvalidated response envelopes', async () =>
   const result = await client.direct({ path: '/id/stations', method: 'GET' })
   assert.deepEqual(result.data, { unexpected: 'fixture' })
 })
+
+test('map options preserve the guard; an explicit feature-order array can include it', async () => {
+  for (const feature of [
+    { test: { active: false } },
+    [{ name: 'envelope', active: true }, { name: 'test', active: false }],
+  ]) {
+    const client = new EaFloodSDK({ feature, system: { fetch: async () => new Response('{}', { headers: { 'content-type': 'application/json' } }) } })
+    await assert.rejects(() => client.Station().list(), error => error.code === 'response_envelope_invalid')
+  }
+})

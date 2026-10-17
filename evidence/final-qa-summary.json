@@ -10,7 +10,7 @@
     "skipped": 9
   },
   "independentTests": {
-    "passed": 40,
+    "passed": 41,
     "failed": 0,
     "skipped": 0,
     "scope": "HTTP contracts, malformed envelopes, errors, cancellation/deadlines and documentation"
@@ -45,5 +45,7 @@
     "No automatic retries or default request timeout",
     "Raw doctor intentionally flags one documented default-feature customization",
     "No human hands-on time was measured"
-  ]
+  ],
+  "finalPublishedCheckoutPreviouslyVerified": "a2def505610a74137c578136fbcd53dcf58dd366",
+  "advancedFeatureArray": "Explicit feature-order arrays must include envelope; map/default configuration retains it"
 }
