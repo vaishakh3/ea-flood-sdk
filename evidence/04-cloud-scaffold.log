@@ -1,0 +1,41 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> npx
+> "create-sdkgen" ea-flood -d ./openapi.json -o ./sdk -t ts -f test
+
+[13:03:47.388] INFO: create                 generate-start       standard
+[13:03:47.479] INFO: create/jostraca        generate-install     running npm install in ./sdk/.sdk
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 postinstall
+> node build/docgen.js
+
+
+up to date in 684ms
+[13:03:48.254] INFO: create/jostraca        generate-target      adding targets: ts
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 add-target
+> voxgig-sdkgen target add ts
+
+[13:03:48.899] INFO: sdkgen/jostraca        target-start         
+[13:03:48.905] INFO: sdkgen/jostraca        target-build         ts
+[13:03:48.905] INFO: ts/jostraca            target-name          ts from:node_modules/@voxgig/sdkgen/project/.sdk
+[13:03:48.927] INFO: sdkgen/jostraca        target-feature-trim  ts: dropping 20 unselected feature source entries
+[13:03:48.930] INFO: sdkgen/jostraca        target-done          ts
+[13:03:49.048] INFO: sdkgen/jostraca        feature-start        
+[13:03:49.049] INFO: sdkgen/jostraca        feature-build        test
+[13:03:49.052] INFO: sdkgen/jostraca        feature-done         test
+[13:03:49.058] INFO: sdkgen/jostraca        feature-end          
+[13:03:49.058] INFO: sdkgen/jostraca        target-end           
+[13:03:49.072] INFO: create/jostraca        generate-feature     adding features: test
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 add-feature
+> voxgig-sdkgen feature add test
+
+[13:03:49.785] INFO: sdkgen/jostraca        feature-start        
+[13:03:49.791] INFO: sdkgen/jostraca        feature-build        test
+[13:03:49.795] INFO: sdkgen/jostraca        feature-done         test
+[13:03:49.807] INFO: sdkgen/jostraca        feature-end          
+[13:03:49.822] INFO: create                 generate-end         

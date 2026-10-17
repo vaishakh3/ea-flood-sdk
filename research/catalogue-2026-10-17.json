@@ -1,0 +1,4022 @@
+[
+  {
+    "name": "aareguru-sdk",
+    "description": "Voxgig SDK for aareguru",
+    "url": "https://github.com/voxgig-sdk/aareguru-sdk"
+  },
+  {
+    "name": "abdo-store-sdk",
+    "description": "Voxgig SDK for abdo-store",
+    "url": "https://github.com/voxgig-sdk/abdo-store-sdk"
+  },
+  {
+    "name": "abhi-sdk",
+    "description": "Voxgig SDK for abhi",
+    "url": "https://github.com/voxgig-sdk/abhi-sdk"
+  },
+  {
+    "name": "accommodation-sdk",
+    "description": "Voxgig SDK for accommodation",
+    "url": "https://github.com/voxgig-sdk/accommodation-sdk"
+  },
+  {
+    "name": "acousticbrainz-sdk",
+    "description": "Voxgig SDK for acousticbrainz",
+    "url": "https://github.com/voxgig-sdk/acousticbrainz-sdk"
+  },
+  {
+    "name": "address-lookup-service-sdk",
+    "description": "Voxgig SDK for address-lookup-service",
+    "url": "https://github.com/voxgig-sdk/address-lookup-service-sdk"
+  },
+  {
+    "name": "adress-api-france-sdk",
+    "description": "Voxgig SDK for adress-api-france",
+    "url": "https://github.com/voxgig-sdk/adress-api-france-sdk"
+  },
+  {
+    "name": "advice-slip-api2-sdk",
+    "description": "Voxgig SDK for advice-slip-api-2",
+    "url": "https://github.com/voxgig-sdk/advice-slip-api2-sdk"
+  },
+  {
+    "name": "advice-slip-sdk",
+    "description": "Voxgig SDK for advice-slip",
+    "url": "https://github.com/voxgig-sdk/advice-slip-sdk"
+  },
+  {
+    "name": "affirmation-generator-sdk",
+    "description": "Voxgig SDK for affirmation-generator",
+    "url": "https://github.com/voxgig-sdk/affirmation-generator-sdk"
+  },
+  {
+    "name": "agent-gateway-sdk",
+    "description": "Voxgig SDK for agent-gateway",
+    "url": "https://github.com/voxgig-sdk/agent-gateway-sdk"
+  },
+  {
+    "name": "agifyio-sdk",
+    "description": "Voxgig SDK for agifyio",
+    "url": "https://github.com/voxgig-sdk/agifyio-sdk"
+  },
+  {
+    "name": "ai-background-remover-sdk",
+    "description": "Voxgig SDK for ai-background-remover",
+    "url": "https://github.com/voxgig-sdk/ai-background-remover-sdk"
+  },
+  {
+    "name": "ai-cats-sdk",
+    "description": "Voxgig SDK for ai-cats",
+    "url": "https://github.com/voxgig-sdk/ai-cats-sdk"
+  },
+  {
+    "name": "ai-presentation-generator-sdk",
+    "description": "Voxgig SDK for ai-presentation-generator",
+    "url": "https://github.com/voxgig-sdk/ai-presentation-generator-sdk"
+  },
+  {
+    "name": "air-quality-index-sdk",
+    "description": "Voxgig SDK for air-quality-index",
+    "url": "https://github.com/voxgig-sdk/air-quality-index-sdk"
+  },
+  {
+    "name": "air-quality-sdk",
+    "description": "Voxgig SDK for air-quality",
+    "url": "https://github.com/voxgig-sdk/air-quality-sdk"
+  },
+  {
+    "name": "airtable-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/airtable-sdk"
+  },
+  {
+    "name": "alan-perlis-quotes-sdk",
+    "description": "Voxgig SDK for alan-perlis-quotes",
+    "url": "https://github.com/voxgig-sdk/alan-perlis-quotes-sdk"
+  },
+  {
+    "name": "amiiboapi-sdk",
+    "description": "Voxgig SDK for amiiboapi",
+    "url": "https://github.com/voxgig-sdk/amiiboapi-sdk"
+  },
+  {
+    "name": "amnezia-warp-sdk",
+    "description": "Voxgig SDK for github-website",
+    "url": "https://github.com/voxgig-sdk/amnezia-warp-sdk"
+  },
+  {
+    "name": "anapioficeandfire-sdk",
+    "description": "Voxgig SDK for anapioficeandfire",
+    "url": "https://github.com/voxgig-sdk/anapioficeandfire-sdk"
+  },
+  {
+    "name": "anipub-sdk",
+    "description": "Voxgig SDK for anipub",
+    "url": "https://github.com/voxgig-sdk/anipub-sdk"
+  },
+  {
+    "name": "answerbook-sdk",
+    "description": "Voxgig SDK for answerbook",
+    "url": "https://github.com/voxgig-sdk/answerbook-sdk"
+  },
+  {
+    "name": "anti-phishing-detection-sdk",
+    "description": "Voxgig SDK for anti-phishing-detection",
+    "url": "https://github.com/voxgig-sdk/anti-phishing-detection-sdk"
+  },
+  {
+    "name": "api-error-handler-sdk",
+    "description": "Voxgig SDK for api-error-handler",
+    "url": "https://github.com/voxgig-sdk/api-error-handler-sdk"
+  },
+  {
+    "name": "api-tools-sdk",
+    "description": "Voxgig SDK for api-tools",
+    "url": "https://github.com/voxgig-sdk/api-tools-sdk"
+  },
+  {
+    "name": "api2news-endpoint-sdk",
+    "description": "Voxgig SDK for api2news-endpoint",
+    "url": "https://github.com/voxgig-sdk/api2news-endpoint-sdk"
+  },
+  {
+    "name": "apic-agent-sdk",
+    "description": "Voxgig SDK for apic-agent",
+    "url": "https://github.com/voxgig-sdk/apic-agent-sdk"
+  },
+  {
+    "name": "apicurio-registry-sdk",
+    "description": "Voxgig SDK for the Apicurio Registry API, built to compare with Apicurio's Kiota SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/apicurio-registry-sdk"
+  },
+  {
+    "name": "apimatic-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/apimatic-sdk"
+  },
+  {
+    "name": "app-store-metadata-sdk",
+    "description": "Voxgig SDK for app-store-metadata",
+    "url": "https://github.com/voxgig-sdk/app-store-metadata-sdk"
+  },
+  {
+    "name": "arbeitnow-sdk",
+    "description": "Voxgig SDK for arbeitnow",
+    "url": "https://github.com/voxgig-sdk/arbeitnow-sdk"
+  },
+  {
+    "name": "arcgis-hub-world-countries-generalized-sdk",
+    "description": "Voxgig SDK for arcgis-hub-world-countries-generalized",
+    "url": "https://github.com/voxgig-sdk/arcgis-hub-world-countries-generalized-sdk"
+  },
+  {
+    "name": "argentinadatos-sdk",
+    "description": "Voxgig SDK for argentinadatos",
+    "url": "https://github.com/voxgig-sdk/argentinadatos-sdk"
+  },
+  {
+    "name": "argentofx-sdk",
+    "description": "Voxgig SDK for argentofx",
+    "url": "https://github.com/voxgig-sdk/argentofx-sdk"
+  },
+  {
+    "name": "art-institute-of-chicago-sdk",
+    "description": "Voxgig SDK for art-institute-of-chicago",
+    "url": "https://github.com/voxgig-sdk/art-institute-of-chicago-sdk"
+  },
+  {
+    "name": "aruls-ip-sdk",
+    "description": "Voxgig SDK for aruls-ip",
+    "url": "https://github.com/voxgig-sdk/aruls-ip-sdk"
+  },
+  {
+    "name": "attachmentav-sdk",
+    "description": "AttachmentAV virus/malware scan API SDK (ts, go, js, py, php, lua)",
+    "url": "https://github.com/voxgig-sdk/attachmentav-sdk"
+  },
+  {
+    "name": "attack-on-titan-sdk",
+    "description": "Voxgig SDK for attack-on-titan",
+    "url": "https://github.com/voxgig-sdk/attack-on-titan-sdk"
+  },
+  {
+    "name": "autobahn-api-de-sdk",
+    "description": "Voxgig SDK for autobahn-api-de",
+    "url": "https://github.com/voxgig-sdk/autobahn-api-de-sdk"
+  },
+  {
+    "name": "automatic-weather-stations-sdk",
+    "description": "Voxgig SDK for automatic-weather-stations",
+    "url": "https://github.com/voxgig-sdk/automatic-weather-stations-sdk"
+  },
+  {
+    "name": "autoscrape-sdk",
+    "description": "Voxgig SDK for autoscrape",
+    "url": "https://github.com/voxgig-sdk/autoscrape-sdk"
+  },
+  {
+    "name": "avatar-sdk",
+    "description": "Voxgig SDK for avatar",
+    "url": "https://github.com/voxgig-sdk/avatar-sdk"
+  },
+  {
+    "name": "aviationweather-data-sdk",
+    "description": "Voxgig SDK for aviationweather-data",
+    "url": "https://github.com/voxgig-sdk/aviationweather-data-sdk"
+  },
+  {
+    "name": "bacon-ipsum-sdk",
+    "description": "Voxgig SDK for bacon-ipsum",
+    "url": "https://github.com/voxgig-sdk/bacon-ipsum-sdk"
+  },
+  {
+    "name": "bank-logos-sdk",
+    "description": "Voxgig SDK for bank-logos",
+    "url": "https://github.com/voxgig-sdk/bank-logos-sdk"
+  },
+  {
+    "name": "bbc-web-sdk",
+    "description": "Voxgig SDK for bbc-web",
+    "url": "https://github.com/voxgig-sdk/bbc-web-sdk"
+  },
+  {
+    "name": "belkavpn-sdk",
+    "description": "Voxgig SDK for belkavpn",
+    "url": "https://github.com/voxgig-sdk/belkavpn-sdk"
+  },
+  {
+    "name": "benzokolonka-sdk",
+    "description": "Voxgig SDK for benzokolonka",
+    "url": "https://github.com/voxgig-sdk/benzokolonka-sdk"
+  },
+  {
+    "name": "berufsbildung-daten-exporte-sdk",
+    "description": "Voxgig SDK for berufsbildung-daten-exporte",
+    "url": "https://github.com/voxgig-sdk/berufsbildung-daten-exporte-sdk"
+  },
+  {
+    "name": "beverage-mixing-sdk",
+    "description": "Voxgig SDK for beverage-mixing",
+    "url": "https://github.com/voxgig-sdk/beverage-mixing-sdk"
+  },
+  {
+    "name": "bevwire-sdk",
+    "description": "Voxgig SDK for bevwire",
+    "url": "https://github.com/voxgig-sdk/bevwire-sdk"
+  },
+  {
+    "name": "biz-factory-sdk",
+    "description": "Voxgig SDK for biz-factory",
+    "url": "https://github.com/voxgig-sdk/biz-factory-sdk"
+  },
+  {
+    "name": "blackbook-wiki-sdk",
+    "description": "Voxgig SDK for blackbook-wiki",
+    "url": "https://github.com/voxgig-sdk/blackbook-wiki-sdk"
+  },
+  {
+    "name": "bleach-poems-sdk",
+    "description": "Voxgig SDK for bleach-poems",
+    "url": "https://github.com/voxgig-sdk/bleach-poems-sdk"
+  },
+  {
+    "name": "bluefin-decryptx-p2pe-sdk",
+    "description": "Bluefin bluefin-decryptx-p2pe SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-decryptx-p2pe-sdk"
+  },
+  {
+    "name": "bluefin-decryptx-sdk",
+    "description": "Bluefin bluefin-decryptx SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-decryptx-sdk"
+  },
+  {
+    "name": "bluefin-network-token-sdk",
+    "description": "Bluefin bluefin-network-token SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-network-token-sdk"
+  },
+  {
+    "name": "bluefin-payconex-sdk",
+    "description": "Bluefin PayConex payment gateway SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-payconex-sdk"
+  },
+  {
+    "name": "bluefin-shieldconex-mgmt-sdk",
+    "description": "Bluefin bluefin-shieldconex-mgmt SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-shieldconex-mgmt-sdk"
+  },
+  {
+    "name": "bluefin-shieldconex-sdk",
+    "description": "Bluefin bluefin-shieldconex SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-shieldconex-sdk"
+  },
+  {
+    "name": "bluefin-tecs-ecr-sdk",
+    "description": "Bluefin bluefin-tecs-ecr SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-tecs-ecr-sdk"
+  },
+  {
+    "name": "bluefin-tecs-merchant-portal-sdk",
+    "description": "Bluefin bluefin-tecs-merchant-portal SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-tecs-merchant-portal-sdk"
+  },
+  {
+    "name": "bluefin-tecs-merchant-services-sdk",
+    "description": "Bluefin bluefin-tecs-merchant-services SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-tecs-merchant-services-sdk"
+  },
+  {
+    "name": "bluefin-tecs-user-backoffice-sdk",
+    "description": "Bluefin bluefin-tecs-user-backoffice SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bluefin-tecs-user-backoffice-sdk"
+  },
+  {
+    "name": "blutv-authentication-sdk",
+    "description": "Voxgig SDK for blutv-authentication",
+    "url": "https://github.com/voxgig-sdk/blutv-authentication-sdk"
+  },
+  {
+    "name": "bmi-calculator-sdk",
+    "description": "Voxgig SDK for bmi-calculator",
+    "url": "https://github.com/voxgig-sdk/bmi-calculator-sdk"
+  },
+  {
+    "name": "bng2latlong-converter-sdk",
+    "description": "Voxgig SDK for bng2latlong-converter",
+    "url": "https://github.com/voxgig-sdk/bng2latlong-converter-sdk"
+  },
+  {
+    "name": "bonequest-sdk",
+    "description": "Voxgig SDK for bonequest",
+    "url": "https://github.com/voxgig-sdk/bonequest-sdk"
+  },
+  {
+    "name": "bored-sdk",
+    "description": "Voxgig SDK for bored",
+    "url": "https://github.com/voxgig-sdk/bored-sdk"
+  },
+  {
+    "name": "branch-aggregate-sdk",
+    "description": "SDK for the Branch Aggregate API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-aggregate-sdk"
+  },
+  {
+    "name": "branch-attribution-sdk",
+    "description": "SDK for the Branch Attribution API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-attribution-sdk"
+  },
+  {
+    "name": "branch-cohort-sdk",
+    "description": "SDK for the Branch Cohort API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-cohort-sdk"
+  },
+  {
+    "name": "branch-cross-events-export-sdk",
+    "description": "SDK for the Branch Cross-Events Export API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-cross-events-export-sdk"
+  },
+  {
+    "name": "branch-custom-exports-sdk",
+    "description": "SDK for the Branch Custom Exports API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-custom-exports-sdk"
+  },
+  {
+    "name": "branch-daily-exports-sdk",
+    "description": "SDK for the Branch Daily Exports API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-daily-exports-sdk"
+  },
+  {
+    "name": "branch-data-subject-request-sdk",
+    "description": "SDK for the Branch Data Subject Request API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-data-subject-request-sdk"
+  },
+  {
+    "name": "branch-deep-linking-sdk",
+    "description": "SDK for the Branch Deep Linking API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-deep-linking-sdk"
+  },
+  {
+    "name": "branch-events-sdk",
+    "description": "SDK for the Branch Events API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-events-sdk"
+  },
+  {
+    "name": "branch-query-sdk",
+    "description": "SDK for the Branch Query API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-query-sdk"
+  },
+  {
+    "name": "branch-quick-links-sdk",
+    "description": "SDK for the Branch Quick Links API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-quick-links-sdk"
+  },
+  {
+    "name": "branch-scheduled-log-exports-sdk",
+    "description": "SDK for the Branch Scheduled Log Exports API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/branch-scheduled-log-exports-sdk"
+  },
+  {
+    "name": "branchio-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/branchio-sdk"
+  },
+  {
+    "name": "brasil-sdk",
+    "description": "Voxgig SDK for brasil",
+    "url": "https://github.com/voxgig-sdk/brasil-sdk"
+  },
+  {
+    "name": "breaking-bad-quotes-sdk",
+    "description": "Voxgig SDK for breaking-bad-quotes",
+    "url": "https://github.com/voxgig-sdk/breaking-bad-quotes-sdk"
+  },
+  {
+    "name": "brewpage-hosting-sdk",
+    "description": "Voxgig SDK for brewpage-hosting",
+    "url": "https://github.com/voxgig-sdk/brewpage-hosting-sdk"
+  },
+  {
+    "name": "brontie-sdk",
+    "description": "brontie-sdk",
+    "url": "https://github.com/voxgig-sdk/brontie-sdk"
+  },
+  {
+    "name": "bud-assess-sdk",
+    "description": "SDK for the Bud Assess API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-assess-sdk"
+  },
+  {
+    "name": "bud-authentication-sdk",
+    "description": "SDK for the Bud Authentication (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-authentication-sdk"
+  },
+  {
+    "name": "bud-characteristics-sdk",
+    "description": "SDK for the Bud Characteristics API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-characteristics-sdk"
+  },
+  {
+    "name": "bud-connect-sdk",
+    "description": "SDK for the Bud Connect API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-connect-sdk"
+  },
+  {
+    "name": "bud-customers-sdk",
+    "description": "SDK for the Bud Customers API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-customers-sdk"
+  },
+  {
+    "name": "bud-drive-sdk",
+    "description": "SDK for the Bud Drive API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-drive-sdk"
+  },
+  {
+    "name": "bud-enrichment-sdk",
+    "description": "SDK for the Bud Enrichment API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-enrichment-sdk"
+  },
+  {
+    "name": "bud-financial-data-sdk",
+    "description": "SDK for the Bud Financial Data API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-financial-data-sdk"
+  },
+  {
+    "name": "bud-goals-sdk",
+    "description": "SDK for the Bud Goals API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-goals-sdk"
+  },
+  {
+    "name": "bud-insights-sdk",
+    "description": "SDK for the Bud Insights API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-insights-sdk"
+  },
+  {
+    "name": "bud-intelligent-search-sdk",
+    "description": "SDK for the Bud Intelligent Search API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-intelligent-search-sdk"
+  },
+  {
+    "name": "bud-mcp-model-context-protocol-sdk",
+    "description": "SDK for the Bud MCP (Model Context Protocol) API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-mcp-model-context-protocol-sdk"
+  },
+  {
+    "name": "bud-payments-sdk",
+    "description": "SDK for the Bud Payments API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-payments-sdk"
+  },
+  {
+    "name": "bud-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/bud-sdk"
+  },
+  {
+    "name": "bud-smart-finders-sdk",
+    "description": "SDK for the Bud Smart Finders API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/bud-smart-finders-sdk"
+  },
+  {
+    "name": "buddha-quotes-sdk",
+    "description": "Voxgig SDK for buddha-quotes",
+    "url": "https://github.com/voxgig-sdk/buddha-quotes-sdk"
+  },
+  {
+    "name": "buggie-sdk",
+    "description": "Unofficial Buggie API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with Buggie.",
+    "url": "https://github.com/voxgig-sdk/buggie-sdk"
+  },
+  {
+    "name": "business-day-calculator-sdk",
+    "description": "Voxgig SDK for business-day-calculator",
+    "url": "https://github.com/voxgig-sdk/business-day-calculator-sdk"
+  },
+  {
+    "name": "cainiao-tracking-sdk",
+    "description": "Voxgig SDK for cainiao-tracking",
+    "url": "https://github.com/voxgig-sdk/cainiao-tracking-sdk"
+  },
+  {
+    "name": "california-state-portal-sdk",
+    "description": "Voxgig SDK for california-state-portal",
+    "url": "https://github.com/voxgig-sdk/california-state-portal-sdk"
+  },
+  {
+    "name": "carbon-intensity-sdk",
+    "description": "Voxgig SDK for carbon-intensity",
+    "url": "https://github.com/voxgig-sdk/carbon-intensity-sdk"
+  },
+  {
+    "name": "cartoons-sdk",
+    "description": "Voxgig SDK for cartoons",
+    "url": "https://github.com/voxgig-sdk/cartoons-sdk"
+  },
+  {
+    "name": "cat-fact-sdk",
+    "description": "Voxgig SDK for cat-fact",
+    "url": "https://github.com/voxgig-sdk/cat-fact-sdk"
+  },
+  {
+    "name": "cataas-sdk",
+    "description": "Voxgig SDK for cataas",
+    "url": "https://github.com/voxgig-sdk/cataas-sdk"
+  },
+  {
+    "name": "catchdoms-security-sdk",
+    "description": "Voxgig SDK for catchdoms-security",
+    "url": "https://github.com/voxgig-sdk/catchdoms-security-sdk"
+  },
+  {
+    "name": "catherine-schulman-quotes-sdk",
+    "description": "Voxgig SDK for catherine-schulman-quotes",
+    "url": "https://github.com/voxgig-sdk/catherine-schulman-quotes-sdk"
+  },
+  {
+    "name": "catherine-shulmans-quotes-sdk",
+    "description": "Voxgig SDK for catherine-shulman's-quotes",
+    "url": "https://github.com/voxgig-sdk/catherine-shulmans-quotes-sdk"
+  },
+  {
+    "name": "celestrak-gp-data-sdk",
+    "description": "Voxgig SDK for celestrak-gp-data",
+    "url": "https://github.com/voxgig-sdk/celestrak-gp-data-sdk"
+  },
+  {
+    "name": "ceorater-sdk",
+    "description": "Voxgig SDK for ceorater",
+    "url": "https://github.com/voxgig-sdk/ceorater-sdk"
+  },
+  {
+    "name": "cepik-sdk",
+    "description": "Voxgig SDK for cepik",
+    "url": "https://github.com/voxgig-sdk/cepik-sdk"
+  },
+  {
+    "name": "cheapshark-sdk",
+    "description": "Voxgig SDK for cheapshark",
+    "url": "https://github.com/voxgig-sdk/cheapshark-sdk"
+  },
+  {
+    "name": "check-e-mail-or-username-for-a-data-breach-sdk",
+    "description": "Voxgig SDK for check-e-mail-or-username-for-a-data-breach",
+    "url": "https://github.com/voxgig-sdk/check-e-mail-or-username-for-a-data-breach-sdk"
+  },
+  {
+    "name": "checklyhq-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/checklyhq-sdk"
+  },
+  {
+    "name": "checktica-sdk",
+    "description": "Voxgig SDK for checktica",
+    "url": "https://github.com/voxgig-sdk/checktica-sdk"
+  },
+  {
+    "name": "chinese-holiday-calendar-sdk",
+    "description": "Voxgig SDK for chinese-holiday-calendar",
+    "url": "https://github.com/voxgig-sdk/chinese-holiday-calendar-sdk"
+  },
+  {
+    "name": "chinese-medicine-clinics-sdk",
+    "description": "Voxgig SDK for chinese-medicine-clinics",
+    "url": "https://github.com/voxgig-sdk/chinese-medicine-clinics-sdk"
+  },
+  {
+    "name": "chocomilk-sdk",
+    "description": "Voxgig SDK for chocomilk",
+    "url": "https://github.com/voxgig-sdk/chocomilk-sdk"
+  },
+  {
+    "name": "chuck-norris-jokes-sdk",
+    "description": "Voxgig SDK for chuck-norris-jokes",
+    "url": "https://github.com/voxgig-sdk/chuck-norris-jokes-sdk"
+  },
+  {
+    "name": "church-calendar-sdk",
+    "description": "Voxgig SDK for church-calendar",
+    "url": "https://github.com/voxgig-sdk/church-calendar-sdk"
+  },
+  {
+    "name": "cie10-sdk",
+    "description": "Voxgig SDK for cie-10",
+    "url": "https://github.com/voxgig-sdk/cie10-sdk"
+  },
+  {
+    "name": "city-autocomplete-sdk",
+    "description": "Voxgig SDK for city-autocomplete",
+    "url": "https://github.com/voxgig-sdk/city-autocomplete-sdk"
+  },
+  {
+    "name": "citybikes-sdk",
+    "description": "Voxgig SDK for citybikes",
+    "url": "https://github.com/voxgig-sdk/citybikes-sdk"
+  },
+  {
+    "name": "civicapi-sdk",
+    "description": "Voxgig SDK for civicapi",
+    "url": "https://github.com/voxgig-sdk/civicapi-sdk"
+  },
+  {
+    "name": "civitai-sdk",
+    "description": "Voxgig SDK for civitai",
+    "url": "https://github.com/voxgig-sdk/civitai-sdk"
+  },
+  {
+    "name": "claude-sdk",
+    "description": "Voxgig SDK for claude",
+    "url": "https://github.com/voxgig-sdk/claude-sdk"
+  },
+  {
+    "name": "close-approach-data-sdk",
+    "description": "Voxgig SDK for close-approach-data",
+    "url": "https://github.com/voxgig-sdk/close-approach-data-sdk"
+  },
+  {
+    "name": "cloudflare-access-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-access-sdk"
+  },
+  {
+    "name": "cloudflare-account-management-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-account-management-sdk"
+  },
+  {
+    "name": "cloudflare-ai-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-ai-sdk"
+  },
+  {
+    "name": "cloudflare-application-delivery-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-application-delivery-sdk"
+  },
+  {
+    "name": "cloudflare-application-security-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-application-security-sdk"
+  },
+  {
+    "name": "cloudflare-billing-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-billing-sdk"
+  },
+  {
+    "name": "cloudflare-cloudforce-one-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-cloudforce-one-sdk"
+  },
+  {
+    "name": "cloudflare-content-monetization-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-content-monetization-sdk"
+  },
+  {
+    "name": "cloudflare-d1-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-d1-sdk"
+  },
+  {
+    "name": "cloudflare-developer-platform-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-developer-platform-sdk"
+  },
+  {
+    "name": "cloudflare-dlp-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-dlp-sdk"
+  },
+  {
+    "name": "cloudflare-dns-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-dns-sdk"
+  },
+  {
+    "name": "cloudflare-email-security-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-email-security-sdk"
+  },
+  {
+    "name": "cloudflare-identity-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-identity-sdk"
+  },
+  {
+    "name": "cloudflare-images-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-images-sdk"
+  },
+  {
+    "name": "cloudflare-load-balancing-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-load-balancing-sdk"
+  },
+  {
+    "name": "cloudflare-logpush-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-logpush-sdk"
+  },
+  {
+    "name": "cloudflare-magic-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-magic-sdk"
+  },
+  {
+    "name": "cloudflare-network-services-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-network-services-sdk"
+  },
+  {
+    "name": "cloudflare-observability-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-observability-sdk"
+  },
+  {
+    "name": "cloudflare-pages-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-pages-sdk"
+  },
+  {
+    "name": "cloudflare-queues-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-queues-sdk"
+  },
+  {
+    "name": "cloudflare-r2-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-r2-sdk"
+  },
+  {
+    "name": "cloudflare-radar-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-radar-sdk"
+  },
+  {
+    "name": "cloudflare-realtime-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-realtime-sdk"
+  },
+  {
+    "name": "cloudflare-registrar-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-registrar-sdk"
+  },
+  {
+    "name": "cloudflare-security-intelligence-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-security-intelligence-sdk"
+  },
+  {
+    "name": "cloudflare-ssl-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-ssl-sdk"
+  },
+  {
+    "name": "cloudflare-stream-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-stream-sdk"
+  },
+  {
+    "name": "cloudflare-waf-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-waf-sdk"
+  },
+  {
+    "name": "cloudflare-waiting-rooms-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-waiting-rooms-sdk"
+  },
+  {
+    "name": "cloudflare-workers-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-workers-sdk"
+  },
+  {
+    "name": "cloudflare-zero-trust-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-zero-trust-sdk"
+  },
+  {
+    "name": "cloudflare-zone-settings-sdk",
+    "description": "Generated SDKs for the Cloudflare API product surface.",
+    "url": "https://github.com/voxgig-sdk/cloudflare-zone-settings-sdk"
+  },
+  {
+    "name": "cloudsmith-sdk",
+    "description": "Voxgig SDK for cloudsmith",
+    "url": "https://github.com/voxgig-sdk/cloudsmith-sdk"
+  },
+  {
+    "name": "cocktail-recipe-sdk",
+    "description": "Voxgig SDK for cocktail-recipe",
+    "url": "https://github.com/voxgig-sdk/cocktail-recipe-sdk"
+  },
+  {
+    "name": "codatplatform-sdk",
+    "description": "Codat Platform API SDK \u2014 generated by @voxgig/sdkgen",
+    "url": "https://github.com/voxgig-sdk/codatplatform-sdk"
+  },
+  {
+    "name": "coffee-sdk",
+    "description": "Voxgig SDK for coffee",
+    "url": "https://github.com/voxgig-sdk/coffee-sdk"
+  },
+  {
+    "name": "coffee-two-sdk",
+    "description": "Voxgig SDK for coffee-two",
+    "url": "https://github.com/voxgig-sdk/coffee-two-sdk"
+  },
+  {
+    "name": "coingecko-sdk",
+    "description": "Voxgig SDK for coingecko",
+    "url": "https://github.com/voxgig-sdk/coingecko-sdk"
+  },
+  {
+    "name": "coinpaprika-sdk",
+    "description": "Voxgig SDK for coinpaprika",
+    "url": "https://github.com/voxgig-sdk/coinpaprika-sdk"
+  },
+  {
+    "name": "college-roi-sdk",
+    "description": "Voxgig SDK for college-roi",
+    "url": "https://github.com/voxgig-sdk/college-roi-sdk"
+  },
+  {
+    "name": "colombia-public-sdk",
+    "description": "Voxgig SDK for colombia-public",
+    "url": "https://github.com/voxgig-sdk/colombia-public-sdk"
+  },
+  {
+    "name": "colorado-information-marketplace-sdk",
+    "description": "Voxgig SDK for colorado-information-marketplace",
+    "url": "https://github.com/voxgig-sdk/colorado-information-marketplace-sdk"
+  },
+  {
+    "name": "commonroom-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/commonroom-sdk"
+  },
+  {
+    "name": "company-enrich-sdk",
+    "description": "Voxgig SDK for company-enrich",
+    "url": "https://github.com/voxgig-sdk/company-enrich-sdk"
+  },
+  {
+    "name": "company-search-sdk",
+    "description": "Voxgig SDK for company-search",
+    "url": "https://github.com/voxgig-sdk/company-search-sdk"
+  },
+  {
+    "name": "conecto-sdk",
+    "description": "Open source SDKs for the Conecto API (conecto.chat) \u2014 TypeScript, Python, Go, PHP, Ruby, Lua, plus a CLI and MCP server. Generated by @voxgig/sdkgen.",
+    "url": "https://github.com/voxgig-sdk/conecto-sdk"
+  },
+  {
+    "name": "console-weather-forecast-sdk",
+    "description": "Voxgig SDK for console-weather-forecast",
+    "url": "https://github.com/voxgig-sdk/console-weather-forecast-sdk"
+  },
+  {
+    "name": "contentful-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/contentful-sdk"
+  },
+  {
+    "name": "contentfulcma-sdk",
+    "description": "Contentful Content Management API SDK \u2014 generated by @voxgig/sdkgen",
+    "url": "https://github.com/voxgig-sdk/contentfulcma-sdk"
+  },
+  {
+    "name": "corporate-bullshit-generator-sdk",
+    "description": "Voxgig SDK for corporate-bullshit-generator",
+    "url": "https://github.com/voxgig-sdk/corporate-bullshit-generator-sdk"
+  },
+  {
+    "name": "countries-and-cities-sdk",
+    "description": "Voxgig SDK for countries-and-cities",
+    "url": "https://github.com/voxgig-sdk/countries-and-cities-sdk"
+  },
+  {
+    "name": "covid19-data-sdk",
+    "description": "Voxgig SDK for covid-19-data",
+    "url": "https://github.com/voxgig-sdk/covid19-data-sdk"
+  },
+  {
+    "name": "credit-card-validation-sdk",
+    "description": "Voxgig SDK for credit-card-validation",
+    "url": "https://github.com/voxgig-sdk/credit-card-validation-sdk"
+  },
+  {
+    "name": "crisis-core-fusion-sdk",
+    "description": "Voxgig SDK for crisis-core-fusion",
+    "url": "https://github.com/voxgig-sdk/crisis-core-fusion-sdk"
+  },
+  {
+    "name": "crossref-rest-sdk",
+    "description": "Voxgig SDK for crossref-rest",
+    "url": "https://github.com/voxgig-sdk/crossref-rest-sdk"
+  },
+  {
+    "name": "crowd-sourced-lyrics-sdk",
+    "description": "Voxgig SDK for crowd-sourced-lyrics",
+    "url": "https://github.com/voxgig-sdk/crowd-sourced-lyrics-sdk"
+  },
+  {
+    "name": "crun-api-overview-sdk",
+    "description": "Voxgig SDK for crun-api-overview",
+    "url": "https://github.com/voxgig-sdk/crun-api-overview-sdk"
+  },
+  {
+    "name": "cryptolabel-sdk",
+    "description": "Voxgig SDK for cryptolabel",
+    "url": "https://github.com/voxgig-sdk/cryptolabel-sdk"
+  },
+  {
+    "name": "ctp-sdk",
+    "description": "Voxgig SDK for ctp",
+    "url": "https://github.com/voxgig-sdk/ctp-sdk"
+  },
+  {
+    "name": "currency-exchange-sdk",
+    "description": "Voxgig SDK for currency-exchange",
+    "url": "https://github.com/voxgig-sdk/currency-exchange-sdk"
+  },
+  {
+    "name": "custom-temp-mail-sdk",
+    "description": "Voxgig SDK for custom-temp-mail",
+    "url": "https://github.com/voxgig-sdk/custom-temp-mail-sdk"
+  },
+  {
+    "name": "customerio-app-sdk",
+    "description": "SDK for the Customer.io App API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/customerio-app-sdk"
+  },
+  {
+    "name": "customerio-pipelines-sdk",
+    "description": "SDK for the Customer.io Pipelines API (CDP) (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/customerio-pipelines-sdk"
+  },
+  {
+    "name": "customerio-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/customerio-sdk"
+  },
+  {
+    "name": "customerio-track-sdk",
+    "description": "SDK for the Customer.io Track API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/customerio-track-sdk"
+  },
+  {
+    "name": "customs-window-sdk",
+    "description": "Customs Window (customswindow.com) customs/trade declaration API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/customs-window-sdk"
+  },
+  {
+    "name": "cvedb-sdk",
+    "description": "Voxgig SDK for cvedb",
+    "url": "https://github.com/voxgig-sdk/cvedb-sdk"
+  },
+  {
+    "name": "data-dragon-sdk",
+    "description": "Voxgig SDK for data-dragon",
+    "url": "https://github.com/voxgig-sdk/data-dragon-sdk"
+  },
+  {
+    "name": "data-gov-au-sdk",
+    "description": "Voxgig SDK for data.gov.au",
+    "url": "https://github.com/voxgig-sdk/data-gov-au-sdk"
+  },
+  {
+    "name": "data-usa-sdk",
+    "description": "Voxgig SDK for data-usa",
+    "url": "https://github.com/voxgig-sdk/data-usa-sdk"
+  },
+  {
+    "name": "datagov-ckan-sdk",
+    "description": "Voxgig SDK for datagov-ckan",
+    "url": "https://github.com/voxgig-sdk/datagov-ckan-sdk"
+  },
+  {
+    "name": "datamuse-sdk",
+    "description": "Voxgig SDK for datamuse",
+    "url": "https://github.com/voxgig-sdk/datamuse-sdk"
+  },
+  {
+    "name": "deck-of-cards-sdk",
+    "description": "Voxgig SDK for deck-of-cards",
+    "url": "https://github.com/voxgig-sdk/deck-of-cards-sdk"
+  },
+  {
+    "name": "dedline-sdk",
+    "description": "Voxgig SDK for dedline",
+    "url": "https://github.com/voxgig-sdk/dedline-sdk"
+  },
+  {
+    "name": "deel-ats-sdk",
+    "description": "Unofficial Deel API SDKs: applicant tracking - jobs, job postings, candidates, applications, sources and attachments, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-ats-sdk"
+  },
+  {
+    "name": "deel-contractor-sdk",
+    "description": "Unofficial Deel API SDKs: contracts, milestones, tasks and timesheets, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-contractor-sdk"
+  },
+  {
+    "name": "deel-eor-sdk",
+    "description": "Unofficial Deel API SDKs: Employer of Record from the employer side - hiring, amendments, adjustments, offboarding and terminations, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-eor-sdk"
+  },
+  {
+    "name": "deel-eor-worker-sdk",
+    "description": "Unofficial Deel API SDKs: Employer of Record from the worker side - own information, agreements, compliance, bank accounts and offboarding, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-eor-worker-sdk"
+  },
+  {
+    "name": "deel-hris-sdk",
+    "description": "Unofficial Deel API SDKs: HRIS - people and relations, time off, organization structure, personal information and custom fields, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-hris-sdk"
+  },
+  {
+    "name": "deel-platform-sdk",
+    "description": "Unofficial Deel API SDKs: organization level, which Deel calls Platform - immigration, screenings, groups, legal entities, managers, cost centres, lookups and webhooks, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/deel-platform-sdk"
+  },
+  {
+    "name": "demon-slayer-sdk",
+    "description": "Voxgig SDK for demon-slayer",
+    "url": "https://github.com/voxgig-sdk/demon-slayer-sdk"
+  },
+  {
+    "name": "developer-toolbox-sdk",
+    "description": "Voxgig SDK for developer-toolbox",
+    "url": "https://github.com/voxgig-sdk/developer-toolbox-sdk"
+  },
+  {
+    "name": "dexpaprika-sdk",
+    "description": "Voxgig SDK for dexpaprika",
+    "url": "https://github.com/voxgig-sdk/dexpaprika-sdk"
+  },
+  {
+    "name": "dictum-sdk",
+    "description": "Voxgig SDK for dictum",
+    "url": "https://github.com/voxgig-sdk/dictum-sdk"
+  },
+  {
+    "name": "dietlyapi-integration-sdk",
+    "description": "Voxgig SDK for dietlyapi-integration",
+    "url": "https://github.com/voxgig-sdk/dietlyapi-integration-sdk"
+  },
+  {
+    "name": "digimon-sdk",
+    "description": "Voxgig SDK for digimon",
+    "url": "https://github.com/voxgig-sdk/digimon-sdk"
+  },
+  {
+    "name": "digimon-tcg-sdk",
+    "description": "Voxgig SDK for digimon-tcg",
+    "url": "https://github.com/voxgig-sdk/digimon-tcg-sdk"
+  },
+  {
+    "name": "dingconnect-sdk",
+    "description": "DingConnect (dingconnect.com) mobile top-up API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/dingconnect-sdk"
+  },
+  {
+    "name": "discard-sdk",
+    "description": "Voxgig SDK for discard",
+    "url": "https://github.com/voxgig-sdk/discard-sdk"
+  },
+  {
+    "name": "disney-sdk",
+    "description": "Voxgig SDK for disney",
+    "url": "https://github.com/voxgig-sdk/disney-sdk"
+  },
+  {
+    "name": "dns-lookup-sdk",
+    "description": "Voxgig SDK for dns-lookup",
+    "url": "https://github.com/voxgig-sdk/dns-lookup-sdk"
+  },
+  {
+    "name": "dog-sdk",
+    "description": "Voxgig SDK for dog",
+    "url": "https://github.com/voxgig-sdk/dog-sdk"
+  },
+  {
+    "name": "dolar-y-monedas-sdk",
+    "description": "Voxgig SDK for d\u00f3lar-y-monedas",
+    "url": "https://github.com/voxgig-sdk/dolar-y-monedas-sdk"
+  },
+  {
+    "name": "domain-whois-sdk",
+    "description": "Voxgig SDK for domain-whois",
+    "url": "https://github.com/voxgig-sdk/domain-whois-sdk"
+  },
+  {
+    "name": "dorognoe-sdk",
+    "description": "Voxgig SDK for dorognoe",
+    "url": "https://github.com/voxgig-sdk/dorognoe-sdk"
+  },
+  {
+    "name": "dragon-ball-sdk",
+    "description": "Voxgig SDK for dragon-ball",
+    "url": "https://github.com/voxgig-sdk/dragon-ball-sdk"
+  },
+  {
+    "name": "dreamapply-sdk",
+    "description": "Unofficial open source SDKs for the DreamApply API - TypeScript, Python, Go. Spec derived from DreamApply's own open source PHP SDK. MIT.",
+    "url": "https://github.com/voxgig-sdk/dreamapply-sdk"
+  },
+  {
+    "name": "dtone-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/dtone-sdk"
+  },
+  {
+    "name": "dungeons-and-dragons-sdk",
+    "description": "Voxgig SDK for dungeons-and-dragons",
+    "url": "https://github.com/voxgig-sdk/dungeons-and-dragons-sdk"
+  },
+  {
+    "name": "dungeons-and-dragons-two-sdk",
+    "description": "Voxgig SDK for dungeons-and-dragons-two",
+    "url": "https://github.com/voxgig-sdk/dungeons-and-dragons-two-sdk"
+  },
+  {
+    "name": "dutch-customer-data-sdk",
+    "description": "Voxgig SDK for dutch-customer-data",
+    "url": "https://github.com/voxgig-sdk/dutch-customer-data-sdk"
+  },
+  {
+    "name": "dw-news-sdk",
+    "description": "Voxgig SDK for dw-news",
+    "url": "https://github.com/voxgig-sdk/dw-news-sdk"
+  },
+  {
+    "name": "dymo-api-introduction-sdk",
+    "description": "Voxgig SDK for dymo-api-introduction",
+    "url": "https://github.com/voxgig-sdk/dymo-api-introduction-sdk"
+  },
+  {
+    "name": "earthquake-catalog-sdk",
+    "description": "Voxgig SDK for earthquake-catalog",
+    "url": "https://github.com/voxgig-sdk/earthquake-catalog-sdk"
+  },
+  {
+    "name": "ec2-shop-sdk",
+    "description": "Voxgig SDK for ec-2-shop",
+    "url": "https://github.com/voxgig-sdk/ec2-shop-sdk"
+  },
+  {
+    "name": "echofm-sdk",
+    "description": "Voxgig SDK for echofm",
+    "url": "https://github.com/voxgig-sdk/echofm-sdk"
+  },
+  {
+    "name": "elering-dashboard-sdk",
+    "description": "Voxgig SDK for elering-dashboard",
+    "url": "https://github.com/voxgig-sdk/elering-dashboard-sdk"
+  },
+  {
+    "name": "elife-sciences-sdk",
+    "description": "Voxgig SDK for elife-sciences",
+    "url": "https://github.com/voxgig-sdk/elife-sciences-sdk"
+  },
+  {
+    "name": "elonmuskapi-sdk",
+    "description": "Voxgig SDK for elonmuskapi",
+    "url": "https://github.com/voxgig-sdk/elonmuskapi-sdk"
+  },
+  {
+    "name": "email-validation-api2-sdk",
+    "description": "Voxgig SDK for email-validation-api-2",
+    "url": "https://github.com/voxgig-sdk/email-validation-api2-sdk"
+  },
+  {
+    "name": "email-validation-sdk",
+    "description": "Voxgig SDK for email-validation",
+    "url": "https://github.com/voxgig-sdk/email-validation-sdk"
+  },
+  {
+    "name": "email-verification-sdk",
+    "description": "Voxgig SDK for email-verification",
+    "url": "https://github.com/voxgig-sdk/email-verification-sdk"
+  },
+  {
+    "name": "emojihub-sdk",
+    "description": "Voxgig SDK for emojihub",
+    "url": "https://github.com/voxgig-sdk/emojihub-sdk"
+  },
+  {
+    "name": "energy-charts-api2-sdk",
+    "description": "Voxgig SDK for energy-charts-api-2",
+    "url": "https://github.com/voxgig-sdk/energy-charts-api2-sdk"
+  },
+  {
+    "name": "energy-charts-sdk",
+    "description": "Voxgig SDK for energy-charts",
+    "url": "https://github.com/voxgig-sdk/energy-charts-sdk"
+  },
+  {
+    "name": "energy-radio-stations-sdk",
+    "description": "Voxgig SDK for energy-radio-stations",
+    "url": "https://github.com/voxgig-sdk/energy-radio-stations-sdk"
+  },
+  {
+    "name": "error-handling-sdk",
+    "description": "Voxgig SDK for error-handling",
+    "url": "https://github.com/voxgig-sdk/error-handling-sdk"
+  },
+  {
+    "name": "error-page-sdk",
+    "description": "Voxgig SDK for error-page",
+    "url": "https://github.com/voxgig-sdk/error-page-sdk"
+  },
+  {
+    "name": "esi-documentation-sdk",
+    "description": "Voxgig SDK for esi-documentation",
+    "url": "https://github.com/voxgig-sdk/esi-documentation-sdk"
+  },
+  {
+    "name": "eu-vat-validation-sdk",
+    "description": "Voxgig SDK for eu-vat-validation",
+    "url": "https://github.com/voxgig-sdk/eu-vat-validation-sdk"
+  },
+  {
+    "name": "euro-rates-sdk",
+    "description": "Voxgig SDK for euro-rates",
+    "url": "https://github.com/voxgig-sdk/euro-rates-sdk"
+  },
+  {
+    "name": "euronews-sdk",
+    "description": "Voxgig SDK for euronews",
+    "url": "https://github.com/voxgig-sdk/euronews-sdk"
+  },
+  {
+    "name": "europaplus-sdk",
+    "description": "Voxgig SDK for europaplus",
+    "url": "https://github.com/voxgig-sdk/europaplus-sdk"
+  },
+  {
+    "name": "eva-email-verification-sdk",
+    "description": "Voxgig SDK for eva-email-verification",
+    "url": "https://github.com/voxgig-sdk/eva-email-verification-sdk"
+  },
+  {
+    "name": "eventbrite-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/eventbrite-sdk"
+  },
+  {
+    "name": "evervault-sdk",
+    "description": "Voxgig SDK for evervault",
+    "url": "https://github.com/voxgig-sdk/evervault-sdk"
+  },
+  {
+    "name": "evil-insult-generator-sdk",
+    "description": "Voxgig SDK for evil-insult-generator",
+    "url": "https://github.com/voxgig-sdk/evil-insult-generator-sdk"
+  },
+  {
+    "name": "exchange-rate-sdk",
+    "description": "Voxgig SDK for exchange-rate",
+    "url": "https://github.com/voxgig-sdk/exchange-rate-sdk"
+  },
+  {
+    "name": "exchange-rates-sdk",
+    "description": "Voxgig SDK for exchange-rates",
+    "url": "https://github.com/voxgig-sdk/exchange-rates-sdk"
+  },
+  {
+    "name": "extinct-animals-sdk",
+    "description": "Voxgig SDK for extinct-animals",
+    "url": "https://github.com/voxgig-sdk/extinct-animals-sdk"
+  },
+  {
+    "name": "fake-json-sdk",
+    "description": "Voxgig SDK for fake-json",
+    "url": "https://github.com/voxgig-sdk/fake-json-sdk"
+  },
+  {
+    "name": "fake-rest-sdk",
+    "description": "Voxgig SDK for fake-rest",
+    "url": "https://github.com/voxgig-sdk/fake-rest-sdk"
+  },
+  {
+    "name": "fake-store-sdk",
+    "description": "Voxgig SDK for fake-store",
+    "url": "https://github.com/voxgig-sdk/fake-store-sdk"
+  },
+  {
+    "name": "fantasy-role-playing-sdk",
+    "description": "Voxgig SDK for fantasy-role-playing",
+    "url": "https://github.com/voxgig-sdk/fantasy-role-playing-sdk"
+  },
+  {
+    "name": "fastapi-sdk",
+    "description": "Voxgig SDK for fastapi",
+    "url": "https://github.com/voxgig-sdk/fastapi-sdk"
+  },
+  {
+    "name": "fastcon-sdk",
+    "description": "Voxgig SDK for fastcon",
+    "url": "https://github.com/voxgig-sdk/fastcon-sdk"
+  },
+  {
+    "name": "fastline-vpn-sdk",
+    "description": "Voxgig SDK for fastline-vpn",
+    "url": "https://github.com/voxgig-sdk/fastline-vpn-sdk"
+  },
+  {
+    "name": "federal-register-sdk",
+    "description": "Voxgig SDK for federal-register",
+    "url": "https://github.com/voxgig-sdk/federal-register-sdk"
+  },
+  {
+    "name": "fedora-messaging-sdk",
+    "description": "Voxgig SDK for fedora-messaging",
+    "url": "https://github.com/voxgig-sdk/fedora-messaging-sdk"
+  },
+  {
+    "name": "film-sdk",
+    "description": "Voxgig SDK for film",
+    "url": "https://github.com/voxgig-sdk/film-sdk"
+  },
+  {
+    "name": "final-space-sdk",
+    "description": "Voxgig SDK for final-space",
+    "url": "https://github.com/voxgig-sdk/final-space-sdk"
+  },
+  {
+    "name": "financial-data-sdk",
+    "description": "Voxgig SDK for financial-data",
+    "url": "https://github.com/voxgig-sdk/financial-data-sdk"
+  },
+  {
+    "name": "finsignals-sdk",
+    "description": "Voxgig SDK for finsignals",
+    "url": "https://github.com/voxgig-sdk/finsignals-sdk"
+  },
+  {
+    "name": "first-news-sdk",
+    "description": "Voxgig SDK for first-news",
+    "url": "https://github.com/voxgig-sdk/first-news-sdk"
+  },
+  {
+    "name": "flyff-game-sdk",
+    "description": "Voxgig SDK for flyff-game",
+    "url": "https://github.com/voxgig-sdk/flyff-game-sdk"
+  },
+  {
+    "name": "food-hygiene-rating-sdk",
+    "description": "Voxgig SDK for food-hygiene-rating",
+    "url": "https://github.com/voxgig-sdk/food-hygiene-rating-sdk"
+  },
+  {
+    "name": "football-data-sdk",
+    "description": "Voxgig SDK for football-data",
+    "url": "https://github.com/voxgig-sdk/football-data-sdk"
+  },
+  {
+    "name": "footer-year-update-sdk",
+    "description": "Voxgig SDK for footer-year-update",
+    "url": "https://github.com/voxgig-sdk/footer-year-update-sdk"
+  },
+  {
+    "name": "foreign-exchange-rates-sdk",
+    "description": "Voxgig SDK for foreign-exchange-rates",
+    "url": "https://github.com/voxgig-sdk/foreign-exchange-rates-sdk"
+  },
+  {
+    "name": "forex-trading-sdk",
+    "description": "Voxgig SDK for forex-trading",
+    "url": "https://github.com/voxgig-sdk/forex-trading-sdk"
+  },
+  {
+    "name": "fortnite-sdk",
+    "description": "Voxgig SDK for fortnite",
+    "url": "https://github.com/voxgig-sdk/fortnite-sdk"
+  },
+  {
+    "name": "forzamusic-sdk",
+    "description": "Voxgig SDK for forzamusic",
+    "url": "https://github.com/voxgig-sdk/forzamusic-sdk"
+  },
+  {
+    "name": "free-birds-sdk",
+    "description": "Voxgig SDK for free-birds",
+    "url": "https://github.com/voxgig-sdk/free-birds-sdk"
+  },
+  {
+    "name": "free-dictionary-api2-sdk",
+    "description": "Voxgig SDK for free-dictionary-api-2",
+    "url": "https://github.com/voxgig-sdk/free-dictionary-api2-sdk"
+  },
+  {
+    "name": "free-dictionary-sdk",
+    "description": "Voxgig SDK for free-dictionary",
+    "url": "https://github.com/voxgig-sdk/free-dictionary-sdk"
+  },
+  {
+    "name": "free-elevation-sdk",
+    "description": "Voxgig SDK for free-elevation",
+    "url": "https://github.com/voxgig-sdk/free-elevation-sdk"
+  },
+  {
+    "name": "free-games-sdk",
+    "description": "Voxgig SDK for free-games",
+    "url": "https://github.com/voxgig-sdk/free-games-sdk"
+  },
+  {
+    "name": "free-ip-sdk",
+    "description": "Voxgig SDK for free-ip",
+    "url": "https://github.com/voxgig-sdk/free-ip-sdk"
+  },
+  {
+    "name": "free-jobs-sdk",
+    "description": "Voxgig SDK for free-jobs",
+    "url": "https://github.com/voxgig-sdk/free-jobs-sdk"
+  },
+  {
+    "name": "free-meal-sdk",
+    "description": "Voxgig SDK for free-meal",
+    "url": "https://github.com/voxgig-sdk/free-meal-sdk"
+  },
+  {
+    "name": "free-movie-sdk",
+    "description": "Voxgig SDK for free-movie",
+    "url": "https://github.com/voxgig-sdk/free-movie-sdk"
+  },
+  {
+    "name": "free-music-api2-sdk",
+    "description": "Voxgig SDK for free-music-api-2",
+    "url": "https://github.com/voxgig-sdk/free-music-api2-sdk"
+  },
+  {
+    "name": "free-music-sdk",
+    "description": "Voxgig SDK for free-music",
+    "url": "https://github.com/voxgig-sdk/free-music-sdk"
+  },
+  {
+    "name": "free-public-apis-sdk",
+    "description": "Voxgig SDK for free-public-apis",
+    "url": "https://github.com/voxgig-sdk/free-public-apis-sdk"
+  },
+  {
+    "name": "free-sports-sdk",
+    "description": "Voxgig SDK for free-sports",
+    "url": "https://github.com/voxgig-sdk/free-sports-sdk"
+  },
+  {
+    "name": "free-to-play-games-sdk",
+    "description": "Voxgig SDK for free-to-play-games",
+    "url": "https://github.com/voxgig-sdk/free-to-play-games-sdk"
+  },
+  {
+    "name": "free-uv-index-sdk",
+    "description": "Voxgig SDK for free-uv-index",
+    "url": "https://github.com/voxgig-sdk/free-uv-index-sdk"
+  },
+  {
+    "name": "freepublicapis-sdk",
+    "description": "Voxgig SDK for freepublicapis",
+    "url": "https://github.com/voxgig-sdk/freepublicapis-sdk"
+  },
+  {
+    "name": "freetestapi-sdk",
+    "description": "Voxgig SDK for freetestapi",
+    "url": "https://github.com/voxgig-sdk/freetestapi-sdk"
+  },
+  {
+    "name": "fried-apps-sdk",
+    "description": "Voxgig SDK for fried-apps",
+    "url": "https://github.com/voxgig-sdk/fried-apps-sdk"
+  },
+  {
+    "name": "fruityvice-sdk",
+    "description": "Voxgig SDK for fruityvice",
+    "url": "https://github.com/voxgig-sdk/fruityvice-sdk"
+  },
+  {
+    "name": "fuel-prices-at-spanish-gas-stations-sdk",
+    "description": "Voxgig SDK for fuel-prices-at-spanish-gas-stations",
+    "url": "https://github.com/voxgig-sdk/fuel-prices-at-spanish-gas-stations-sdk"
+  },
+  {
+    "name": "funisgo-streaming-sdk",
+    "description": "Voxgig SDK for funisgo-streaming",
+    "url": "https://github.com/voxgig-sdk/funisgo-streaming-sdk"
+  },
+  {
+    "name": "fussy-api-documentation-sdk",
+    "description": "Voxgig SDK for fussy-api-documentation",
+    "url": "https://github.com/voxgig-sdk/fussy-api-documentation-sdk"
+  },
+  {
+    "name": "game-data-sdk",
+    "description": "Voxgig SDK for game-data",
+    "url": "https://github.com/voxgig-sdk/game-data-sdk"
+  },
+  {
+    "name": "game-development-sdk",
+    "description": "Voxgig SDK for game-development",
+    "url": "https://github.com/voxgig-sdk/game-development-sdk"
+  },
+  {
+    "name": "game-of-thrones-quotes-sdk",
+    "description": "Voxgig SDK for game-of-thrones-quotes",
+    "url": "https://github.com/voxgig-sdk/game-of-thrones-quotes-sdk"
+  },
+  {
+    "name": "gbif-sdk",
+    "description": "Voxgig SDK for gbif",
+    "url": "https://github.com/voxgig-sdk/gbif-sdk"
+  },
+  {
+    "name": "gcal-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/gcal-sdk"
+  },
+  {
+    "name": "gemini-sdk",
+    "description": "Voxgig SDK for gemini",
+    "url": "https://github.com/voxgig-sdk/gemini-sdk"
+  },
+  {
+    "name": "genderizeio-sdk",
+    "description": "Voxgig SDK for genderizeio",
+    "url": "https://github.com/voxgig-sdk/genderizeio-sdk"
+  },
+  {
+    "name": "genrenator-sdk",
+    "description": "Voxgig SDK for genrenator",
+    "url": "https://github.com/voxgig-sdk/genrenator-sdk"
+  },
+  {
+    "name": "geoadmin-search-sdk",
+    "description": "Voxgig SDK for geoadmin-search",
+    "url": "https://github.com/voxgig-sdk/geoadmin-search-sdk"
+  },
+  {
+    "name": "geodescription-sdk",
+    "description": "Voxgig SDK for geodescription",
+    "url": "https://github.com/voxgig-sdk/geodescription-sdk"
+  },
+  {
+    "name": "geonet-sdk",
+    "description": "Voxgig SDK for geonet",
+    "url": "https://github.com/voxgig-sdk/geonet-sdk"
+  },
+  {
+    "name": "geonode-sdk",
+    "description": "Voxgig SDK for geonode",
+    "url": "https://github.com/voxgig-sdk/geonode-sdk"
+  },
+  {
+    "name": "github-rest-sdk",
+    "description": "Voxgig SDK for github-rest",
+    "url": "https://github.com/voxgig-sdk/github-rest-sdk"
+  },
+  {
+    "name": "github-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/github-sdk"
+  },
+  {
+    "name": "gitlab-sdk",
+    "description": "Voxgig SDK for gitlab",
+    "url": "https://github.com/voxgig-sdk/gitlab-sdk"
+  },
+  {
+    "name": "give-food-sdk",
+    "description": "Voxgig SDK for give-food",
+    "url": "https://github.com/voxgig-sdk/give-food-sdk"
+  },
+  {
+    "name": "glax-weather-sdk",
+    "description": "Voxgig SDK for glax-weather",
+    "url": "https://github.com/voxgig-sdk/glax-weather-sdk"
+  },
+  {
+    "name": "global-flood-sdk",
+    "description": "Voxgig SDK for global-flood",
+    "url": "https://github.com/voxgig-sdk/global-flood-sdk"
+  },
+  {
+    "name": "global-shark-attack-sdk",
+    "description": "Voxgig SDK for global-shark-attack",
+    "url": "https://github.com/voxgig-sdk/global-shark-attack-sdk"
+  },
+  {
+    "name": "graphite-note-sdk",
+    "description": "Graphite Note (graphite-note.com) predictive analytics API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/graphite-note-sdk"
+  },
+  {
+    "name": "grass-touch-sdk",
+    "description": "Voxgig SDK for grass-touch",
+    "url": "https://github.com/voxgig-sdk/grass-touch-sdk"
+  },
+  {
+    "name": "gregorian-lunar-calendar-sdk",
+    "description": "Voxgig SDK for gregorian-lunar-calendar",
+    "url": "https://github.com/voxgig-sdk/gregorian-lunar-calendar-sdk"
+  },
+  {
+    "name": "guild-wars2-sdk",
+    "description": "Voxgig SDK for guild-wars-2",
+    "url": "https://github.com/voxgig-sdk/guild-wars2-sdk"
+  },
+  {
+    "name": "gutendex-sdk",
+    "description": "Voxgig SDK for gutendex",
+    "url": "https://github.com/voxgig-sdk/gutendex-sdk"
+  },
+  {
+    "name": "hackernews-sdk",
+    "description": "Voxgig SDK for hackernews",
+    "url": "https://github.com/voxgig-sdk/hackernews-sdk"
+  },
+  {
+    "name": "hanko-public-sdk",
+    "description": "Hanko Public API (hanko.io) passkey/auth SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hanko-public-sdk"
+  },
+  {
+    "name": "hano-snapchat-lens-sdk",
+    "description": "Voxgig SDK for hano-snapchat-lens",
+    "url": "https://github.com/voxgig-sdk/hano-snapchat-lens-sdk"
+  },
+  {
+    "name": "harry-potter-sdk",
+    "description": "Voxgig SDK for harry-potter",
+    "url": "https://github.com/voxgig-sdk/harry-potter-sdk"
+  },
+  {
+    "name": "healthcare-gov-content-sdk",
+    "description": "Voxgig SDK for healthcare.gov-content",
+    "url": "https://github.com/voxgig-sdk/healthcare-gov-content-sdk"
+  },
+  {
+    "name": "heat-stress-warning-sdk",
+    "description": "Voxgig SDK for heat-stress-warning",
+    "url": "https://github.com/voxgig-sdk/heat-stress-warning-sdk"
+  },
+  {
+    "name": "hello-as-service-sdk",
+    "description": "Voxgig SDK for hello-as-service",
+    "url": "https://github.com/voxgig-sdk/hello-as-service-sdk"
+  },
+  {
+    "name": "hiking-trail-closures-sdk",
+    "description": "Voxgig SDK for hiking-trail-closures",
+    "url": "https://github.com/voxgig-sdk/hiking-trail-closures-sdk"
+  },
+  {
+    "name": "homepage-screenshot-sdk",
+    "description": "Voxgig SDK for homepage-screenshot",
+    "url": "https://github.com/voxgig-sdk/homepage-screenshot-sdk"
+  },
+  {
+    "name": "hong-kong-csdi-sdk",
+    "description": "Voxgig SDK for hong-kong-csdi",
+    "url": "https://github.com/voxgig-sdk/hong-kong-csdi-sdk"
+  },
+  {
+    "name": "hook0-sdk",
+    "description": "Unofficial Hook0 API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with Hook0.",
+    "url": "https://github.com/voxgig-sdk/hook0-sdk"
+  },
+  {
+    "name": "hosted-rest-sdk",
+    "description": "Voxgig SDK for hosted-rest",
+    "url": "https://github.com/voxgig-sdk/hosted-rest-sdk"
+  },
+  {
+    "name": "html-creator-sdk",
+    "description": "Voxgig SDK for html-creator",
+    "url": "https://github.com/voxgig-sdk/html-creator-sdk"
+  },
+  {
+    "name": "html-to-pdf-converter-sdk",
+    "description": "Voxgig SDK for html-to-pdf-converter",
+    "url": "https://github.com/voxgig-sdk/html-to-pdf-converter-sdk"
+  },
+  {
+    "name": "hubspot-account-sdk",
+    "description": "HubSpot Account API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-account-sdk"
+  },
+  {
+    "name": "hubspot-analytics-sdk",
+    "description": "HubSpot Analytics API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-analytics-sdk"
+  },
+  {
+    "name": "hubspot-auth-sdk",
+    "description": "HubSpot Auth API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-auth-sdk"
+  },
+  {
+    "name": "hubspot-automation-sdk",
+    "description": "HubSpot Automation API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-automation-sdk"
+  },
+  {
+    "name": "hubspot-business-units-sdk",
+    "description": "HubSpot Business Units API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-business-units-sdk"
+  },
+  {
+    "name": "hubspot-cms-sdk",
+    "description": "HubSpot CMS API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-cms-sdk"
+  },
+  {
+    "name": "hubspot-commerce-sdk",
+    "description": "HubSpot Commerce API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-commerce-sdk"
+  },
+  {
+    "name": "hubspot-communication-preferences-sdk",
+    "description": "HubSpot Communication Preferences API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-communication-preferences-sdk"
+  },
+  {
+    "name": "hubspot-conversations-sdk",
+    "description": "HubSpot Conversations API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-conversations-sdk"
+  },
+  {
+    "name": "hubspot-crm-sdk",
+    "description": "HubSpot CRM API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-crm-sdk"
+  },
+  {
+    "name": "hubspot-data-studio-sdk",
+    "description": "HubSpot Data Studio API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-data-studio-sdk"
+  },
+  {
+    "name": "hubspot-events-sdk",
+    "description": "HubSpot Events API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-events-sdk"
+  },
+  {
+    "name": "hubspot-files-sdk",
+    "description": "HubSpot Files API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-files-sdk"
+  },
+  {
+    "name": "hubspot-marketing-sdk",
+    "description": "HubSpot Marketing API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-marketing-sdk"
+  },
+  {
+    "name": "hubspot-meta-sdk",
+    "description": "HubSpot Meta API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-meta-sdk"
+  },
+  {
+    "name": "hubspot-scheduler-sdk",
+    "description": "HubSpot Scheduler API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-scheduler-sdk"
+  },
+  {
+    "name": "hubspot-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/hubspot-sdk"
+  },
+  {
+    "name": "hubspot-settings-sdk",
+    "description": "HubSpot Settings API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-settings-sdk"
+  },
+  {
+    "name": "hubspot-webhooks-journal-sdk",
+    "description": "HubSpot Webhooks Journal API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-webhooks-journal-sdk"
+  },
+  {
+    "name": "hubspot-webhooks-sdk",
+    "description": "HubSpot Webhooks API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/hubspot-webhooks-sdk"
+  },
+  {
+    "name": "hypixel-sdk",
+    "description": "Voxgig SDK for hypixel",
+    "url": "https://github.com/voxgig-sdk/hypixel-sdk"
+  },
+  {
+    "name": "hyrule-compendium-sdk",
+    "description": "Voxgig SDK for hyrule-compendium",
+    "url": "https://github.com/voxgig-sdk/hyrule-compendium-sdk"
+  },
+  {
+    "name": "iam-smart-sdk",
+    "description": "Voxgig SDK for iam-smart",
+    "url": "https://github.com/voxgig-sdk/iam-smart-sdk"
+  },
+  {
+    "name": "iban-validation-sdk",
+    "description": "Voxgig SDK for iban-validation",
+    "url": "https://github.com/voxgig-sdk/iban-validation-sdk"
+  },
+  {
+    "name": "ignav-flight-sdk",
+    "description": "Voxgig SDK for ignav-flight",
+    "url": "https://github.com/voxgig-sdk/ignav-flight-sdk"
+  },
+  {
+    "name": "iin-lookup-sdk",
+    "description": "Voxgig SDK for iin-lookup",
+    "url": "https://github.com/voxgig-sdk/iin-lookup-sdk"
+  },
+  {
+    "name": "image-placeholder-generator-sdk",
+    "description": "Voxgig SDK for image-placeholder-generator",
+    "url": "https://github.com/voxgig-sdk/image-placeholder-generator-sdk"
+  },
+  {
+    "name": "image-transformation-sdk",
+    "description": "Voxgig SDK for image-transformation",
+    "url": "https://github.com/voxgig-sdk/image-transformation-sdk"
+  },
+  {
+    "name": "imgflip-sdk",
+    "description": "Voxgig SDK for imgflip",
+    "url": "https://github.com/voxgig-sdk/imgflip-sdk"
+  },
+  {
+    "name": "imgur-sdk",
+    "description": "Voxgig SDK for imgur",
+    "url": "https://github.com/voxgig-sdk/imgur-sdk"
+  },
+  {
+    "name": "incident-io-sdk",
+    "description": "Unofficial incident.io SDK \u2014 TypeScript, JavaScript, Go, Python, PHP, Lua + MCP server. Generated from the public OpenAPI spec by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/incident-io-sdk"
+  },
+  {
+    "name": "indoor-environmental-monitoring-sdk",
+    "description": "Voxgig SDK for indoor-environmental-monitoring",
+    "url": "https://github.com/voxgig-sdk/indoor-environmental-monitoring-sdk"
+  },
+  {
+    "name": "infranode-open-data-sdk",
+    "description": "Voxgig SDK for infranode-open-data",
+    "url": "https://github.com/voxgig-sdk/infranode-open-data-sdk"
+  },
+  {
+    "name": "inno-cyber-authentication-sdk",
+    "description": "Voxgig SDK for inno_cyber-authentication",
+    "url": "https://github.com/voxgig-sdk/inno-cyber-authentication-sdk"
+  },
+  {
+    "name": "insult-sdk",
+    "description": "Voxgig SDK for insult",
+    "url": "https://github.com/voxgig-sdk/insult-sdk"
+  },
+  {
+    "name": "intercom-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/intercom-sdk"
+  },
+  {
+    "name": "internetdb-sdk",
+    "description": "Voxgig SDK for internetdb",
+    "url": "https://github.com/voxgig-sdk/internetdb-sdk"
+  },
+  {
+    "name": "invoice-extraction-sdk",
+    "description": "Voxgig SDK for invoice-extraction",
+    "url": "https://github.com/voxgig-sdk/invoice-extraction-sdk"
+  },
+  {
+    "name": "ip-address-lookup-sdk",
+    "description": "Voxgig SDK for ip-address-lookup",
+    "url": "https://github.com/voxgig-sdk/ip-address-lookup-sdk"
+  },
+  {
+    "name": "ip-address-lookup-two-sdk",
+    "description": "Voxgig SDK for ip-address-lookup-two",
+    "url": "https://github.com/voxgig-sdk/ip-address-lookup-two-sdk"
+  },
+  {
+    "name": "ip-address-sdk",
+    "description": "Voxgig SDK for ip-address",
+    "url": "https://github.com/voxgig-sdk/ip-address-sdk"
+  },
+  {
+    "name": "ip-data-sdk",
+    "description": "Voxgig SDK for ip-data",
+    "url": "https://github.com/voxgig-sdk/ip-data-sdk"
+  },
+  {
+    "name": "ip-geo-currency-sdk",
+    "description": "Voxgig SDK for ip-geo-currency",
+    "url": "https://github.com/voxgig-sdk/ip-geo-currency-sdk"
+  },
+  {
+    "name": "ip-geolocation-api2-sdk",
+    "description": "Voxgig SDK for ip-geolocation-api-2",
+    "url": "https://github.com/voxgig-sdk/ip-geolocation-api2-sdk"
+  },
+  {
+    "name": "ip-geolocation-api3-sdk",
+    "description": "Voxgig SDK for ip-geolocation-api-3",
+    "url": "https://github.com/voxgig-sdk/ip-geolocation-api3-sdk"
+  },
+  {
+    "name": "ip-geolocation-api4-sdk",
+    "description": "Voxgig SDK for ip-geolocation-api-4",
+    "url": "https://github.com/voxgig-sdk/ip-geolocation-api4-sdk"
+  },
+  {
+    "name": "ip-geolocation-sdk",
+    "description": "Voxgig SDK for ip-geolocation",
+    "url": "https://github.com/voxgig-sdk/ip-geolocation-sdk"
+  },
+  {
+    "name": "ip-intelligence-api2-sdk",
+    "description": "Voxgig SDK for ip-intelligence-api-2",
+    "url": "https://github.com/voxgig-sdk/ip-intelligence-api2-sdk"
+  },
+  {
+    "name": "ip-intelligence-sdk",
+    "description": "Voxgig SDK for ip-intelligence",
+    "url": "https://github.com/voxgig-sdk/ip-intelligence-sdk"
+  },
+  {
+    "name": "ip-proxy-detection-sdk",
+    "description": "Voxgig SDK for ip-proxy-detection",
+    "url": "https://github.com/voxgig-sdk/ip-proxy-detection-sdk"
+  },
+  {
+    "name": "ip-reputation-sdk",
+    "description": "Voxgig SDK for ip-reputation",
+    "url": "https://github.com/voxgig-sdk/ip-reputation-sdk"
+  },
+  {
+    "name": "ipify-sdk",
+    "description": "Voxgig SDK for ipify",
+    "url": "https://github.com/voxgig-sdk/ipify-sdk"
+  },
+  {
+    "name": "ipinfo-developer-sdk",
+    "description": "Voxgig SDK for ipinfo-developer",
+    "url": "https://github.com/voxgig-sdk/ipinfo-developer-sdk"
+  },
+  {
+    "name": "ipleak-sdk",
+    "description": "Voxgig SDK for ipleak",
+    "url": "https://github.com/voxgig-sdk/ipleak-sdk"
+  },
+  {
+    "name": "irail-sdk",
+    "description": "Voxgig SDK for irail",
+    "url": "https://github.com/voxgig-sdk/irail-sdk"
+  },
+  {
+    "name": "ironoc-sdk",
+    "description": "Voxgig SDK for github-project-issues",
+    "url": "https://github.com/voxgig-sdk/ironoc-sdk"
+  },
+  {
+    "name": "is-even-sdk",
+    "description": "Voxgig SDK for is-even",
+    "url": "https://github.com/voxgig-sdk/is-even-sdk"
+  },
+  {
+    "name": "isports-sdk",
+    "description": "Voxgig SDK for isports",
+    "url": "https://github.com/voxgig-sdk/isports-sdk"
+  },
+  {
+    "name": "iss-current-location-sdk",
+    "description": "Voxgig SDK for iss-current-location",
+    "url": "https://github.com/voxgig-sdk/iss-current-location-sdk"
+  },
+  {
+    "name": "istories-sdk",
+    "description": "Voxgig SDK for istories",
+    "url": "https://github.com/voxgig-sdk/istories-sdk"
+  },
+  {
+    "name": "jelly-belly-wiki-sdk",
+    "description": "Voxgig SDK for jelly-belly-wiki",
+    "url": "https://github.com/voxgig-sdk/jelly-belly-wiki-sdk"
+  },
+  {
+    "name": "jikan-rest-sdk",
+    "description": "Voxgig SDK for jikan-rest",
+    "url": "https://github.com/voxgig-sdk/jikan-rest-sdk"
+  },
+  {
+    "name": "jmespath-free-sdk",
+    "description": "Voxgig SDK for jmespath-free",
+    "url": "https://github.com/voxgig-sdk/jmespath-free-sdk"
+  },
+  {
+    "name": "jojos-bizarre-sdk",
+    "description": "Voxgig SDK for jojos-bizarre",
+    "url": "https://github.com/voxgig-sdk/jojos-bizarre-sdk"
+  },
+  {
+    "name": "joke-delivery-sdk",
+    "description": "Voxgig SDK for joke-delivery",
+    "url": "https://github.com/voxgig-sdk/joke-delivery-sdk"
+  },
+  {
+    "name": "joke-father-sdk",
+    "description": "Voxgig SDK for joke-father",
+    "url": "https://github.com/voxgig-sdk/joke-father-sdk"
+  },
+  {
+    "name": "jokeapi-sdk",
+    "description": "Voxgig SDK for jokeapi",
+    "url": "https://github.com/voxgig-sdk/jokeapi-sdk"
+  },
+  {
+    "name": "joplin-sdk",
+    "description": "Unofficial Joplin Data API SDKs: notes, folders and tags, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/joplin-sdk"
+  },
+  {
+    "name": "json-ip-geolocation-sdk",
+    "description": "Voxgig SDK for json-ip-geolocation",
+    "url": "https://github.com/voxgig-sdk/json-ip-geolocation-sdk"
+  },
+  {
+    "name": "jsonplaceholder-sdk",
+    "description": "Voxgig SDK for jsonplaceholder",
+    "url": "https://github.com/voxgig-sdk/jsonplaceholder-sdk"
+  },
+  {
+    "name": "kanji-data-sdk",
+    "description": "Voxgig SDK for kanji-data",
+    "url": "https://github.com/voxgig-sdk/kanji-data-sdk"
+  },
+  {
+    "name": "kanyerest-sdk",
+    "description": "Voxgig SDK for kanyerest",
+    "url": "https://github.com/voxgig-sdk/kanyerest-sdk"
+  },
+  {
+    "name": "keanu-whoa-sdk",
+    "description": "Voxgig SDK for keanu-whoa",
+    "url": "https://github.com/voxgig-sdk/keanu-whoa-sdk"
+  },
+  {
+    "name": "kekkai-currency-sdk",
+    "description": "Voxgig SDK for kekkai-currency",
+    "url": "https://github.com/voxgig-sdk/kekkai-currency-sdk"
+  },
+  {
+    "name": "keyval-sdk",
+    "description": "Voxgig SDK for keyval",
+    "url": "https://github.com/voxgig-sdk/keyval-sdk"
+  },
+  {
+    "name": "kimi-quotes-sdk",
+    "description": "Voxgig SDK for kimi-quotes",
+    "url": "https://github.com/voxgig-sdk/kimi-quotes-sdk"
+  },
+  {
+    "name": "kiprio-api-suite-sdk",
+    "description": "Voxgig SDK for kiprio-api-suite",
+    "url": "https://github.com/voxgig-sdk/kiprio-api-suite-sdk"
+  },
+  {
+    "name": "kiprio-http-apis-sdk",
+    "description": "Voxgig SDK for kiprio-http-apis",
+    "url": "https://github.com/voxgig-sdk/kiprio-http-apis-sdk"
+  },
+  {
+    "name": "kitsu-sdk",
+    "description": "Voxgig SDK for kitsu",
+    "url": "https://github.com/voxgig-sdk/kitsu-sdk"
+  },
+  {
+    "name": "kitty-net-vpn-sdk",
+    "description": "Voxgig SDK for kitty-net-vpn",
+    "url": "https://github.com/voxgig-sdk/kitty-net-vpn-sdk"
+  },
+  {
+    "name": "kmail-sdk",
+    "description": "Voxgig SDK for kmail",
+    "url": "https://github.com/voxgig-sdk/kmail-sdk"
+  },
+  {
+    "name": "kokkai-kaigiroku-api-sdk",
+    "description": "Voxgig SDK for kokkai-kaigiroku-api",
+    "url": "https://github.com/voxgig-sdk/kokkai-kaigiroku-api-sdk"
+  },
+  {
+    "name": "kolner-adressen-sdk",
+    "description": "Voxgig SDK for k\u00f6lner-adressen",
+    "url": "https://github.com/voxgig-sdk/kolner-adressen-sdk"
+  },
+  {
+    "name": "konkan-railway-live-position-sdk",
+    "description": "Voxgig SDK for konkan-railway-live-position",
+    "url": "https://github.com/voxgig-sdk/konkan-railway-live-position-sdk"
+  },
+  {
+    "name": "korean-json-sdk",
+    "description": "Voxgig SDK for korean-json",
+    "url": "https://github.com/voxgig-sdk/korean-json-sdk"
+  },
+  {
+    "name": "korpo-pro-sdk",
+    "description": "Voxgig SDK for korpo-pro",
+    "url": "https://github.com/voxgig-sdk/korpo-pro-sdk"
+  },
+  {
+    "name": "kota-sdk",
+    "description": "Unofficial Kota API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with Kota.",
+    "url": "https://github.com/voxgig-sdk/kota-sdk"
+  },
+  {
+    "name": "las-vegas-city-sdk",
+    "description": "Voxgig SDK for las-vegas-city",
+    "url": "https://github.com/voxgig-sdk/las-vegas-city-sdk"
+  },
+  {
+    "name": "latchshot-screenshot-sdk",
+    "description": "Voxgig SDK for latchshot-screenshot",
+    "url": "https://github.com/voxgig-sdk/latchshot-screenshot-sdk"
+  },
+  {
+    "name": "latlng-geocoding-sdk",
+    "description": "Voxgig SDK for latlng-geocoding",
+    "url": "https://github.com/voxgig-sdk/latlng-geocoding-sdk"
+  },
+  {
+    "name": "launch-library2-sdk",
+    "description": "Voxgig SDK for launch-library-2",
+    "url": "https://github.com/voxgig-sdk/launch-library2-sdk"
+  },
+  {
+    "name": "launchpics-sdk",
+    "description": "Voxgig SDK for launchpics",
+    "url": "https://github.com/voxgig-sdk/launchpics-sdk"
+  },
+  {
+    "name": "learnworlds-sdk",
+    "description": "Voxgig SDKs for Learnworlds",
+    "url": "https://github.com/voxgig-sdk/learnworlds-sdk"
+  },
+  {
+    "name": "letscount-sdk",
+    "description": "Voxgig SDK for letscount",
+    "url": "https://github.com/voxgig-sdk/letscount-sdk"
+  },
+  {
+    "name": "linear-sdk",
+    "description": "Unofficial Linear API SDKs: the Issue entity, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/linear-sdk"
+  },
+  {
+    "name": "listenfree-sdk",
+    "description": "Voxgig SDK for listenfree",
+    "url": "https://github.com/voxgig-sdk/listenfree-sdk"
+  },
+  {
+    "name": "listloco-sdk",
+    "description": "Voxgig SDK for listloco",
+    "url": "https://github.com/voxgig-sdk/listloco-sdk"
+  },
+  {
+    "name": "lm-email-sdk",
+    "description": "Unofficial LINK Mobility MyLINK Email API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with LINK Mobility.",
+    "url": "https://github.com/voxgig-sdk/lm-email-sdk"
+  },
+  {
+    "name": "lm-multichannel-sdk",
+    "description": "Unofficial LINK Mobility MyLINK Multichannel API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with LINK Mobility.",
+    "url": "https://github.com/voxgig-sdk/lm-multichannel-sdk"
+  },
+  {
+    "name": "lm-sms-sdk",
+    "description": "Unofficial LINK Mobility MyLINK SMS API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with LINK Mobility.",
+    "url": "https://github.com/voxgig-sdk/lm-sms-sdk"
+  },
+  {
+    "name": "lm-umbrella-sdk",
+    "description": "Unofficial LINK Mobility Permission (Umbrella) API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with LINK Mobility.",
+    "url": "https://github.com/voxgig-sdk/lm-umbrella-sdk"
+  },
+  {
+    "name": "lm-whatsapp-sdk",
+    "description": "Unofficial LINK Mobility MyLINK WhatsApp API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with LINK Mobility.",
+    "url": "https://github.com/voxgig-sdk/lm-whatsapp-sdk"
+  },
+  {
+    "name": "lob-sdk",
+    "description": "Voxgig SDK for the Lob API, built to compare with Lob's OpenAPI Generator SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/lob-sdk"
+  },
+  {
+    "name": "location-sharing-sdk",
+    "description": "Voxgig SDK for location-sharing",
+    "url": "https://github.com/voxgig-sdk/location-sharing-sdk"
+  },
+  {
+    "name": "logotypes-sdk",
+    "description": "Voxgig SDK for logotypes",
+    "url": "https://github.com/voxgig-sdk/logotypes-sdk"
+  },
+  {
+    "name": "longevity-competition-sdk",
+    "description": "Voxgig SDK for longevity-competition",
+    "url": "https://github.com/voxgig-sdk/longevity-competition-sdk"
+  },
+  {
+    "name": "lorem-picsum-sdk",
+    "description": "Voxgig SDK for lorem-picsum",
+    "url": "https://github.com/voxgig-sdk/lorem-picsum-sdk"
+  },
+  {
+    "name": "lucifer-quotes-sdk",
+    "description": "Voxgig SDK for lucifer-quotes",
+    "url": "https://github.com/voxgig-sdk/lucifer-quotes-sdk"
+  },
+  {
+    "name": "luma-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/luma-sdk"
+  },
+  {
+    "name": "magic-eight-ball-sdk",
+    "description": "Voxgig SDK for magic-eight-ball",
+    "url": "https://github.com/voxgig-sdk/magic-eight-ball-sdk"
+  },
+  {
+    "name": "magic-the-gathering-sdk",
+    "description": "Voxgig SDK for magic-the-gathering",
+    "url": "https://github.com/voxgig-sdk/magic-the-gathering-sdk"
+  },
+  {
+    "name": "magic-the-gathering-two-sdk",
+    "description": "Voxgig SDK for magic-the-gathering-two",
+    "url": "https://github.com/voxgig-sdk/magic-the-gathering-two-sdk"
+  },
+  {
+    "name": "magic8-ball-sdk",
+    "description": "Voxgig SDK for magic-8-ball",
+    "url": "https://github.com/voxgig-sdk/magic8-ball-sdk"
+  },
+  {
+    "name": "makeup-sdk",
+    "description": "Voxgig SDK for makeup",
+    "url": "https://github.com/voxgig-sdk/makeup-sdk"
+  },
+  {
+    "name": "manual-precipitation-stations-sdk",
+    "description": "Voxgig SDK for manual-precipitation-stations",
+    "url": "https://github.com/voxgig-sdk/manual-precipitation-stations-sdk"
+  },
+  {
+    "name": "maplestory-sdk",
+    "description": "Voxgig SDK for maplestory",
+    "url": "https://github.com/voxgig-sdk/maplestory-sdk"
+  },
+  {
+    "name": "market-data-sdk",
+    "description": "Voxgig SDK for market-data",
+    "url": "https://github.com/voxgig-sdk/market-data-sdk"
+  },
+  {
+    "name": "math-function-parser-sdk",
+    "description": "Voxgig SDK for math-function-parser",
+    "url": "https://github.com/voxgig-sdk/math-function-parser-sdk"
+  },
+  {
+    "name": "maxio-advanced-billing-sdk",
+    "description": "Voxgig SDK for the Maxio Advanced Billing API, built to compare with Maxio's APIMatic SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/maxio-advanced-billing-sdk"
+  },
+  {
+    "name": "mbta-v3-sdk",
+    "description": "Voxgig SDK for mbta-v3",
+    "url": "https://github.com/voxgig-sdk/mbta-v3-sdk"
+  },
+  {
+    "name": "mcu-countdown-sdk",
+    "description": "Voxgig SDK for mcu-countdown",
+    "url": "https://github.com/voxgig-sdk/mcu-countdown-sdk"
+  },
+  {
+    "name": "mediawiki-action-sdk",
+    "description": "Voxgig SDK for mediawiki-action",
+    "url": "https://github.com/voxgig-sdk/mediawiki-action-sdk"
+  },
+  {
+    "name": "mediazona-sdk",
+    "description": "Voxgig SDK for mediazona",
+    "url": "https://github.com/voxgig-sdk/mediazona-sdk"
+  },
+  {
+    "name": "meduza-sdk",
+    "description": "Voxgig SDK for meduza",
+    "url": "https://github.com/voxgig-sdk/meduza-sdk"
+  },
+  {
+    "name": "meetup-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/meetup-sdk"
+  },
+  {
+    "name": "memesio-content-creation-sdk",
+    "description": "Voxgig SDK for memesio-content-creation",
+    "url": "https://github.com/voxgig-sdk/memesio-content-creation-sdk"
+  },
+  {
+    "name": "mentality-skill-training-sdk",
+    "description": "Voxgig SDK for mentality-skill-training",
+    "url": "https://github.com/voxgig-sdk/mentality-skill-training-sdk"
+  },
+  {
+    "name": "mercado-bitcoin-sdk",
+    "description": "Voxgig SDK for mercado-bitcoin",
+    "url": "https://github.com/voxgig-sdk/mercado-bitcoin-sdk"
+  },
+  {
+    "name": "met-museum-collection-sdk",
+    "description": "Voxgig SDK for met-museum-collection",
+    "url": "https://github.com/voxgig-sdk/met-museum-collection-sdk"
+  },
+  {
+    "name": "meteoprog-weather-sdk",
+    "description": "Voxgig SDK for meteoprog-weather",
+    "url": "https://github.com/voxgig-sdk/meteoprog-weather-sdk"
+  },
+  {
+    "name": "metropolitano-de-lisboa-sdk",
+    "description": "Voxgig SDK for metropolitano-de-lisboa",
+    "url": "https://github.com/voxgig-sdk/metropolitano-de-lisboa-sdk"
+  },
+  {
+    "name": "microlink-sdk",
+    "description": "Voxgig SDK for microlink",
+    "url": "https://github.com/voxgig-sdk/microlink-sdk"
+  },
+  {
+    "name": "mixpanel-annotations-sdk",
+    "description": "SDK for the Mixpanel Annotations API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-annotations-sdk"
+  },
+  {
+    "name": "mixpanel-data-pipelines-sdk",
+    "description": "SDK for the Mixpanel Data Pipelines API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-data-pipelines-sdk"
+  },
+  {
+    "name": "mixpanel-experiments-sdk",
+    "description": "SDK for the Mixpanel Experiments API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-experiments-sdk"
+  },
+  {
+    "name": "mixpanel-export-sdk",
+    "description": "SDK for the Mixpanel Event Export API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-export-sdk"
+  },
+  {
+    "name": "mixpanel-feature-flags-management-sdk",
+    "description": "SDK for the Mixpanel Feature Flags Management API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-feature-flags-management-sdk"
+  },
+  {
+    "name": "mixpanel-feature-flags-sdk",
+    "description": "SDK for the Mixpanel Feature Flags API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-feature-flags-sdk"
+  },
+  {
+    "name": "mixpanel-gdpr-sdk",
+    "description": "SDK for the Mixpanel GDPR API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-gdpr-sdk"
+  },
+  {
+    "name": "mixpanel-identity-sdk",
+    "description": "SDK for the Mixpanel Identity API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-identity-sdk"
+  },
+  {
+    "name": "mixpanel-ingestion-sdk",
+    "description": "SDK for the Mixpanel Ingestion API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-ingestion-sdk"
+  },
+  {
+    "name": "mixpanel-lexicon-schemas-sdk",
+    "description": "SDK for the Mixpanel Lexicon Schemas API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-lexicon-schemas-sdk"
+  },
+  {
+    "name": "mixpanel-query-sdk",
+    "description": "SDK for the Mixpanel Query API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-query-sdk"
+  },
+  {
+    "name": "mixpanel-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/mixpanel-sdk"
+  },
+  {
+    "name": "mixpanel-service-accounts-sdk",
+    "description": "SDK for the Mixpanel Service Accounts API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-service-accounts-sdk"
+  },
+  {
+    "name": "mixpanel-warehouse-connectors-sdk",
+    "description": "SDK for the Mixpanel Warehouse Connectors API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/mixpanel-warehouse-connectors-sdk"
+  },
+  {
+    "name": "mlb-gumbo-sdk",
+    "description": "Voxgig SDK for mlb-gumbo",
+    "url": "https://github.com/voxgig-sdk/mlb-gumbo-sdk"
+  },
+  {
+    "name": "mock-api-service-sdk",
+    "description": "Voxgig SDK for mock-api-service",
+    "url": "https://github.com/voxgig-sdk/mock-api-service-sdk"
+  },
+  {
+    "name": "mock-sdk",
+    "description": "Voxgig SDK for mock",
+    "url": "https://github.com/voxgig-sdk/mock-sdk"
+  },
+  {
+    "name": "mockae-sdk",
+    "description": "Voxgig SDK for mockae",
+    "url": "https://github.com/voxgig-sdk/mockae-sdk"
+  },
+  {
+    "name": "monster-hunter-world-sdk",
+    "description": "Voxgig SDK for monster-hunter-world",
+    "url": "https://github.com/voxgig-sdk/monster-hunter-world-sdk"
+  },
+  {
+    "name": "moogleapi-sdk",
+    "description": "Voxgig SDK for moogleapi",
+    "url": "https://github.com/voxgig-sdk/moogleapi-sdk"
+  },
+  {
+    "name": "moonton-sdk",
+    "description": "Voxgig SDK for moonton",
+    "url": "https://github.com/voxgig-sdk/moonton-sdk"
+  },
+  {
+    "name": "motivational-sdk",
+    "description": "Voxgig SDK for motivational",
+    "url": "https://github.com/voxgig-sdk/motivational-sdk"
+  },
+  {
+    "name": "mullvad-vpn-sdk",
+    "description": "Voxgig SDK for mullvad-vpn",
+    "url": "https://github.com/voxgig-sdk/mullvad-vpn-sdk"
+  },
+  {
+    "name": "multifon-client-sdk",
+    "description": "Voxgig SDK for multifon-client",
+    "url": "https://github.com/voxgig-sdk/multifon-client-sdk"
+  },
+  {
+    "name": "municipal-finance-sdk",
+    "description": "Voxgig SDK for municipal-finance",
+    "url": "https://github.com/voxgig-sdk/municipal-finance-sdk"
+  },
+  {
+    "name": "musicbrainz-sdk",
+    "description": "Voxgig SDK for musicbrainz",
+    "url": "https://github.com/voxgig-sdk/musicbrainz-sdk"
+  },
+  {
+    "name": "mux-sdk",
+    "description": "Voxgig SDK for the Mux API, built to compare with Mux's Stainless SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/mux-sdk"
+  },
+  {
+    "name": "my-ip-sdk",
+    "description": "Voxgig SDK for my-ip",
+    "url": "https://github.com/voxgig-sdk/my-ip-sdk"
+  },
+  {
+    "name": "myip-sdk",
+    "description": "Voxgig SDK for myip",
+    "url": "https://github.com/voxgig-sdk/myip-sdk"
+  },
+  {
+    "name": "mysql-visual-explain-sdk",
+    "description": "Voxgig SDK for mysql-visual-explain",
+    "url": "https://github.com/voxgig-sdk/mysql-visual-explain-sdk"
+  },
+  {
+    "name": "n404-error-handler-sdk",
+    "description": "Voxgig SDK for 404-error-handler",
+    "url": "https://github.com/voxgig-sdk/n404-error-handler-sdk"
+  },
+  {
+    "name": "n4chan-sdk",
+    "description": "Voxgig SDK for 4chan",
+    "url": "https://github.com/voxgig-sdk/n4chan-sdk"
+  },
+  {
+    "name": "n7timer-weather-sdk",
+    "description": "Voxgig SDK for 7timer-weather",
+    "url": "https://github.com/voxgig-sdk/n7timer-weather-sdk"
+  },
+  {
+    "name": "naruto-character-sdk",
+    "description": "Voxgig SDK for naruto-character",
+    "url": "https://github.com/voxgig-sdk/naruto-character-sdk"
+  },
+  {
+    "name": "nasa-open-apis-sdk",
+    "description": "Voxgig SDK for nasa-open-apis",
+    "url": "https://github.com/voxgig-sdk/nasa-open-apis-sdk"
+  },
+  {
+    "name": "nationalize-sdk",
+    "description": "Voxgig SDK for nationalize",
+    "url": "https://github.com/voxgig-sdk/nationalize-sdk"
+  },
+  {
+    "name": "navalnyarchive-sdk",
+    "description": "Voxgig SDK for navalnyarchive",
+    "url": "https://github.com/voxgig-sdk/navalnyarchive-sdk"
+  },
+  {
+    "name": "ndbc-buoy-data-sdk",
+    "description": "Voxgig SDK for ndbc-buoy-data",
+    "url": "https://github.com/voxgig-sdk/ndbc-buoy-data-sdk"
+  },
+  {
+    "name": "nebulum-mars-rovers-sdk",
+    "description": "Voxgig SDK for nebulum-mars-rovers",
+    "url": "https://github.com/voxgig-sdk/nebulum-mars-rovers-sdk"
+  },
+  {
+    "name": "nekosbest-sdk",
+    "description": "Voxgig SDK for nekosbest",
+    "url": "https://github.com/voxgig-sdk/nekosbest-sdk"
+  },
+  {
+    "name": "nekosia-neko-sdk",
+    "description": "Voxgig SDK for nekosia-neko",
+    "url": "https://github.com/voxgig-sdk/nekosia-neko-sdk"
+  },
+  {
+    "name": "neon-sdk",
+    "description": "Voxgig SDK for the Neon API, built to compare with Neon's Hey API SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/neon-sdk"
+  },
+  {
+    "name": "neugeborenen-vornamen-kanton-stgallen-sdk",
+    "description": "Voxgig SDK for neugeborenen-vornamen-kanton-stgallen",
+    "url": "https://github.com/voxgig-sdk/neugeborenen-vornamen-kanton-stgallen-sdk"
+  },
+  {
+    "name": "news-public-sdk",
+    "description": "Voxgig SDK for news-public",
+    "url": "https://github.com/voxgig-sdk/news-public-sdk"
+  },
+  {
+    "name": "newton-sdk",
+    "description": "Voxgig SDK for newton",
+    "url": "https://github.com/voxgig-sdk/newton-sdk"
+  },
+  {
+    "name": "nexarda-sdk",
+    "description": "Voxgig SDK for nexarda",
+    "url": "https://github.com/voxgig-sdk/nexarda-sdk"
+  },
+  {
+    "name": "nextbike-sdk",
+    "description": "Voxgig SDK for nextbike",
+    "url": "https://github.com/voxgig-sdk/nextbike-sdk"
+  },
+  {
+    "name": "nhl-api-documentation-sdk",
+    "description": "Voxgig SDK for nhl-api-documentation",
+    "url": "https://github.com/voxgig-sdk/nhl-api-documentation-sdk"
+  },
+  {
+    "name": "nid-application-system-sdk",
+    "description": "Voxgig SDK for nid-application-system",
+    "url": "https://github.com/voxgig-sdk/nid-application-system-sdk"
+  },
+  {
+    "name": "nid-correction-portal-sdk",
+    "description": "Voxgig SDK for nid-correction-portal",
+    "url": "https://github.com/voxgig-sdk/nid-correction-portal-sdk"
+  },
+  {
+    "name": "no-as-a-service-sdk",
+    "description": "Voxgig SDK for no-as-a-service",
+    "url": "https://github.com/voxgig-sdk/no-as-a-service-sdk"
+  },
+  {
+    "name": "no-as-a-service-two-sdk",
+    "description": "Voxgig SDK for no-as-a-service-two",
+    "url": "https://github.com/voxgig-sdk/no-as-a-service-two-sdk"
+  },
+  {
+    "name": "nobel-prize-sdk",
+    "description": "Voxgig SDK for nobel-prize",
+    "url": "https://github.com/voxgig-sdk/nobel-prize-sdk"
+  },
+  {
+    "name": "nofrixion-sdk",
+    "description": "Voxgig SDK for nofrixion.com",
+    "url": "https://github.com/voxgig-sdk/nofrixion-sdk"
+  },
+  {
+    "name": "nominatim-sdk",
+    "description": "Voxgig SDK for nominatim",
+    "url": "https://github.com/voxgig-sdk/nominatim-sdk"
+  },
+  {
+    "name": "nordigen-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/nordigen-sdk"
+  },
+  {
+    "name": "notion-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/notion-sdk"
+  },
+  {
+    "name": "novaya-gazeta-sdk",
+    "description": "Voxgig SDK for novaya-gazeta",
+    "url": "https://github.com/voxgig-sdk/novaya-gazeta-sdk"
+  },
+  {
+    "name": "novu-sdk",
+    "description": "Voxgig SDK for the Novu API, built to compare with Novu's Speakeasy SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/novu-sdk"
+  },
+  {
+    "name": "npm-registry-sdk",
+    "description": "Voxgig SDK for npm-registry",
+    "url": "https://github.com/voxgig-sdk/npm-registry-sdk"
+  },
+  {
+    "name": "nppes-npi-registry-sdk",
+    "description": "Voxgig SDK for nppes-npi-registry",
+    "url": "https://github.com/voxgig-sdk/nppes-npi-registry-sdk"
+  },
+  {
+    "name": "numbers-sdk",
+    "description": "Voxgig SDK for numbers",
+    "url": "https://github.com/voxgig-sdk/numbers-sdk"
+  },
+  {
+    "name": "nyc-open-data-sdk",
+    "description": "Voxgig SDK for nyc-open-data",
+    "url": "https://github.com/voxgig-sdk/nyc-open-data-sdk"
+  },
+  {
+    "name": "obsidian-sdk",
+    "description": "Unofficial Obsidian Local REST API SDKs: vault files and tags, in 6 languages plus a CLI and MCP server. Generated by Voxgig.",
+    "url": "https://github.com/voxgig-sdk/obsidian-sdk"
+  },
+  {
+    "name": "oec-pro-sdk",
+    "description": "Voxgig SDK for oec-pro",
+    "url": "https://github.com/voxgig-sdk/oec-pro-sdk"
+  },
+  {
+    "name": "official-joke-sdk",
+    "description": "Voxgig SDK for official-joke",
+    "url": "https://github.com/voxgig-sdk/official-joke-sdk"
+  },
+  {
+    "name": "ogli-link-shortener-sdk",
+    "description": "Voxgig SDK for ogli-link-shortener",
+    "url": "https://github.com/voxgig-sdk/ogli-link-shortener-sdk"
+  },
+  {
+    "name": "oktias-bakery-sdk",
+    "description": "Voxgig SDK for oktias-bakery",
+    "url": "https://github.com/voxgig-sdk/oktias-bakery-sdk"
+  },
+  {
+    "name": "oldest-people-records-sdk",
+    "description": "Voxgig SDK for oldest-people-records",
+    "url": "https://github.com/voxgig-sdk/oldest-people-records-sdk"
+  },
+  {
+    "name": "one-piece-sdk",
+    "description": "Voxgig SDK for one-piece",
+    "url": "https://github.com/voxgig-sdk/one-piece-sdk"
+  },
+  {
+    "name": "open-brewery-db-sdk",
+    "description": "Voxgig SDK for open-brewery-db",
+    "url": "https://github.com/voxgig-sdk/open-brewery-db-sdk"
+  },
+  {
+    "name": "open-data-hub-sdk",
+    "description": "Voxgig SDK for open-data-hub",
+    "url": "https://github.com/voxgig-sdk/open-data-hub-sdk"
+  },
+  {
+    "name": "open-elevation-sdk",
+    "description": "Voxgig SDK for open-elevation",
+    "url": "https://github.com/voxgig-sdk/open-elevation-sdk"
+  },
+  {
+    "name": "open-government-portal-sdk",
+    "description": "Voxgig SDK for open-government-portal",
+    "url": "https://github.com/voxgig-sdk/open-government-portal-sdk"
+  },
+  {
+    "name": "open-library-search-sdk",
+    "description": "Voxgig SDK for open-library-search",
+    "url": "https://github.com/voxgig-sdk/open-library-search-sdk"
+  },
+  {
+    "name": "open-meteo-sdk",
+    "description": "Voxgig SDK for open-meteo",
+    "url": "https://github.com/voxgig-sdk/open-meteo-sdk"
+  },
+  {
+    "name": "open-topo-data-sdk",
+    "description": "Voxgig SDK for open-topo-data",
+    "url": "https://github.com/voxgig-sdk/open-topo-data-sdk"
+  },
+  {
+    "name": "openaq-platform-sdk",
+    "description": "Voxgig SDK for openaq-platform",
+    "url": "https://github.com/voxgig-sdk/openaq-platform-sdk"
+  },
+  {
+    "name": "openf1-car-data-sdk",
+    "description": "Voxgig SDK for openf1-car-data",
+    "url": "https://github.com/voxgig-sdk/openf1-car-data-sdk"
+  },
+  {
+    "name": "openfda-sdk",
+    "description": "Voxgig SDK for openfda",
+    "url": "https://github.com/voxgig-sdk/openfda-sdk"
+  },
+  {
+    "name": "openfoodfacts-sdk",
+    "description": "Voxgig SDK for openfoodfacts",
+    "url": "https://github.com/voxgig-sdk/openfoodfacts-sdk"
+  },
+  {
+    "name": "openmercantil-sdk",
+    "description": "Voxgig SDK for openmercantil",
+    "url": "https://github.com/voxgig-sdk/openmercantil-sdk"
+  },
+  {
+    "name": "openrouter-models-sdk",
+    "description": "Voxgig SDK for openrouter-models",
+    "url": "https://github.com/voxgig-sdk/openrouter-models-sdk"
+  },
+  {
+    "name": "opensanctum-sdk",
+    "description": "Voxgig SDK for opensanctum",
+    "url": "https://github.com/voxgig-sdk/opensanctum-sdk"
+  },
+  {
+    "name": "opensensemap-sdk",
+    "description": "Voxgig SDK for opensensemap",
+    "url": "https://github.com/voxgig-sdk/opensensemap-sdk"
+  },
+  {
+    "name": "opensky-network-sdk",
+    "description": "Voxgig SDK for opensky-network",
+    "url": "https://github.com/voxgig-sdk/opensky-network-sdk"
+  },
+  {
+    "name": "openverse-sdk",
+    "description": "Voxgig SDK for openverse",
+    "url": "https://github.com/voxgig-sdk/openverse-sdk"
+  },
+  {
+    "name": "openwhyd-sdk",
+    "description": "Voxgig SDK for openwhyd",
+    "url": "https://github.com/voxgig-sdk/openwhyd-sdk"
+  },
+  {
+    "name": "orbit-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/orbit-sdk"
+  },
+  {
+    "name": "osu-beatmap-sdk",
+    "description": "Voxgig SDK for osu!-beatmap",
+    "url": "https://github.com/voxgig-sdk/osu-beatmap-sdk"
+  },
+  {
+    "name": "ovationincentives-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/ovationincentives-sdk"
+  },
+  {
+    "name": "pagespeed-sdk",
+    "description": "Voxgig SDK for pagespeed",
+    "url": "https://github.com/voxgig-sdk/pagespeed-sdk"
+  },
+  {
+    "name": "parkhaus-basel-sdk",
+    "description": "Voxgig SDK for parkhaus-basel",
+    "url": "https://github.com/voxgig-sdk/parkhaus-basel-sdk"
+  },
+  {
+    "name": "parking-stgallen-sdk",
+    "description": "Voxgig SDK for parking-stgallen",
+    "url": "https://github.com/voxgig-sdk/parking-stgallen-sdk"
+  },
+  {
+    "name": "parkleitsystem-sdk",
+    "description": "Voxgig SDK for parkleitsystem",
+    "url": "https://github.com/voxgig-sdk/parkleitsystem-sdk"
+  },
+  {
+    "name": "parlament-open-data-sdk",
+    "description": "Voxgig SDK for parlament-open-data",
+    "url": "https://github.com/voxgig-sdk/parlament-open-data-sdk"
+  },
+  {
+    "name": "passantenfrequenz-stadt-stgallen-sdk",
+    "description": "Voxgig SDK for passantenfrequenz-stadt-stgallen",
+    "url": "https://github.com/voxgig-sdk/passantenfrequenz-stadt-stgallen-sdk"
+  },
+  {
+    "name": "passantenfrequenzen-zuerich-sdk",
+    "description": "Voxgig SDK for passantenfrequenzen-zuerich",
+    "url": "https://github.com/voxgig-sdk/passantenfrequenzen-zuerich-sdk"
+  },
+  {
+    "name": "peremen-sdk",
+    "description": "Voxgig SDK for peremen",
+    "url": "https://github.com/voxgig-sdk/peremen-sdk"
+  },
+  {
+    "name": "phantomjscloud-sdk",
+    "description": "Voxgig SDK for phantomjscloud",
+    "url": "https://github.com/voxgig-sdk/phantomjscloud-sdk"
+  },
+  {
+    "name": "phish-in-sdk",
+    "description": "Voxgig SDK for phish.in",
+    "url": "https://github.com/voxgig-sdk/phish-in-sdk"
+  },
+  {
+    "name": "phone-number-validator-sdk",
+    "description": "Voxgig SDK for phone-number-validator",
+    "url": "https://github.com/voxgig-sdk/phone-number-validator-sdk"
+  },
+  {
+    "name": "pipedrive-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/pipedrive-sdk"
+  },
+  {
+    "name": "placar-agora-sdk",
+    "description": "Voxgig SDK for placar-agora",
+    "url": "https://github.com/voxgig-sdk/placar-agora-sdk"
+  },
+  {
+    "name": "placeholder-image-sdk",
+    "description": "Voxgig SDK for placeholder-image",
+    "url": "https://github.com/voxgig-sdk/placeholder-image-sdk"
+  },
+  {
+    "name": "playstation-store-api2-sdk",
+    "description": "Voxgig SDK for playstation-store-api-2",
+    "url": "https://github.com/voxgig-sdk/playstation-store-api2-sdk"
+  },
+  {
+    "name": "playstation-store-sdk",
+    "description": "Voxgig SDK for playstation-store",
+    "url": "https://github.com/voxgig-sdk/playstation-store-sdk"
+  },
+  {
+    "name": "poetrydb-sdk",
+    "description": "Voxgig SDK for poetrydb",
+    "url": "https://github.com/voxgig-sdk/poetrydb-sdk"
+  },
+  {
+    "name": "pogony-sdk",
+    "description": "Voxgig SDK for pogony",
+    "url": "https://github.com/voxgig-sdk/pogony-sdk"
+  },
+  {
+    "name": "pokapi-sdk",
+    "description": "Voxgig SDK for pokapi",
+    "url": "https://github.com/voxgig-sdk/pokapi-sdk"
+  },
+  {
+    "name": "pokefact-sdk",
+    "description": "Voxgig SDK for pokefact",
+    "url": "https://github.com/voxgig-sdk/pokefact-sdk"
+  },
+  {
+    "name": "pokemon-tcg-sdk",
+    "description": "Voxgig SDK for pok\u00e9mon-tcg",
+    "url": "https://github.com/voxgig-sdk/pokemon-tcg-sdk"
+  },
+  {
+    "name": "pokemon3d-sdk",
+    "description": "Voxgig SDK for pokemon3d",
+    "url": "https://github.com/voxgig-sdk/pokemon3d-sdk"
+  },
+  {
+    "name": "pollinations-ai-sdk",
+    "description": "Voxgig SDK for pollinations-ai",
+    "url": "https://github.com/voxgig-sdk/pollinations-ai-sdk"
+  },
+  {
+    "name": "pony-sdk",
+    "description": "Voxgig SDK for pony",
+    "url": "https://github.com/voxgig-sdk/pony-sdk"
+  },
+  {
+    "name": "postali-api-rest-sdk",
+    "description": "Voxgig SDK for postali-api-rest",
+    "url": "https://github.com/voxgig-sdk/postali-api-rest-sdk"
+  },
+  {
+    "name": "postcodesio-sdk",
+    "description": "Voxgig SDK for postcodesio",
+    "url": "https://github.com/voxgig-sdk/postcodesio-sdk"
+  },
+  {
+    "name": "prank-show-sdk",
+    "description": "Voxgig SDK for prank-show",
+    "url": "https://github.com/voxgig-sdk/prank-show-sdk"
+  },
+  {
+    "name": "pricing-day-sdk",
+    "description": "Voxgig SDK for pricing-day",
+    "url": "https://github.com/voxgig-sdk/pricing-day-sdk"
+  },
+  {
+    "name": "pricing-sdk",
+    "description": "Voxgig SDK for pricing",
+    "url": "https://github.com/voxgig-sdk/pricing-sdk"
+  },
+  {
+    "name": "profanity-checker-sdk",
+    "description": "Voxgig SDK for profanity-checker",
+    "url": "https://github.com/voxgig-sdk/profanity-checker-sdk"
+  },
+  {
+    "name": "profanity-filter-sdk",
+    "description": "Voxgig SDK for profanity-filter",
+    "url": "https://github.com/voxgig-sdk/profanity-filter-sdk"
+  },
+  {
+    "name": "proxy-checker-sdk",
+    "description": "Voxgig SDK for proxy-checker",
+    "url": "https://github.com/voxgig-sdk/proxy-checker-sdk"
+  },
+  {
+    "name": "proxyscrape-sdk",
+    "description": "Voxgig SDK for proxyscrape",
+    "url": "https://github.com/voxgig-sdk/proxyscrape-sdk"
+  },
+  {
+    "name": "publibike-stations-sdk",
+    "description": "Voxgig SDK for publibike-stations",
+    "url": "https://github.com/voxgig-sdk/publibike-stations-sdk"
+  },
+  {
+    "name": "public-apis-database-sdk",
+    "description": "Voxgig SDK for public-apis-database",
+    "url": "https://github.com/voxgig-sdk/public-apis-database-sdk"
+  },
+  {
+    "name": "public-holiday-sdk",
+    "description": "Voxgig SDK for public-holiday",
+    "url": "https://github.com/voxgig-sdk/public-holiday-sdk"
+  },
+  {
+    "name": "public-time-sdk",
+    "description": "Voxgig SDK for public-time",
+    "url": "https://github.com/voxgig-sdk/public-time-sdk"
+  },
+  {
+    "name": "punkapi-sdk",
+    "description": "Voxgig SDK for punkapi",
+    "url": "https://github.com/voxgig-sdk/punkapi-sdk"
+  },
+  {
+    "name": "qr-code-generator-sdk",
+    "description": "Voxgig SDK for qr-code-generator",
+    "url": "https://github.com/voxgig-sdk/qr-code-generator-sdk"
+  },
+  {
+    "name": "quanhau-api-docs-sdk",
+    "description": "Voxgig SDK for quanhau-api-docs",
+    "url": "https://github.com/voxgig-sdk/quanhau-api-docs-sdk"
+  },
+  {
+    "name": "quote-retrieval-sdk",
+    "description": "Voxgig SDK for quote-retrieval",
+    "url": "https://github.com/voxgig-sdk/quote-retrieval-sdk"
+  },
+  {
+    "name": "quotes-on-design-sdk",
+    "description": "Voxgig SDK for quotes-on-design",
+    "url": "https://github.com/voxgig-sdk/quotes-on-design-sdk"
+  },
+  {
+    "name": "quotes-sdk",
+    "description": "Voxgig SDK for quotes",
+    "url": "https://github.com/voxgig-sdk/quotes-sdk"
+  },
+  {
+    "name": "radio-basilisk-sdk",
+    "description": "Voxgig SDK for radio-basilisk",
+    "url": "https://github.com/voxgig-sdk/radio-basilisk-sdk"
+  },
+  {
+    "name": "radio-srf1-sdk",
+    "description": "Voxgig SDK for radio-srf-1",
+    "url": "https://github.com/voxgig-sdk/radio-srf1-sdk"
+  },
+  {
+    "name": "radiorecord-sdk",
+    "description": "Voxgig SDK for radiorecord",
+    "url": "https://github.com/voxgig-sdk/radiorecord-sdk"
+  },
+  {
+    "name": "railway-station-photos-sdk",
+    "description": "Voxgig SDK for railway-station-photos",
+    "url": "https://github.com/voxgig-sdk/railway-station-photos-sdk"
+  },
+  {
+    "name": "random-fox-sdk",
+    "description": "Voxgig SDK for random-fox",
+    "url": "https://github.com/voxgig-sdk/random-fox-sdk"
+  },
+  {
+    "name": "random-user-generator-sdk",
+    "description": "Voxgig SDK for random-user-generator",
+    "url": "https://github.com/voxgig-sdk/random-user-generator-sdk"
+  },
+  {
+    "name": "rbf-vpn-sdk",
+    "description": "Voxgig SDK for rbf-vpn",
+    "url": "https://github.com/voxgig-sdk/rbf-vpn-sdk"
+  },
+  {
+    "name": "real-rest-sdk",
+    "description": "Voxgig SDK for real-rest",
+    "url": "https://github.com/voxgig-sdk/real-rest-sdk"
+  },
+  {
+    "name": "real-time-bus-data-sdk",
+    "description": "Voxgig SDK for real-time-bus-data",
+    "url": "https://github.com/voxgig-sdk/real-time-bus-data-sdk"
+  },
+  {
+    "name": "realgazeta-sdk",
+    "description": "Voxgig SDK for realgazeta",
+    "url": "https://github.com/voxgig-sdk/realgazeta-sdk"
+  },
+  {
+    "name": "realtime-weather-sdk",
+    "description": "Voxgig SDK for realtime-weather",
+    "url": "https://github.com/voxgig-sdk/realtime-weather-sdk"
+  },
+  {
+    "name": "red-tide-information-sdk",
+    "description": "Voxgig SDK for red-tide-information",
+    "url": "https://github.com/voxgig-sdk/red-tide-information-sdk"
+  },
+  {
+    "name": "reddit-stocks-sdk",
+    "description": "Voxgig SDK for reddit-stocks",
+    "url": "https://github.com/voxgig-sdk/reddit-stocks-sdk"
+  },
+  {
+    "name": "refuge-restrooms-sdk",
+    "description": "Voxgig SDK for refuge-restrooms",
+    "url": "https://github.com/voxgig-sdk/refuge-restrooms-sdk"
+  },
+  {
+    "name": "rejection-reason-generator-sdk",
+    "description": "Voxgig SDK for rejection-reason-generator",
+    "url": "https://github.com/voxgig-sdk/rejection-reason-generator-sdk"
+  },
+  {
+    "name": "remote-jobs-api-rss-feed-sdk",
+    "description": "Voxgig SDK for remote-jobs-api-rss-feed",
+    "url": "https://github.com/voxgig-sdk/remote-jobs-api-rss-feed-sdk"
+  },
+  {
+    "name": "remote-jobs-sdk",
+    "description": "Voxgig SDK for remote-jobs",
+    "url": "https://github.com/voxgig-sdk/remote-jobs-sdk"
+  },
+  {
+    "name": "remote-ok-jobs-sdk",
+    "description": "Voxgig SDK for remote-ok-jobs",
+    "url": "https://github.com/voxgig-sdk/remote-ok-jobs-sdk"
+  },
+  {
+    "name": "represent-officials-sdk",
+    "description": "Voxgig SDK for represent-officials",
+    "url": "https://github.com/voxgig-sdk/represent-officials-sdk"
+  },
+  {
+    "name": "republicmag-sdk",
+    "description": "Voxgig SDK for republicmag",
+    "url": "https://github.com/voxgig-sdk/republicmag-sdk"
+  },
+  {
+    "name": "rest-api-beispiele-sdk",
+    "description": "Voxgig SDK for rest-api-beispiele",
+    "url": "https://github.com/voxgig-sdk/rest-api-beispiele-sdk"
+  },
+  {
+    "name": "rest-countries-sdk",
+    "description": "Voxgig SDK for rest-countries",
+    "url": "https://github.com/voxgig-sdk/rest-countries-sdk"
+  },
+  {
+    "name": "rick-and-morty-sdk",
+    "description": "Voxgig SDK for rick-and-morty",
+    "url": "https://github.com/voxgig-sdk/rick-and-morty-sdk"
+  },
+  {
+    "name": "roadie-sdk",
+    "description": "Roadie (roadie.io) catalog + Entity Push API SDK (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/roadie-sdk"
+  },
+  {
+    "name": "ron-swanson-quotes-sdk",
+    "description": "Voxgig SDK for ron-swanson-quotes",
+    "url": "https://github.com/voxgig-sdk/ron-swanson-quotes-sdk"
+  },
+  {
+    "name": "rsq-sdk",
+    "description": "Voxgig SDK for rsq",
+    "url": "https://github.com/voxgig-sdk/rsq-sdk"
+  },
+  {
+    "name": "runescape-apis-sdk",
+    "description": "Voxgig SDK for runescape-apis",
+    "url": "https://github.com/voxgig-sdk/runescape-apis-sdk"
+  },
+  {
+    "name": "runtimebuzz-article-sdk",
+    "description": "Voxgig SDK for runtimebuzz-article",
+    "url": "https://github.com/voxgig-sdk/runtimebuzz-article-sdk"
+  },
+  {
+    "name": "saladcloud-sdk",
+    "description": "Voxgig SDK for the SaladCloud API, built to compare with SaladCloud's liblab SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/saladcloud-sdk"
+  },
+  {
+    "name": "salesforce-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/salesforce-sdk"
+  },
+  {
+    "name": "satellite-tle-data-sdk",
+    "description": "Voxgig SDK for satellite-tle-data",
+    "url": "https://github.com/voxgig-sdk/satellite-tle-data-sdk"
+  },
+  {
+    "name": "screenshot-sdk",
+    "description": "Voxgig SDK for screenshot",
+    "url": "https://github.com/voxgig-sdk/screenshot-sdk"
+  },
+  {
+    "name": "scryfall-sdk",
+    "description": "Voxgig SDK for scryfall",
+    "url": "https://github.com/voxgig-sdk/scryfall-sdk"
+  },
+  {
+    "name": "search-notice-sdk",
+    "description": "Voxgig SDK for search-notice",
+    "url": "https://github.com/voxgig-sdk/search-notice-sdk"
+  },
+  {
+    "name": "sepomex-sdk",
+    "description": "Voxgig SDK for sepomex",
+    "url": "https://github.com/voxgig-sdk/sepomex-sdk"
+  },
+  {
+    "name": "seqbench-mcp-sdk",
+    "description": "Voxgig SDK for seqbench-mcp",
+    "url": "https://github.com/voxgig-sdk/seqbench-mcp-sdk"
+  },
+  {
+    "name": "serialif-color-sdk",
+    "description": "Voxgig SDK for serialif-color",
+    "url": "https://github.com/voxgig-sdk/serialif-color-sdk"
+  },
+  {
+    "name": "setup-gear-guide-sdk",
+    "description": "Voxgig SDK for setup-gear-guide",
+    "url": "https://github.com/voxgig-sdk/setup-gear-guide-sdk"
+  },
+  {
+    "name": "shame-as-a-service-sdk",
+    "description": "Voxgig SDK for shame-as-a-service",
+    "url": "https://github.com/voxgig-sdk/shame-as-a-service-sdk"
+  },
+  {
+    "name": "sharedmobilitych-sdk",
+    "description": "Voxgig SDK for sharedmobilitych",
+    "url": "https://github.com/voxgig-sdk/sharedmobilitych-sdk"
+  },
+  {
+    "name": "shikhar-mobile-sdk",
+    "description": "Voxgig SDK for shikhar-mobile",
+    "url": "https://github.com/voxgig-sdk/shikhar-mobile-sdk"
+  },
+  {
+    "name": "shikimori-sdk",
+    "description": "Voxgig SDK for shikimori",
+    "url": "https://github.com/voxgig-sdk/shikimori-sdk"
+  },
+  {
+    "name": "shodan-entitydb-sdk",
+    "description": "Voxgig SDK for shodan-entitydb",
+    "url": "https://github.com/voxgig-sdk/shodan-entitydb-sdk"
+  },
+  {
+    "name": "short-link-sdk",
+    "description": "Voxgig SDK for short-link",
+    "url": "https://github.com/voxgig-sdk/short-link-sdk"
+  },
+  {
+    "name": "shortcut-sdk",
+    "description": "Shortcut v3 API SDK \u2014 generated by @voxgig/sdkgen",
+    "url": "https://github.com/voxgig-sdk/shortcut-sdk"
+  },
+  {
+    "name": "simpsons-character-sdk",
+    "description": "Voxgig SDK for simpsons-character",
+    "url": "https://github.com/voxgig-sdk/simpsons-character-sdk"
+  },
+  {
+    "name": "single-use-key-registry-sdk",
+    "description": "Voxgig SDK for single-use-key-registry",
+    "url": "https://github.com/voxgig-sdk/single-use-key-registry-sdk"
+  },
+  {
+    "name": "sla-uptime-calculator-sdk",
+    "description": "Voxgig SDK for sla-uptime-calculator",
+    "url": "https://github.com/voxgig-sdk/sla-uptime-calculator-sdk"
+  },
+  {
+    "name": "slack-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/slack-sdk"
+  },
+  {
+    "name": "smsapi-sdk",
+    "description": "Unofficial SMSAPI API SDKs in 13 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with SMSAPI.",
+    "url": "https://github.com/voxgig-sdk/smsapi-sdk"
+  },
+  {
+    "name": "sodeom-ai-proxy-sdk",
+    "description": "Voxgig SDK for sodeom-ai-proxy",
+    "url": "https://github.com/voxgig-sdk/sodeom-ai-proxy-sdk"
+  },
+  {
+    "name": "sodeom-search-sdk",
+    "description": "Voxgig SDK for sodeom-search",
+    "url": "https://github.com/voxgig-sdk/sodeom-search-sdk"
+  },
+  {
+    "name": "softvpn-mobile-sdk",
+    "description": "Voxgig SDK for softvpn-mobile",
+    "url": "https://github.com/voxgig-sdk/softvpn-mobile-sdk"
+  },
+  {
+    "name": "sotaproject-sdk",
+    "description": "Voxgig SDK for sotaproject",
+    "url": "https://github.com/voxgig-sdk/sotaproject-sdk"
+  },
+  {
+    "name": "south-park-quotes-sdk",
+    "description": "Voxgig SDK for south-park-quotes",
+    "url": "https://github.com/voxgig-sdk/south-park-quotes-sdk"
+  },
+  {
+    "name": "spacex-rest-sdk",
+    "description": "Voxgig SDK for spacex-rest",
+    "url": "https://github.com/voxgig-sdk/spacex-rest-sdk"
+  },
+  {
+    "name": "spider-man-movies-sdk",
+    "description": "Voxgig SDK for spider-man-movies",
+    "url": "https://github.com/voxgig-sdk/spider-man-movies-sdk"
+  },
+  {
+    "name": "stadt-land-fluss-sdk",
+    "description": "Voxgig SDK for stadt-land-fluss",
+    "url": "https://github.com/voxgig-sdk/stadt-land-fluss-sdk"
+  },
+  {
+    "name": "star-trek-sdk",
+    "description": "Voxgig SDK for star-trek",
+    "url": "https://github.com/voxgig-sdk/star-trek-sdk"
+  },
+  {
+    "name": "star-wars-databank-sdk",
+    "description": "Voxgig SDK for star-wars-databank",
+    "url": "https://github.com/voxgig-sdk/star-wars-databank-sdk"
+  },
+  {
+    "name": "star-wars-sdk",
+    "description": "Voxgig SDK for star-wars",
+    "url": "https://github.com/voxgig-sdk/star-wars-sdk"
+  },
+  {
+    "name": "statuspage-sdk",
+    "description": "Voxgig SDK for statuspage.com",
+    "url": "https://github.com/voxgig-sdk/statuspage-sdk"
+  },
+  {
+    "name": "stephen-king-sdk",
+    "description": "Voxgig SDK for stephen-king",
+    "url": "https://github.com/voxgig-sdk/stephen-king-sdk"
+  },
+  {
+    "name": "stitch-ai-design-sdk",
+    "description": "Voxgig SDK for stitch-ai-design",
+    "url": "https://github.com/voxgig-sdk/stitch-ai-design-sdk"
+  },
+  {
+    "name": "stoicism-quote-sdk",
+    "description": "Voxgig SDK for stoicism-quote",
+    "url": "https://github.com/voxgig-sdk/stoicism-quote-sdk"
+  },
+  {
+    "name": "strictly-better-sdk",
+    "description": "Voxgig SDK for strictly-better",
+    "url": "https://github.com/voxgig-sdk/strictly-better-sdk"
+  },
+  {
+    "name": "stripe-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/stripe-sdk"
+  },
+  {
+    "name": "stytch-management-sdk",
+    "description": "SDK for the Stytch Management API \u2014 programmatic workspace actions.",
+    "url": "https://github.com/voxgig-sdk/stytch-management-sdk"
+  },
+  {
+    "name": "stytch-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/stytch-sdk"
+  },
+  {
+    "name": "sumo-sdk",
+    "description": "Voxgig SDK for sumo",
+    "url": "https://github.com/voxgig-sdk/sumo-sdk"
+  },
+  {
+    "name": "sunset-times-sdk",
+    "description": "Voxgig SDK for sunset-times",
+    "url": "https://github.com/voxgig-sdk/sunset-times-sdk"
+  },
+  {
+    "name": "svoboda-web-sdk",
+    "description": "Voxgig SDK for svoboda-web",
+    "url": "https://github.com/voxgig-sdk/svoboda-web-sdk"
+  },
+  {
+    "name": "swiss-federal-railways-sbb-sdk",
+    "description": "Voxgig SDK for swiss-federal-railways-sbb",
+    "url": "https://github.com/voxgig-sdk/swiss-federal-railways-sbb-sdk"
+  },
+  {
+    "name": "sxp-vpn-sdk",
+    "description": "Voxgig SDK for sxp-vpn",
+    "url": "https://github.com/voxgig-sdk/sxp-vpn-sdk"
+  },
+  {
+    "name": "t-rex-vpn-sdk",
+    "description": "Voxgig SDK for t-rex-vpn",
+    "url": "https://github.com/voxgig-sdk/t-rex-vpn-sdk"
+  },
+  {
+    "name": "taiwan-legal-ai-sdk",
+    "description": "Voxgig SDK for taiwan-legal-ai",
+    "url": "https://github.com/voxgig-sdk/taiwan-legal-ai-sdk"
+  },
+  {
+    "name": "tangocard-auth-sdk",
+    "description": "SDK for Tango's Auth Token acquisition API (generated by Voxgig sdkgen)",
+    "url": "https://github.com/voxgig-sdk/tangocard-auth-sdk"
+  },
+  {
+    "name": "tangocard-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/tangocard-sdk"
+  },
+  {
+    "name": "tarot-card-meanings-sdk",
+    "description": "Voxgig SDK for tarot-card-meanings",
+    "url": "https://github.com/voxgig-sdk/tarot-card-meanings-sdk"
+  },
+  {
+    "name": "techvpn-sdk",
+    "description": "Voxgig SDK for techvpn",
+    "url": "https://github.com/voxgig-sdk/techvpn-sdk"
+  },
+  {
+    "name": "techy-sdk",
+    "description": "Voxgig SDK for techy",
+    "url": "https://github.com/voxgig-sdk/techy-sdk"
+  },
+  {
+    "name": "teehee-joke-sdk",
+    "description": "Voxgig SDK for teehee-joke",
+    "url": "https://github.com/voxgig-sdk/teehee-joke-sdk"
+  },
+  {
+    "name": "telegram-bot-sdk",
+    "description": "Voxgig SDK for telegram-bot",
+    "url": "https://github.com/voxgig-sdk/telegram-bot-sdk"
+  },
+  {
+    "name": "telegram-channel-sdk",
+    "description": "Voxgig SDK for telegram-channel",
+    "url": "https://github.com/voxgig-sdk/telegram-channel-sdk"
+  },
+  {
+    "name": "telegram-mailing-service-sdk",
+    "description": "Voxgig SDK for telegram-mailing-service",
+    "url": "https://github.com/voxgig-sdk/telegram-mailing-service-sdk"
+  },
+  {
+    "name": "temp-mail-api-by-boomlify-sdk",
+    "description": "Voxgig SDK for temp-mail-api-by-boomlify",
+    "url": "https://github.com/voxgig-sdk/temp-mail-api-by-boomlify-sdk"
+  },
+  {
+    "name": "temp-mail-api2-sdk",
+    "description": "Voxgig SDK for temp-mail-api-2",
+    "url": "https://github.com/voxgig-sdk/temp-mail-api2-sdk"
+  },
+  {
+    "name": "temp-mail-sdk",
+    "description": "Voxgig SDK for temp-mail",
+    "url": "https://github.com/voxgig-sdk/temp-mail-sdk"
+  },
+  {
+    "name": "tempmail-api2-sdk",
+    "description": "Voxgig SDK for tempmail-api-2",
+    "url": "https://github.com/voxgig-sdk/tempmail-api2-sdk"
+  },
+  {
+    "name": "tempmail-sdk",
+    "description": "Voxgig SDK for tempmail",
+    "url": "https://github.com/voxgig-sdk/tempmail-sdk"
+  },
+  {
+    "name": "temporary-email-api2-sdk",
+    "description": "Voxgig SDK for temporary-email-api-2",
+    "url": "https://github.com/voxgig-sdk/temporary-email-api2-sdk"
+  },
+  {
+    "name": "temporary-email-sdk",
+    "description": "Voxgig SDK for temporary-email",
+    "url": "https://github.com/voxgig-sdk/temporary-email-sdk"
+  },
+  {
+    "name": "temporary-email-service-sdk",
+    "description": "Voxgig SDK for temporary-email-service",
+    "url": "https://github.com/voxgig-sdk/temporary-email-service-sdk"
+  },
+  {
+    "name": "terra-sdk",
+    "description": "Unofficial Terra API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with Terra.",
+    "url": "https://github.com/voxgig-sdk/terra-sdk"
+  },
+  {
+    "name": "text-validation-sdk",
+    "description": "Voxgig SDK for text-validation",
+    "url": "https://github.com/voxgig-sdk/text-validation-sdk"
+  },
+  {
+    "name": "the-cat-sdk",
+    "description": "Voxgig SDK for the-cat",
+    "url": "https://github.com/voxgig-sdk/the-cat-sdk"
+  },
+  {
+    "name": "the-color-sdk",
+    "description": "Voxgig SDK for the-color",
+    "url": "https://github.com/voxgig-sdk/the-color-sdk"
+  },
+  {
+    "name": "the-office-sdk",
+    "description": "Voxgig SDK for the-office",
+    "url": "https://github.com/voxgig-sdk/the-office-sdk"
+  },
+  {
+    "name": "the-rosary-sdk",
+    "description": "Voxgig SDK for the-rosary",
+    "url": "https://github.com/voxgig-sdk/the-rosary-sdk"
+  },
+  {
+    "name": "thesmsworks-sdk",
+    "description": "Unofficial The SMS Works API SDKs in 13 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with The SMS Works.",
+    "url": "https://github.com/voxgig-sdk/thesmsworks-sdk"
+  },
+  {
+    "name": "throwaway-email-sdk",
+    "description": "Voxgig SDK for throwaway-email",
+    "url": "https://github.com/voxgig-sdk/throwaway-email-sdk"
+  },
+  {
+    "name": "thurgau-population-data-sdk",
+    "description": "Voxgig SDK for thurgau-population-data",
+    "url": "https://github.com/voxgig-sdk/thurgau-population-data-sdk"
+  },
+  {
+    "name": "tiktok-engagement-bot-sdk",
+    "description": "Voxgig SDK for tiktok-engagement-bot",
+    "url": "https://github.com/voxgig-sdk/tiktok-engagement-bot-sdk"
+  },
+  {
+    "name": "tillo-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/tillo-sdk"
+  },
+  {
+    "name": "top-news-sdk",
+    "description": "Voxgig SDK for top-news",
+    "url": "https://github.com/voxgig-sdk/top-news-sdk"
+  },
+  {
+    "name": "translate-funny-languages-sdk",
+    "description": "Voxgig SDK for translate-funny-languages",
+    "url": "https://github.com/voxgig-sdk/translate-funny-languages-sdk"
+  },
+  {
+    "name": "transport-sdk",
+    "description": "Voxgig SDK for transport",
+    "url": "https://github.com/voxgig-sdk/transport-sdk"
+  },
+  {
+    "name": "transportrest-transit-apis-sdk",
+    "description": "Voxgig SDK for transportrest-transit-apis",
+    "url": "https://github.com/voxgig-sdk/transportrest-transit-apis-sdk"
+  },
+  {
+    "name": "trello-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/trello-sdk"
+  },
+  {
+    "name": "trivia-sdk",
+    "description": "Voxgig SDK for trivia",
+    "url": "https://github.com/voxgig-sdk/trivia-sdk"
+  },
+  {
+    "name": "tronalddump-sdk",
+    "description": "Voxgig SDK for tronalddump",
+    "url": "https://github.com/voxgig-sdk/tronalddump-sdk"
+  },
+  {
+    "name": "truth-or-dare-sdk",
+    "description": "Voxgig SDK for truth-or-dare",
+    "url": "https://github.com/voxgig-sdk/truth-or-dare-sdk"
+  },
+  {
+    "name": "tvmaze-sdk",
+    "description": "Voxgig SDK for tvmaze",
+    "url": "https://github.com/voxgig-sdk/tvmaze-sdk"
+  },
+  {
+    "name": "tvp-sdk",
+    "description": "Voxgig SDK for tvp",
+    "url": "https://github.com/voxgig-sdk/tvp-sdk"
+  },
+  {
+    "name": "typebot-sdk",
+    "description": "Unofficial Typebot API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with Typebot.",
+    "url": "https://github.com/voxgig-sdk/typebot-sdk"
+  },
+  {
+    "name": "typeform-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/typeform-sdk"
+  },
+  {
+    "name": "u-to-link-shortener-sdk",
+    "description": "Voxgig SDK for u.to-link-shortener",
+    "url": "https://github.com/voxgig-sdk/u-to-link-shortener-sdk"
+  },
+  {
+    "name": "unirate-sdk",
+    "description": "Voxgig SDK for unirate",
+    "url": "https://github.com/voxgig-sdk/unirate-sdk"
+  },
+  {
+    "name": "univec-sdk",
+    "description": "Unofficial UniVec API SDKs in 6 languages + CLI + MCP server, generated by Voxgig sdkgen. Not affiliated with UniVec.",
+    "url": "https://github.com/voxgig-sdk/univec-sdk"
+  },
+  {
+    "name": "unix-converter-sdk",
+    "description": "Voxgig SDK for unix-converter",
+    "url": "https://github.com/voxgig-sdk/unix-converter-sdk"
+  },
+  {
+    "name": "unshortenme-sdk",
+    "description": "Voxgig SDK for unshortenme",
+    "url": "https://github.com/voxgig-sdk/unshortenme-sdk"
+  },
+  {
+    "name": "unsolicited-advice-sdk",
+    "description": "Voxgig SDK for unsolicited-advice",
+    "url": "https://github.com/voxgig-sdk/unsolicited-advice-sdk"
+  },
+  {
+    "name": "url-shortener-sdk",
+    "description": "Voxgig SDK for url-shortener",
+    "url": "https://github.com/voxgig-sdk/url-shortener-sdk"
+  },
+  {
+    "name": "usaspending-sdk",
+    "description": "Voxgig SDK for usaspending",
+    "url": "https://github.com/voxgig-sdk/usaspending-sdk"
+  },
+  {
+    "name": "useless-facts-sdk",
+    "description": "Voxgig SDK for useless-facts",
+    "url": "https://github.com/voxgig-sdk/useless-facts-sdk"
+  },
+  {
+    "name": "user-agent-lookup-sdk",
+    "description": "Voxgig SDK for user-agent-lookup",
+    "url": "https://github.com/voxgig-sdk/user-agent-lookup-sdk"
+  },
+  {
+    "name": "user-data-scraper-sdk",
+    "description": "Voxgig SDK for user-data-scraper",
+    "url": "https://github.com/voxgig-sdk/user-data-scraper-sdk"
+  },
+  {
+    "name": "useragent-parser-sdk",
+    "description": "Voxgig SDK for useragent-parser",
+    "url": "https://github.com/voxgig-sdk/useragent-parser-sdk"
+  },
+  {
+    "name": "usercheck-sdk",
+    "description": "Voxgig SDK for usercheck",
+    "url": "https://github.com/voxgig-sdk/usercheck-sdk"
+  },
+  {
+    "name": "uspto-api-catalog-sdk",
+    "description": "Voxgig SDK for uspto-api-catalog",
+    "url": "https://github.com/voxgig-sdk/uspto-api-catalog-sdk"
+  },
+  {
+    "name": "uuid-generator-api2-sdk",
+    "description": "Voxgig SDK for uuid-generator-api-2",
+    "url": "https://github.com/voxgig-sdk/uuid-generator-api2-sdk"
+  },
+  {
+    "name": "uuid-generator-sdk",
+    "description": "Voxgig SDK for uuid-generator",
+    "url": "https://github.com/voxgig-sdk/uuid-generator-sdk"
+  },
+  {
+    "name": "uv-index-api2-sdk",
+    "description": "Voxgig SDK for uv-index-api-2",
+    "url": "https://github.com/voxgig-sdk/uv-index-api2-sdk"
+  },
+  {
+    "name": "uv-index-sdk",
+    "description": "Voxgig SDK for uv-index",
+    "url": "https://github.com/voxgig-sdk/uv-index-sdk"
+  },
+  {
+    "name": "v-gd-sdk",
+    "description": "Voxgig SDK for v.gd",
+    "url": "https://github.com/voxgig-sdk/v-gd-sdk"
+  },
+  {
+    "name": "valorant-sdk",
+    "description": "Voxgig SDK for valorant",
+    "url": "https://github.com/voxgig-sdk/valorant-sdk"
+  },
+  {
+    "name": "vapi-sdk",
+    "description": "Voxgig SDK for the Vapi API, built to compare with Vapi's Fern SDK. Not published.",
+    "url": "https://github.com/voxgig-sdk/vapi-sdk"
+  },
+  {
+    "name": "vat-validation-sdk",
+    "description": "Voxgig SDK for vat-validation",
+    "url": "https://github.com/voxgig-sdk/vat-validation-sdk"
+  },
+  {
+    "name": "vdraw-sdk",
+    "description": "Voxgig SDK for vdraw",
+    "url": "https://github.com/voxgig-sdk/vdraw-sdk"
+  },
+  {
+    "name": "vercel-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/vercel-sdk"
+  },
+  {
+    "name": "viacep-address-lookup-sdk",
+    "description": "Voxgig SDK for viacep-address-lookup",
+    "url": "https://github.com/voxgig-sdk/viacep-address-lookup-sdk"
+  },
+  {
+    "name": "virenmonitoring-sdk",
+    "description": "Voxgig SDK for virenmonitoring",
+    "url": "https://github.com/voxgig-sdk/virenmonitoring-sdk"
+  },
+  {
+    "name": "visitor-frequencies-lucerne-ch-sdk",
+    "description": "Voxgig SDK for visitor-frequencies-lucerne-ch",
+    "url": "https://github.com/voxgig-sdk/visitor-frequencies-lucerne-ch-sdk"
+  },
+  {
+    "name": "visitor-statistics-sdk",
+    "description": "Voxgig SDK for visitor-statistics",
+    "url": "https://github.com/voxgig-sdk/visitor-statistics-sdk"
+  },
+  {
+    "name": "vogelwarte-schweiz-sdk",
+    "description": "Voxgig SDK for vogelwarte-schweiz",
+    "url": "https://github.com/voxgig-sdk/vogelwarte-schweiz-sdk"
+  },
+  {
+    "name": "voxgig-elementdemo-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/voxgig-elementdemo-sdk"
+  },
+  {
+    "name": "voxgig-solardemo-sdk",
+    "description": "Voxgig Solar API - a test API describing the Solar system.",
+    "url": "https://github.com/voxgig-sdk/voxgig-solardemo-sdk"
+  },
+  {
+    "name": "wahlumfragen-datenbank-sdk",
+    "description": "Voxgig SDK for wahlumfragen-datenbank",
+    "url": "https://github.com/voxgig-sdk/wahlumfragen-datenbank-sdk"
+  },
+  {
+    "name": "waifu-finder-sdk",
+    "description": "Voxgig SDK for waifu-finder",
+    "url": "https://github.com/voxgig-sdk/waifu-finder-sdk"
+  },
+  {
+    "name": "waifu-pics-sdk",
+    "description": "Voxgig SDK for waifu-pics",
+    "url": "https://github.com/voxgig-sdk/waifu-pics-sdk"
+  },
+  {
+    "name": "waifuim-sdk",
+    "description": "Voxgig SDK for github-api-2",
+    "url": "https://github.com/voxgig-sdk/waifuim-sdk"
+  },
+  {
+    "name": "warp-vless-sdk",
+    "description": "Voxgig SDK for github-error",
+    "url": "https://github.com/voxgig-sdk/warp-vless-sdk"
+  },
+  {
+    "name": "water-quality-archive-sdk",
+    "description": "Voxgig SDK for water-quality-archive",
+    "url": "https://github.com/voxgig-sdk/water-quality-archive-sdk"
+  },
+  {
+    "name": "wayback-machine-sdk",
+    "description": "Voxgig SDK for wayback-machine",
+    "url": "https://github.com/voxgig-sdk/wayback-machine-sdk"
+  },
+  {
+    "name": "we-ultrarich-sdk",
+    "description": "Voxgig SDK for we->-ultrarich",
+    "url": "https://github.com/voxgig-sdk/we-ultrarich-sdk"
+  },
+  {
+    "name": "weather-data-api2-sdk",
+    "description": "Voxgig SDK for weather-data-api-2",
+    "url": "https://github.com/voxgig-sdk/weather-data-api2-sdk"
+  },
+  {
+    "name": "weather-data-api3-sdk",
+    "description": "Voxgig SDK for weather-data-api-3",
+    "url": "https://github.com/voxgig-sdk/weather-data-api3-sdk"
+  },
+  {
+    "name": "weather-data-sdk",
+    "description": "Voxgig SDK for weather-data",
+    "url": "https://github.com/voxgig-sdk/weather-data-sdk"
+  },
+  {
+    "name": "weather-forecast-sdk",
+    "description": "Voxgig SDK for weather-forecast",
+    "url": "https://github.com/voxgig-sdk/weather-forecast-sdk"
+  },
+  {
+    "name": "weather-sdk",
+    "description": "Voxgig SDK for weather",
+    "url": "https://github.com/voxgig-sdk/weather-sdk"
+  },
+  {
+    "name": "web-page-to-markdown-sdk",
+    "description": "Voxgig SDK for web-page-to-markdown",
+    "url": "https://github.com/voxgig-sdk/web-page-to-markdown-sdk"
+  },
+  {
+    "name": "webflow-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/webflow-sdk"
+  },
+  {
+    "name": "website-analysis-apis-sdk",
+    "description": "Voxgig SDK for website-analysis-apis",
+    "url": "https://github.com/voxgig-sdk/website-analysis-apis-sdk"
+  },
+  {
+    "name": "website-analysis-apis2-sdk",
+    "description": "Voxgig SDK for website-analysis-apis-2",
+    "url": "https://github.com/voxgig-sdk/website-analysis-apis2-sdk"
+  },
+  {
+    "name": "website-carbon-sdk",
+    "description": "Voxgig SDK for website-carbon",
+    "url": "https://github.com/voxgig-sdk/website-carbon-sdk"
+  },
+  {
+    "name": "welt-news-sdk",
+    "description": "Voxgig SDK for welt-news",
+    "url": "https://github.com/voxgig-sdk/welt-news-sdk"
+  },
+  {
+    "name": "whois-domain-monitoring-sdk",
+    "description": "Voxgig SDK for whois-domain-monitoring",
+    "url": "https://github.com/voxgig-sdk/whois-domain-monitoring-sdk"
+  },
+  {
+    "name": "woody-sdk",
+    "description": "Voxgig SDK for woody",
+    "url": "https://github.com/voxgig-sdk/woody-sdk"
+  },
+  {
+    "name": "world-bank-data-sdk",
+    "description": "Voxgig SDK for world-bank-data",
+    "url": "https://github.com/voxgig-sdk/world-bank-data-sdk"
+  },
+  {
+    "name": "world-cup-qualification-sdk",
+    "description": "Voxgig SDK for world-cup-qualification",
+    "url": "https://github.com/voxgig-sdk/world-cup-qualification-sdk"
+  },
+  {
+    "name": "world-time-sdk",
+    "description": "Voxgig SDK for world-time",
+    "url": "https://github.com/voxgig-sdk/world-time-sdk"
+  },
+  {
+    "name": "world-wonders-sdk",
+    "description": "Voxgig SDK for world-wonders",
+    "url": "https://github.com/voxgig-sdk/world-wonders-sdk"
+  },
+  {
+    "name": "xeno-canto-sdk",
+    "description": "Voxgig SDK for xeno-canto",
+    "url": "https://github.com/voxgig-sdk/xeno-canto-sdk"
+  },
+  {
+    "name": "xkcd-comics-sdk",
+    "description": "Voxgig SDK for xkcd-comics",
+    "url": "https://github.com/voxgig-sdk/xkcd-comics-sdk"
+  },
+  {
+    "name": "yadore-publisher-sdk",
+    "description": "Voxgig SDK for yadore-publisher",
+    "url": "https://github.com/voxgig-sdk/yadore-publisher-sdk"
+  },
+  {
+    "name": "yagla-url-shortener-sdk",
+    "description": "Voxgig SDK for yagla-url-shortener",
+    "url": "https://github.com/voxgig-sdk/yagla-url-shortener-sdk"
+  },
+  {
+    "name": "yahoo-finance-sdk",
+    "description": "Voxgig SDK for yahoo-finance",
+    "url": "https://github.com/voxgig-sdk/yahoo-finance-sdk"
+  },
+  {
+    "name": "yaml-yugi-sdk",
+    "description": "Voxgig SDK for yaml-yugi",
+    "url": "https://github.com/voxgig-sdk/yaml-yugi-sdk"
+  },
+  {
+    "name": "yandere-api-v2-sdk",
+    "description": "Voxgig SDK for yandere-api-v2",
+    "url": "https://github.com/voxgig-sdk/yandere-api-v2-sdk"
+  },
+  {
+    "name": "yes-as-a-service-sdk",
+    "description": "Voxgig SDK for yes-as-a-service",
+    "url": "https://github.com/voxgig-sdk/yes-as-a-service-sdk"
+  },
+  {
+    "name": "yesno-generator-sdk",
+    "description": "Voxgig SDK for yesno-generator",
+    "url": "https://github.com/voxgig-sdk/yesno-generator-sdk"
+  },
+  {
+    "name": "yo-mama-sdk",
+    "description": "Voxgig SDK for yo-mama",
+    "url": "https://github.com/voxgig-sdk/yo-mama-sdk"
+  },
+  {
+    "name": "youtube-video-sdk",
+    "description": "Voxgig SDK for youtube-video",
+    "url": "https://github.com/voxgig-sdk/youtube-video-sdk"
+  },
+  {
+    "name": "yu-gi-oh-sdk",
+    "description": "Voxgig SDK for yu-gi-oh!",
+    "url": "https://github.com/voxgig-sdk/yu-gi-oh-sdk"
+  },
+  {
+    "name": "yugi-limit-regulation-sdk",
+    "description": "Voxgig SDK for yugi-limit-regulation",
+    "url": "https://github.com/voxgig-sdk/yugi-limit-regulation-sdk"
+  },
+  {
+    "name": "yummyanime-sdk",
+    "description": "Voxgig SDK for yummyanime",
+    "url": "https://github.com/voxgig-sdk/yummyanime-sdk"
+  },
+  {
+    "name": "zefoy-tiktok-bot-sdk",
+    "description": "Voxgig SDK for zefoy-tiktok-bot",
+    "url": "https://github.com/voxgig-sdk/zefoy-tiktok-bot-sdk"
+  },
+  {
+    "name": "zippopotamus-zip-code-sdk",
+    "description": "Voxgig SDK for zippopotamus-zip-code",
+    "url": "https://github.com/voxgig-sdk/zippopotamus-zip-code-sdk"
+  },
+  {
+    "name": "ziptastic-sdk",
+    "description": "Voxgig SDK for ziptastic",
+    "url": "https://github.com/voxgig-sdk/ziptastic-sdk"
+  },
+  {
+    "name": "zoom-sdk",
+    "description": null,
+    "url": "https://github.com/voxgig-sdk/zoom-sdk"
+  }
+]

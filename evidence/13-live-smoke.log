@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-17T07:36:43.689Z",
+  "passed": true,
+  "listCount": 1,
+  "stationId": "1029TH",
+  "requests": [
+    {
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?_limit=2&parameter=level",
+      "status": 200,
+      "contentType": "application/json",
+      "elapsedMs": 6775
+    },
+    {
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/1029TH",
+      "status": 200,
+      "contentType": "application/json",
+      "elapsedMs": 3969
+    }
+  ]
+}

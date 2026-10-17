@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17",
+  "node": "24.19.0",
+  "npm": "11.9.0",
+  "repository": "https://github.com/vaishakh3/ea-flood-sdk",
+  "npmPublished": false,
+  "checks": {
+    "lockedInstall": "passed",
+    "fullVerification": {
+      "exitCode": 0,
+      "log": "38-final-public-verification.log",
+      "generatedPassed": 212,
+      "generatedSkipped": 9,
+      "generatedFailed": 0,
+      "contractPassed": 7,
+      "contractFailed": 0,
+      "openapiValidation": "passed",
+      "consumerTypeChecks": "passed",
+      "doctor": "no scaffold drift; 0 additive",
+      "regenerationFilesCompared": 96
+    },
+    "localConsumerInstall": "passed; 37-local-consumer-install.log",
+    "liveSmoke": {
+      "passed": true,
+      "checkedAt": "2026-10-17T11:44:14.648Z",
+      "listStatus": 200,
+      "loadStatus": 200,
+      "log": "36-public-live-smoke.log"
+    }
+  }
+}

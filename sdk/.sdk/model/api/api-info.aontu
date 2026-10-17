@@ -1,0 +1,21 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "Unofficial, deliberately limited OpenAPI description of station listing and lookup, authored for a Voxgig SDK generator evaluation from the Environment Agency reference. This uses Environment Agency flood and river level data from the real-time data API (Beta)."
+      servers: [
+        {
+          url: "https://environment.data.gov.uk/flood-monitoring"
+        }
+      ]
+      summary: "Unofficial, deliberately limited OpenAPI description of station listing and lookup, authored for a Voxgig SDK generator evaluation from the Environment Agency reference."
+      title: "Environment Agency Flood Monitoring Stations"
+      version: "0.1.0"
+      website: "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+    }
+  }
+}
+

@@ -1,0 +1,475 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 verify
+> npm run generate && npm test && npm run doctor && npm run test:regeneration
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[17:14:49.452] INFO: model                  model-init           
+[17:14:49.456] INFO: model                  build-start          watch:config last:2026-10-17T11:44:49.456Z
+[17:14:49.456] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:14:49.498] INFO: model                  root-keys            watch:config keys: sys
+[17:14:49.498] INFO: model                  build-end            watch:config
+
+[17:14:49.498] INFO: model                  build-start          watch:model last:2026-10-17T11:44:49.498Z
+[17:14:49.499] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:14:49.753] INFO: model                  pre-actions          apidef
+[17:14:49.755] INFO: model/apidef           generate-start       ./def/openapi.json
+[17:14:49.766] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[17:14:49.778] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[17:14:49.778] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[17:14:49.780] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[17:14:49.810] INFO: model/apidef           generate-end         success
+
+[17:14:49.812] INFO: model                  post-actions         sdkgen
+[17:14:49.813] INFO: model/sdkgen           generate-start       
+[17:14:49.866] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[17:14:49.867] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[17:14:49.885] INFO: model/jostraca         generate-main        target:ts
+[17:14:49.887] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[17:14:49.888] INFO: model/jostraca         generate-agentguide  target:ts
+[17:14:49.904] INFO: model/jostraca         generate-test        target:ts
+[17:14:50.057] INFO: model/sdkgen           generate-end         
+[17:14:50.057] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[17:14:50.058] INFO: model                  build-end            watch:model
+
+[17:14:50.469] INFO: model                  model-init           
+[17:14:50.473] INFO: model                  build-start          watch:config last:2026-10-17T11:44:50.473Z
+[17:14:50.473] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:14:50.508] INFO: model                  root-keys            watch:config keys: sys
+[17:14:50.508] INFO: model                  build-end            watch:config
+
+[17:14:50.509] INFO: model                  build-start          watch:model last:2026-10-17T11:44:50.509Z
+[17:14:50.509] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:14:50.960] INFO: model                  pre-actions          
+[17:14:50.977] INFO: model                  post-actions         
+[17:14:50.977] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[17:14:50.978] INFO: model                  build-end            watch:model
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test
+> npm run test:spec && npm run test:generated && npm run test:contract && npm run test:types
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:spec
+> node scripts/validate-spec.cjs
+
+OpenAPI 3.0.3: validated two unauthenticated GET endpoints
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:generated
+> npm test --prefix sdk/ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+
+> @vaishakh3/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (12.090293ms)
+✔ README example (13.00438ms)
+clean: swept 718 surface(s), 0 leak(s)
+▶ clean
+  ✔ no credential leaves the SDK in any form (131.132035ms)
+  ✔ the sweep can see a leak: clean switched off shows the credential (4.399998ms)
+✔ clean (136.650774ms)
+▶ definition
+  ✔ station.list GET /id/stations (14.178425ms)
+  ✔ station.load GET /id/stations/{id} (3.650153ms)
+✔ definition (18.807963ms)
+▶ StationDirect
+  ✔ direct-exists (9.88157ms)
+  ✔ direct-load-station (3.861878ms)
+  ✔ direct-list-station (2.226598ms)
+✔ StationDirect (16.897103ms)
+▶ StationEntity
+  ✔ instance (7.525289ms)
+  ✔ stream-error (10.66838ms)
+  ✔ stream-ctrl (5.657885ms)
+  ✔ unexpected (3.985521ms)
+  ﹣ validate (0.363219ms) # feature not present in this SDK: validate
+  ✔ basic (8.991528ms)
+✔ StationEntity (38.612586ms)
+▶ exists
+  ✔ test-mode (7.306585ms)
+✔ exists (8.151019ms)
+▶ feature
+  ✔ at least the test feature is present (0.557839ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.227639ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.079107ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.068913ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.088993ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.070916ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.075132ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.124084ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (29.119172ms)
+  ✔ abort (30.542236ms)
+✔ feature (32.008044ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.509407ms)
+  ✔ this SDK has an operation the corpus can drive (0.164765ms)
+  ﹣ cost (2.422359ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✔ FeatureCorpus (21.045657ms)
+▶ netsim
+  ✔ offline simulation fails the request (12.078524ms)
+  ✔ failStatus simulation surfaces the error status (2.88737ms)
+  ✔ latency simulation delays the request (63.717723ms)
+  ✔ a plain test SDK still works with no net simulation (2.754502ms)
+✔ netsim (83.102273ms)
+▶ omni
+  ✔ runset passes a correct subject (11.152729ms)
+  ✔ runset FAILS a wrong result, with OmniError (3.243559ms)
+  ✔ an expected error is matched, an unexpected one fails (2.207029ms)
+✔ omni (17.859803ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (1.047877ms)
+  ✔ makePoint rejects an operation with no endpoints (0.173328ms)
+  ✔ makePoint returns the single point (0.180658ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.392393ms)
+  ✔ an allow list names whole operations, in any case (0.212576ms)
+  ✔ an allow list names whole methods (0.462387ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.137645ms)
+✔ pipeline:makePoint + makeSpec (3.741959ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (9.579281ms)
+✔ pipeline:direct (9.76703ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.308368ms)
+  ✔ a 4xx response sets result.err and copies headers (0.496648ms)
+  ✔ a 2xx response parses the body and marks ok (0.759118ms)
+  ✔ records to ctrl.explain when explain is on (0.126328ms)
+  ✔ a body-parse exception is captured on result.err (0.213638ms)
+  ✔ short-circuits when a feature already supplied the response (0.130594ms)
+✔ pipeline:makeResponse (2.352735ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.232836ms)
+  ✔ list op wraps resdata into entity instances (0.125887ms)
+  ✔ an empty list yields an empty resdata array (0.290762ms)
+  ✔ short-circuits on a preset result (0.142773ms)
+✔ pipeline:makeResult (1.018463ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.353955ms)
+  ✔ a null transport result becomes a response error (0.412412ms)
+  ✔ an Error transport result is carried on the response (0.207989ms)
+  ✔ a normal transport response is wrapped (0.153198ms)
+  ✔ records the fetchdef to ctrl.explain (0.139607ms)
+  ✔ a fetchdef error surfaces as a response error (0.221469ms)
+  ✔ short-circuits a feature-supplied request (0.180207ms)
+✔ pipeline:makeRequest (1.967693ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.152627ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.272455ms)
+✔ pipeline:makeFetchDef (0.510929ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.211735ms)
+  ✔ done throws the error when not ok (0.7539ms)
+  ✔ done cleans ctrl.explain on success (0.264523ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.266937ms)
+  ✔ makeError records to ctrl.explain (0.347076ms)
+✔ pipeline:makeError + done (2.003096ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.206306ms)
+  ✔ __before__ inserts ahead of the named feature (0.094571ms)
+  ✔ __after__ inserts behind the named feature (0.14751ms)
+  ✔ __replace__ swaps the named feature (0.165185ms)
+✔ pipeline:featureAdd ordering (0.800028ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (1.851481ms)
+  ✔ array form preserves the explicit developer-specified order (1.698874ms)
+  ✔ map form with no test orders names deterministically (1.659545ms)
+✔ pipeline:feature order (5.316588ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (2.724027ms)
+  ✔ a config option does not reach the caller's maps (2.270603ms)
+✔ pipeline:makeOptions (5.099696ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.22241ms)
+  ✔ the probe finds the credential this SDK places (0.097895ms)
+  ✔ the apikey is placed where this API puts it (0.088352ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.148331ms)
+  ✔ an empty apikey drops the credential (0.074911ms)
+  ✔ a public API (no auth block) drops the credential (0.088952ms)
+  ✔ a missing apikey option drops the credential (0.058537ms)
+  ✔ HTTP Basic sends the key with a blank password (0.13457ms)
+✔ pipeline:prepareAuth (1.081527ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.285815ms)
+  ✔ an action is never a query parameter (0.084716ms)
+  ✔ a query argument goes out under its orig (0.135462ms)
+✔ pipeline:prepareQuery (0.583527ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.133959ms)
+  ✔ resultBody skips parsing when the body is absent (0.106258ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.49122ms)
+✔ pipeline:result helpers (0.920277ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:281) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (590.18388ms)
+  ✔ root README.md — every runnable example executes in test mode (56.462251ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (1739.208656ms)
+  ✔ ts/README.md — every runnable example executes in test mode (39.201128ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1097.230059ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (8.436864ms)
+✔ README examples (3532.028719ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.728472ms)
+  ✔ every empty section declares why it is deferred (0.173387ms)
+  ✔ every deferral gives a real reason (0.233296ms)
+  ✔ a deferred section that gained cases is promoted (0.138426ms)
+  ✔ every section has a basic.set list (0.163453ms)
+✔ Corpus (2.371904ms)
+▶ Custom
+  ✔ basic (8.605334ms)
+✔ Custom (9.429118ms)
+▶ PrimaryUtility
+  ✔ exists (1.656952ms)
+  ✔ context-basic (3.009922ms)
+  ✔ method-basic (1.604403ms)
+  ✔ headers-basic (0.940587ms)
+  ✔ auth-basic (3.156129ms)
+  ✔ params-basic (0.527203ms)
+  ✔ query-basic (0.468116ms)
+  ✔ body-basic (0.776754ms)
+  ✔ findparam-basic (0.499722ms)
+  ✔ fullurl-basic (0.488185ms)
+  ✔ operator-basic (0.173979ms)
+  ✔ options-basic (4.874692ms)
+  ✔ spec-basic (1.875586ms)
+  ✔ reqform-basic (0.307627ms)
+  ✔ resform-basic (0.300897ms)
+  ✔ resbasic-basic (0.833508ms)
+  ✔ resheaders-basic (0.275709ms)
+  ✔ resbody-basic (0.298774ms)
+  ✔ resbody-empty (6.983765ms)
+  ✔ request-basic (1.481772ms)
+  ✔ response-basic (0.388868ms)
+  ✔ done-basic (3.626768ms)
+  ✔ error-basic (2.189262ms)
+  ✔ makePoint-basic (0.561003ms)
+  ✔ makeFetchDef (0.275719ms)
+  ✔ makeFetchDef-with-body (0.201008ms)
+  ✔ featureAdd (0.102773ms)
+  ✔ featureHook (0.135361ms)
+  ✔ featureInit (0.091466ms)
+  ✔ featureInit-inactive (0.074391ms)
+  ✔ fetcher-live (1.108276ms)
+  ✔ fetcher-blocked-test-mode (1.214053ms)
+  ✔ makeError-no-throw (0.24916ms)
+  ✔ path-basic (0.254749ms)
+  ✔ clean-corpus (0.208019ms)
+  ✔ clean (0.134159ms)
+✔ PrimaryUtility (54.185208ms)
+▶ struct
+  ✔ exists (1.769469ms)
+  ✔ minor-isnode (0.671768ms)
+  ✔ minor-ismap (0.293095ms)
+  ✔ minor-islist (0.246236ms)
+  ✔ minor-iskey (0.368087ms)
+  ✔ minor-strkey (0.348969ms)
+  ✔ minor-isempty (1.4813ms)
+  ✔ minor-isfunc (0.261809ms)
+  ✔ minor-clone (0.430379ms)
+  ✔ minor-edge-clone (0.788221ms)
+  ✔ minor-filter (0.205926ms)
+  ✔ minor-flatten (0.209892ms)
+  ✔ minor-escre (0.159226ms)
+  ✔ minor-escurl (0.145316ms)
+  ✔ minor-stringify (0.512892ms)
+  ✔ minor-edge-stringify (6.626424ms)
+  ✔ minor-jsonify (0.699429ms)
+  ✔ minor-edge-jsonify (0.084706ms)
+  ✔ minor-pathify (1.319771ms)
+  ✔ minor-items (0.367947ms)
+  ✔ minor-edge-items (0.265986ms)
+  ✔ minor-getelem (0.463538ms)
+  ✔ minor-edge-getelem (0.090024ms)
+  ✔ minor-getprop (0.575515ms)
+  ✔ minor-edge-getprop (0.084786ms)
+  ✔ minor-setprop (0.340426ms)
+  ✔ minor-edge-setprop (0.133699ms)
+  ✔ minor-delprop (0.549646ms)
+  ✔ minor-edge-delprop (0.120699ms)
+  ✔ nullsem (2.041253ms)
+  ✔ minor-haskey (0.191034ms)
+  ✔ minor-keysof (0.102863ms)
+  ✔ minor-edge-keysof (0.097565ms)
+  ✔ minor-join (0.859467ms)
+  ✔ minor-typename (0.14803ms)
+  ✔ minor-typify (0.165887ms)
+  ✔ minor-edge-typify (0.138396ms)
+  ✔ minor-size (0.137654ms)
+  ✔ minor-slice (0.628234ms)
+  ✔ minor-pad (0.321989ms)
+  ✔ minor-setpath (0.546963ms)
+  ✔ minor-edge-setpath (0.190473ms)
+  ✔ walk-log (0.326795ms)
+  ✔ walk-basic (0.441456ms)
+  ✔ walk-depth (0.221028ms)
+  ✔ walk-copy (0.26955ms)
+  ✔ merge-basic (0.132667ms)
+  ✔ merge-cases (0.836303ms)
+  ✔ merge-array (0.66011ms)
+  ✔ merge-integrity (0.508235ms)
+  ✔ merge-depth (0.481335ms)
+  ✔ merge-special (0.399653ms)
+  ✔ getpath-basic (0.63299ms)
+  ✔ getpath-relative (0.365563ms)
+  ✔ getpath-special (0.400435ms)
+  ✔ getpath-handler (0.157063ms)
+  ✔ inject-basic (0.143103ms)
+  ✔ inject-string (0.92306ms)
+  ✔ inject-deep (1.96504ms)
+  ✔ transform-basic (0.17502ms)
+  ✔ transform-paths (1.44059ms)
+  ✔ transform-cmds (2.651088ms)
+  ✔ transform-each (8.349965ms)
+  ✔ transform-pack (4.081504ms)
+  ✔ transform-ref (3.992141ms)
+  ✔ transform-format (1.496823ms)
+  ✔ transform-apply (0.759208ms)
+  ✔ transform-edge-apply (0.196452ms)
+  ✔ transform-modify (0.379293ms)
+  ✔ transform-extra (0.328388ms)
+  ✔ transform-funcval (0.20842ms)
+  ✔ validate-basic (4.013322ms)
+  ✔ validate-child (3.222768ms)
+  ✔ validate-one (2.579011ms)
+  ✔ validate-exact (2.175252ms)
+  ✔ validate-invalid (0.528986ms)
+  ✔ validate-special (1.720025ms)
+  ✔ validate-edge (0.402168ms)
+  ✔ validate-custom (0.349829ms)
+  ✔ select-basic (1.996677ms)
+  ✔ select-operators (14.73486ms)
+  ✔ select-edge (6.113432ms)
+  ✔ select-alts (1.552647ms)
+  ✔ json-builder (0.301128ms)
+✔ struct (113.328832ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 212
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 9
+ℹ todo 0
+ℹ duration_ms 5753.642999
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:contract
+> node --test test/contract.test.cjs
+
+✔ list unwraps items and preserves actual station data including unknown fields (16.18514ms)
+✔ load unwraps the single-object items envelope (4.879203ms)
+✔ empty list and zero limit are valid (2.907619ms)
+✔ lookup uses the @id final segment, not the display stationReference (2.29568ms)
+✔ path values are encoded, preventing path/query injection (2.258445ms)
+✔ HTML 404 is rejected rather than exposed as station data (4.352877ms)
+✔ direct preserves the full metadata envelope and HTTP status (2.460465ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 140.307082
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:types
+> node sdk/ts/node_modules/typescript/bin/tsc --strict --noEmit --skipLibCheck --target ES2022 --module NodeNext --moduleResolution NodeNext --typeRoots sdk/ts/node_modules/@types test/consumer-types.ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 doctor
+> cd sdk/.sdk && npx --no-install voxgig-sdkgen doctor
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[17:15:01.989] INFO: sdkgen                 doctor-start         
+[17:15:02.027] INFO: sdkgen                 doctor-end           .sdk matches the scaffold (0 additive)
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:regeneration
+> node scripts/check-regeneration.cjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[17:15:03.394] INFO: model                  model-init           
+[17:15:03.398] INFO: model                  build-start          watch:config last:2026-10-17T11:45:03.397Z
+[17:15:03.398] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:15:03.439] INFO: model                  root-keys            watch:config keys: sys
+[17:15:03.440] INFO: model                  build-end            watch:config
+
+[17:15:03.440] INFO: model                  build-start          watch:model last:2026-10-17T11:45:03.440Z
+[17:15:03.440] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:15:03.692] INFO: model                  pre-actions          apidef
+[17:15:03.693] INFO: model/apidef           generate-start       ./def/openapi.json
+[17:15:03.704] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[17:15:03.714] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[17:15:03.715] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[17:15:03.716] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[17:15:03.747] INFO: model/apidef           generate-end         success
+
+[17:15:03.749] INFO: model                  post-actions         sdkgen
+[17:15:03.750] INFO: model/sdkgen           generate-start       
+[17:15:03.802] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[17:15:03.803] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[17:15:03.818] INFO: model/jostraca         generate-main        target:ts
+[17:15:03.819] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[17:15:03.820] INFO: model/jostraca         generate-agentguide  target:ts
+[17:15:03.833] INFO: model/jostraca         generate-test        target:ts
+[17:15:03.963] INFO: model/sdkgen           generate-end         
+[17:15:03.963] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[17:15:03.963] INFO: model                  build-end            watch:model
+
+[17:15:04.293] INFO: model                  model-init           
+[17:15:04.296] INFO: model                  build-start          watch:config last:2026-10-17T11:45:04.295Z
+[17:15:04.296] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:15:04.328] INFO: model                  root-keys            watch:config keys: sys
+[17:15:04.328] INFO: model                  build-end            watch:config
+
+[17:15:04.328] INFO: model                  build-start          watch:model last:2026-10-17T11:45:04.328Z
+[17:15:04.328] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:15:04.712] INFO: model                  pre-actions          
+[17:15:04.728] INFO: model                  post-actions         
+[17:15:04.728] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[17:15:04.728] INFO: model                  build-end            watch:model
+
+{
+  "passed": true,
+  "filesCompared": 96,
+  "scope": "sdk/ts source, tests, docs and manifests; excludes dependencies and compiler outputs",
+  "sha256": "dbfb4185f007ba5a93f2fbd9e1e344615b69ef86e50466e3463defe187f99b33"
+}

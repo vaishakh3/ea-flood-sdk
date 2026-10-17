@@ -1,0 +1,53 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[13:04:06.030] INFO: model                  model-init           
+[13:04:06.035] INFO: model                  build-start          watch:config last:2026-10-17T07:34:06.034Z
+[13:04:06.035] INFO: model                  build-trigger        watch:config trigger:<config>
+[13:04:06.075] INFO: model                  write-model          ./model/.model-config/model-config.json
+[13:04:06.075] INFO: model                  root-keys            watch:config keys: sys
+[13:04:06.076] INFO: model                  build-end            watch:config
+
+[13:04:06.076] INFO: model                  build-start          watch:model last:2026-10-17T07:34:06.076Z
+[13:04:06.076] INFO: model                  build-trigger        watch:model trigger:<start>
+[13:04:06.303] INFO: model                  pre-actions          apidef
+[13:04:06.305] INFO: model/apidef           generate-start       ./def/openapi.json
+[13:04:06.317] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[13:04:06.329] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[13:04:06.329] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[13:04:06.331] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[13:04:06.368] INFO: model/apidef           generate-end         success
+
+[13:04:06.471] INFO: model                  write-model          ./model/sdk.json
+[13:04:06.471] INFO: model                  post-actions         sdkgen
+[13:04:06.472] INFO: model/sdkgen           generate-start       
+[13:04:06.524] INFO: model/jostraca         generate-agentguide-top name:EaFlood
+[13:04:06.525] INFO: model/jostraca         generate-deploy      targets: ts:npm(publish pending)
+[13:04:06.526] INFO: model/jostraca         generate-publish-workflow npm targets: ts
+[13:04:06.534] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[13:04:06.535] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[13:04:06.551] INFO: model/jostraca         generate-main        target:ts
+[13:04:06.564] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[13:04:06.564] INFO: model/jostraca         generate-agentguide  target:ts
+[13:04:06.579] INFO: model/jostraca         generate-test        target:ts
+[13:04:06.754] INFO: model/sdkgen           generate-end         
+[13:04:06.754] INFO: model                  root-keys            watch:model keys: def;main;name;origin;const;name__orig;Name;name_;name-;NAME
+[13:04:06.754] INFO: model                  build-end            watch:model
+
+[13:04:07.189] INFO: model                  model-init           
+[13:04:07.193] INFO: model                  build-start          watch:config last:2026-10-17T07:34:07.193Z
+[13:04:07.193] INFO: model                  build-trigger        watch:config trigger:<config>
+[13:04:07.242] INFO: model                  write-model          ./test/.model-config/model-config.json
+[13:04:07.243] INFO: model                  root-keys            watch:config keys: sys
+[13:04:07.243] INFO: model                  build-end            watch:config
+
+[13:04:07.244] INFO: model                  build-start          watch:model last:2026-10-17T07:34:07.244Z
+[13:04:07.244] INFO: model                  build-trigger        watch:model trigger:<start>
+[13:04:07.732] INFO: model                  pre-actions          
+[13:04:07.751] INFO: model                  write-model          ./test/test.json
+[13:04:07.753] INFO: model                  post-actions         
+[13:04:07.754] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[13:04:07.754] INFO: model                  build-end            watch:model
+

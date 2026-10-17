@@ -1,0 +1,59 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[13:07:01.237] INFO: model                  model-init           
+[13:07:01.241] INFO: model                  build-start          watch:config last:2026-10-17T07:37:01.241Z
+[13:07:01.242] INFO: model                  build-trigger        watch:config trigger:<config>
+[13:07:01.279] INFO: model                  root-keys            watch:config keys: sys
+[13:07:01.280] INFO: model                  build-end            watch:config
+
+[13:07:01.280] INFO: model                  build-start          watch:model last:2026-10-17T07:37:01.280Z
+[13:07:01.280] INFO: model                  build-trigger        watch:model trigger:<start>
+[13:07:01.414] ERROR: model                  run-build            build 
+  [aontu/scalar_value]: Cannot unify values at path $.main.kit.entity.station.fields.label_value.n  
+  
+Literal scalar values of the same kind can only unify if they are  
+exactly equal.  
+   
+Examples:  
+  1 & 1   -> 1    # Does unify (equal Integers);  
+  a & a   -> a    # Does unify (equal Strings);  
+  1 & 2   -> nil  # Does not unify (unequal Integers);  
+  1 & 1.0 -> nil  # Does not unify (kinds: Integer & Float).  
+  
+ Cannot unify value: "label_value" with value: "label"  
+  --> node_modules/@voxgig/apidef/model/apidef.aontu:144:8  
+  142 |   
+  143 |   %entity-field: { # One named entity field.  
+  144 |     n: key() # Field name from its map key.  
+               ^ value was: "label_value"  
+  145 |     h: string # Human title derived from the field name.  
+  146 |     r: boolean # Whether the field is required.  
+  
+ Cannot unify value: "label" with value: "label_value"  
+  --> model/project.aontu:40:21  
+  38 |   label: a: false  
+  39 |   '@id': { n: '@id', h: 'Station URI', t: '`$STRING`', r: false, fo: 'uri' }  
+  40 |   label_value: { n: 'label', h: 'Station label (string or string array)', t: '`$ANY`', r: false }  
+                           ^ value was: "label"  
+  41 | }  
+  42 |   
+
+  dc: -1
+  path: ["main","kit","entity","station","fields","label_value","n"]
+  mark: {"type":false,"hide":false}
+  err: []
+  explain: null
+  _ctx: {"_pathidx":594,"path":["main","kit","entity","station","fields","label_value","n"]}
+  id: 9678
+  isNil: true
+  isGenable: true
+  nil: true
+  msg: "[aontu/scalar_value]: Cannot unify values at path $.main.kit.entity.station.fields.label_value.n\n\nLiteral scalar values of the same kind can only unify if they are\nexactly equal.\n \nExamples:\n  1 & 1   -> 1    # Does unify (equal Integers);\n  a & a   -> a    # Does unify (equal Strings);\n  1 & 2   -> nil  # Does not unify (unequal Integers);\n  1 & 1.0 -> nil  # Does not unify (kinds: Integer & Float).\n\n Cannot unify value: \"label_value\" with value: \"label\"\n  --> node_modules/@voxgig/apidef/model/apidef.aontu:144:8\n  142 | \n  143 |   %entity-field: { # One named entity field.\n  144 |     n: key() # Field name from its map key.\n               ^ value was: \"label_value\"\n  145 |     h: string # Human title derived from the field name.\n  146 |     r: boolean # Whether the field is required.\n\n Cannot unify value: \"label\" with value: \"label_value\"\n  --> model/project.aontu:40:21\n  38 |   label: a: false\n  39 |   '@id': { n: '@id', h: 'Station URI', t: '`$STRING`', r: false, fo: 'uri' }\n  40 |   label_value: { n: 'label', h: 'Station label (string or string array)', t: '`$ANY`', r: false }\n                           ^ value was: \"label\"\n  41 | }\n  42 | \n"
+  why: "scalar_value"
+  _site: {"row":144,"col":8,"url":"<PROJECT>/sdk/.sdk/node_modules/@voxgig/apidef/model/apidef.aontu","len":-1,"src":""}
+  primary: {"dc":-1,"path":["main","kit","entity","station","fields","label_value","n"],"mark":{"type":false,"hide":false},"peg":"label_value","err":[],"explain":null,"id":9677,"isScalar":true,"isGenable":true,"src":"","isString":true,"_site":{"row":144,"col":8,"url":"<PROJECT>/sdk/.sdk/node_modules/@voxgig/apidef/model/apidef.aontu","len":3,"src":"key"}}
+  secondary: {"dc":-1,"path":["main","kit","entity","station","fields","label_value","n"],"mark":{"type":false,"hide":false},"peg":"label","err":[],"explain":null,"id":2526,"isScalar":true,"isGenable":true,"src":"","isString":true,"_site":{"row":40,"col":21,"url":"<PROJECT>/sdk/.sdk/model/project.aontu","len":7,"src":"'label'"}}
+  

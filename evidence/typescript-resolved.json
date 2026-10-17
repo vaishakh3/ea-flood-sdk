@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "name": "@voxgig-sdk/ea-flood-sdk",
+  "dependencies": {
+    "@types/node": {
+      "version": "25.9.9",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-25.9.9.tgz",
+      "overridden": false
+    },
+    "typescript": {
+      "version": "5.9.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz",
+      "overridden": false
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": "0.0.1",
+  "name": "build-ea-flood-sdk",
+  "dependencies": {
+    "@types/node": {
+      "version": "26.6.5",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-26.6.5.tgz",
+      "overridden": false
+    },
+    "@voxgig/apidef": {
+      "version": "8.25.3",
+      "resolved": "https://registry.npmjs.org/@voxgig/apidef/-/apidef-8.25.3.tgz",
+      "overridden": false
+    },
+    "@voxgig/docgen": {
+      "version": "0.30.2",
+      "resolved": "https://registry.npmjs.org/@voxgig/docgen/-/docgen-0.30.2.tgz",
+      "overridden": false
+    },
+    "@voxgig/model": {
+      "version": "12.0.1",
+      "resolved": "https://registry.npmjs.org/@voxgig/model/-/model-12.0.1.tgz",
+      "overridden": false
+    },
+    "@voxgig/sdkgen": {
+      "version": "4.35.0",
+      "resolved": "https://registry.npmjs.org/@voxgig/sdkgen/-/sdkgen-4.35.0.tgz",
+      "overridden": false
+    },
+    "@voxgig/struct": {
+      "version": "0.3.7",
+      "resolved": "https://registry.npmjs.org/@voxgig/struct/-/struct-0.3.7.tgz",
+      "overridden": false
+    },
+    "@voxgig/util": {
+      "version": "0.5.8",
+      "resolved": "https://registry.npmjs.org/@voxgig/util/-/util-0.5.8.tgz",
+      "overridden": false
+    },
+    "aontu": {
+      "version": "0.76.0",
+      "resolved": "https://registry.npmjs.org/aontu/-/aontu-0.76.0.tgz",
+      "overridden": false
+    },
+    "jostraca": {
+      "version": "0.40.0",
+      "resolved": "https://registry.npmjs.org/jostraca/-/jostraca-0.40.0.tgz",
+      "overridden": false
+    },
+    "typescript": {
+      "version": "7.0.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-7.0.2.tgz",
+      "overridden": false
+    }
+  }
+}

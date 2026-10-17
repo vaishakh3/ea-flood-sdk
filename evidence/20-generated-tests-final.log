@@ -1,0 +1,313 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (13.788779ms)
+✔ README example (14.607963ms)
+clean: swept 718 surface(s), 0 leak(s)
+▶ clean
+  ✔ no credential leaves the SDK in any form (137.266891ms)
+  ✔ the sweep can see a leak: clean switched off shows the credential (4.998335ms)
+✔ clean (143.148705ms)
+▶ definition
+  ✔ station.list GET /id/stations (12.946ms)
+  ✔ station.load GET /id/stations/{id} (3.114424ms)
+✔ definition (17.034257ms)
+▶ StationDirect
+  ✔ direct-exists (7.851702ms)
+  ✔ direct-load-station (3.958685ms)
+  ✔ direct-list-station (2.728192ms)
+✔ StationDirect (15.581174ms)
+▶ StationEntity
+  ✔ instance (8.110837ms)
+  ✔ stream-error (10.446587ms)
+  ✔ stream-ctrl (5.941698ms)
+  ✔ unexpected (3.538583ms)
+  ﹣ validate (0.607841ms) # feature not present in this SDK: validate
+  ✔ basic (9.351244ms)
+✔ StationEntity (39.303745ms)
+▶ exists
+  ✔ test-mode (7.764724ms)
+✔ exists (8.579531ms)
+▶ feature
+  ✔ at least the test feature is present (0.799374ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.321416ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.106097ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.219436ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.135221ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.103753ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.10795ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.158635ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (33.493952ms)
+  ✔ abort (35.716446ms)
+✔ feature (37.752242ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.611076ms)
+  ✔ this SDK has an operation the corpus can drive (0.169121ms)
+  ﹣ cost (3.289824ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✔ FeatureCorpus (31.092895ms)
+▶ netsim
+  ✔ offline simulation fails the request (12.990205ms)
+  ✔ failStatus simulation surfaces the error status (2.722083ms)
+  ✔ latency simulation delays the request (63.816275ms)
+  ✔ a plain test SDK still works with no net simulation (2.800009ms)
+✔ netsim (83.699072ms)
+▶ omni
+  ✔ runset passes a correct subject (9.324544ms)
+  ✔ runset FAILS a wrong result, with OmniError (2.88219ms)
+  ✔ an expected error is matched, an unexpected one fails (2.336382ms)
+✔ omni (15.908378ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (1.090656ms)
+  ✔ makePoint rejects an operation with no endpoints (0.226285ms)
+  ✔ makePoint returns the single point (0.263991ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.193918ms)
+  ✔ an allow list names whole operations, in any case (0.203461ms)
+  ✔ an allow list names whole methods (0.578527ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.159467ms)
+✔ pipeline:makePoint + makeSpec (4.197919ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (11.907982ms)
+✔ pipeline:direct (12.179444ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.422135ms)
+  ✔ a 4xx response sets result.err and copies headers (0.84687ms)
+  ✔ a 2xx response parses the body and marks ok (1.104036ms)
+  ✔ records to ctrl.explain when explain is on (0.143673ms)
+  ✔ a body-parse exception is captured on result.err (0.212655ms)
+  ✔ short-circuits when a feature already supplied the response (0.20895ms)
+✔ pipeline:makeResponse (3.661409ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.207748ms)
+  ✔ list op wraps resdata into entity instances (0.123833ms)
+  ✔ an empty list yields an empty resdata array (0.186697ms)
+  ✔ short-circuits on a preset result (0.093648ms)
+✔ pipeline:makeResult (0.743191ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.338141ms)
+  ✔ a null transport result becomes a response error (0.683573ms)
+  ✔ an Error transport result is carried on the response (0.277391ms)
+  ✔ a normal transport response is wrapped (0.384189ms)
+  ✔ records the fetchdef to ctrl.explain (0.287696ms)
+  ✔ a fetchdef error surfaces as a response error (0.147438ms)
+  ✔ short-circuits a feature-supplied request (0.193487ms)
+✔ pipeline:makeRequest (2.562907ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.172385ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.272714ms)
+✔ pipeline:makeFetchDef (0.539429ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.17548ms)
+  ✔ done throws the error when not ok (0.739886ms)
+  ✔ done cleans ctrl.explain on success (0.235118ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.414223ms)
+  ✔ makeError records to ctrl.explain (3.051131ms)
+✔ pipeline:makeError + done (4.791328ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.300635ms)
+  ✔ __before__ inserts ahead of the named feature (0.262819ms)
+  ✔ __after__ inserts behind the named feature (1.09368ms)
+  ✔ __replace__ swaps the named feature (0.117084ms)
+✔ pipeline:featureAdd ordering (1.931061ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (3.116397ms)
+  ✔ array form preserves the explicit developer-specified order (2.226358ms)
+  ✔ map form with no test orders names deterministically (1.495235ms)
+✔ pipeline:feature order (7.065879ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (7.900314ms)
+  ✔ a config option does not reach the caller's maps (2.558551ms)
+✔ pipeline:makeOptions (10.580486ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.36423ms)
+  ✔ the probe finds the credential this SDK places (0.117605ms)
+  ✔ the apikey is placed where this API puts it (0.196161ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.115171ms)
+  ✔ an empty apikey drops the credential (0.18902ms)
+  ✔ a public API (no auth block) drops the credential (0.065807ms)
+  ✔ a missing apikey option drops the credential (0.056444ms)
+  ✔ HTTP Basic sends the key with a blank password (0.146386ms)
+✔ pipeline:prepareAuth (1.447384ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.255248ms)
+  ✔ an action is never a query parameter (0.171234ms)
+  ✔ a query argument goes out under its orig (0.194999ms)
+✔ pipeline:prepareQuery (0.713727ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.107079ms)
+  ✔ resultBody skips parsing when the body is absent (0.156922ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.726857ms)
+✔ pipeline:result helpers (1.081452ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:196) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (688.251351ms)
+  ✔ root README.md — every runnable example executes in test mode (64.652189ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (2002.543919ms)
+  ✔ ts/README.md — every runnable example executes in test mode (39.496281ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1151.593868ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (10.687315ms)
+✔ README examples (3958.822821ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.748007ms)
+  ✔ every empty section declares why it is deferred (0.175831ms)
+  ✔ every deferral gives a real reason (0.276209ms)
+  ✔ a deferred section that gained cases is promoted (0.46584ms)
+  ✔ every section has a basic.set list (0.171814ms)
+✔ Corpus (3.38999ms)
+▶ Custom
+  ✔ basic (8.348452ms)
+✔ Custom (9.049521ms)
+▶ PrimaryUtility
+  ✔ exists (1.045818ms)
+  ✔ context-basic (1.542645ms)
+  ✔ method-basic (0.799213ms)
+  ✔ headers-basic (0.607059ms)
+  ✔ auth-basic (2.838854ms)
+  ✔ params-basic (0.637774ms)
+  ✔ query-basic (0.524376ms)
+  ✔ body-basic (0.848677ms)
+  ✔ findparam-basic (0.669391ms)
+  ✔ fullurl-basic (0.544206ms)
+  ✔ operator-basic (0.185985ms)
+  ✔ options-basic (6.397653ms)
+  ✔ spec-basic (2.611858ms)
+  ✔ reqform-basic (0.271913ms)
+  ✔ resform-basic (0.355607ms)
+  ✔ resbasic-basic (0.939962ms)
+  ✔ resheaders-basic (0.277421ms)
+  ✔ resbody-basic (0.327425ms)
+  ✔ resbody-empty (8.335653ms)
+  ✔ request-basic (2.401716ms)
+  ✔ response-basic (0.525839ms)
+  ✔ done-basic (4.216704ms)
+  ✔ error-basic (5.505428ms)
+  ✔ makePoint-basic (1.117154ms)
+  ✔ makeFetchDef (0.288187ms)
+  ✔ makeFetchDef-with-body (0.298131ms)
+  ✔ featureAdd (0.305131ms)
+  ✔ featureHook (0.119326ms)
+  ✔ featureInit (0.090744ms)
+  ✔ featureInit-inactive (0.082192ms)
+  ✔ fetcher-live (1.433543ms)
+  ✔ fetcher-blocked-test-mode (1.591727ms)
+  ✔ makeError-no-throw (0.243391ms)
+  ✔ path-basic (0.405751ms)
+  ✔ clean-corpus (0.215879ms)
+  ✔ clean (0.136783ms)
+✔ PrimaryUtility (63.821051ms)
+▶ struct
+  ✔ exists (5.268071ms)
+  ✔ minor-isnode (0.761868ms)
+  ✔ minor-ismap (0.379742ms)
+  ✔ minor-islist (0.239955ms)
+  ✔ minor-iskey (0.39796ms)
+  ✔ minor-strkey (0.25613ms)
+  ✔ minor-isempty (0.261327ms)
+  ✔ minor-isfunc (3.421753ms)
+  ✔ minor-clone (0.444078ms)
+  ✔ minor-edge-clone (0.813355ms)
+  ✔ minor-filter (0.257361ms)
+  ✔ minor-flatten (0.215119ms)
+  ✔ minor-escre (0.180738ms)
+  ✔ minor-escurl (0.164494ms)
+  ✔ minor-stringify (0.507051ms)
+  ✔ minor-edge-stringify (6.802152ms)
+  ✔ minor-jsonify (0.512289ms)
+  ✔ minor-edge-jsonify (0.084134ms)
+  ✔ minor-pathify (0.918501ms)
+  ✔ minor-items (0.405931ms)
+  ✔ minor-edge-items (0.181008ms)
+  ✔ minor-getelem (0.339182ms)
+  ✔ minor-edge-getelem (0.083253ms)
+  ✔ minor-getprop (0.541542ms)
+  ✔ minor-edge-getprop (0.085176ms)
+  ✔ minor-setprop (0.314676ms)
+  ✔ minor-edge-setprop (0.137784ms)
+  ✔ minor-delprop (0.338932ms)
+  ✔ minor-edge-delprop (0.104495ms)
+  ✔ nullsem (1.503336ms)
+  ✔ minor-haskey (0.18282ms)
+  ✔ minor-keysof (0.100699ms)
+  ✔ minor-edge-keysof (0.064636ms)
+  ✔ minor-join (0.405641ms)
+  ✔ minor-typename (0.159847ms)
+  ✔ minor-typify (0.115742ms)
+  ✔ minor-edge-typify (0.113227ms)
+  ✔ minor-size (0.134038ms)
+  ✔ minor-slice (0.54022ms)
+  ✔ minor-pad (0.333483ms)
+  ✔ minor-setpath (0.525759ms)
+  ✔ minor-edge-setpath (0.104454ms)
+  ✔ walk-log (0.304671ms)
+  ✔ walk-basic (0.384018ms)
+  ✔ walk-depth (0.285543ms)
+  ✔ walk-copy (0.265934ms)
+  ✔ merge-basic (0.125596ms)
+  ✔ merge-cases (0.717593ms)
+  ✔ merge-array (0.350639ms)
+  ✔ merge-integrity (0.292333ms)
+  ✔ merge-depth (0.414314ms)
+  ✔ merge-special (0.249089ms)
+  ✔ getpath-basic (0.45886ms)
+  ✔ getpath-relative (0.308957ms)
+  ✔ getpath-special (0.235729ms)
+  ✔ getpath-handler (0.173808ms)
+  ✔ inject-basic (0.137283ms)
+  ✔ inject-string (0.687008ms)
+  ✔ inject-deep (1.631225ms)
+  ✔ transform-basic (0.192505ms)
+  ✔ transform-paths (1.261738ms)
+  ✔ transform-cmds (2.442137ms)
+  ✔ transform-each (6.517631ms)
+  ✔ transform-pack (3.081583ms)
+  ✔ transform-ref (3.393455ms)
+  ✔ transform-format (2.007643ms)
+  ✔ transform-apply (0.526139ms)
+  ✔ transform-edge-apply (0.160888ms)
+  ✔ transform-modify (0.246635ms)
+  ✔ transform-extra (0.227527ms)
+  ✔ transform-funcval (0.188208ms)
+  ✔ validate-basic (2.932332ms)
+  ✔ validate-child (2.083646ms)
+  ✔ validate-one (1.785864ms)
+  ✔ validate-exact (1.577957ms)
+  ✔ validate-invalid (0.602041ms)
+  ✔ validate-special (1.419482ms)
+  ✔ validate-edge (0.57399ms)
+  ✔ validate-custom (0.304682ms)
+  ✔ select-basic (1.927524ms)
+  ✔ select-operators (9.923004ms)
+  ✔ select-edge (6.151899ms)
+  ✔ select-alts (1.655181ms)
+  ✔ json-builder (0.251422ms)
+✔ struct (107.00648ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 212
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 9
+ℹ todo 0
+ℹ duration_ms 6390.932243
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

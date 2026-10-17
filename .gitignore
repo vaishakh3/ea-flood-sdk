@@ -1,0 +1,12 @@
+**/node_modules
+**/node_modules/
+**/dist/
+**/dist-test/
+**/*.tsbuildinfo
+**/.jostraca/
+**/.env*
+**/*.local*
+**/.DS_Store
+**/.npm-cache/
+**/.tooling/
+sdk/.sdk/log/create.log

@@ -1,0 +1,12 @@
+# Guide
+
+@"@voxgig/apidef/model/guide.aontu"
+
+@"./base-guide.aontu"
+
+
+
+
+# EA wraps both list and single-station payloads in `items`.
+guide: entity: station: path: '/id/stations/{id}':
+  op: load: transform: res: '`body.items`'

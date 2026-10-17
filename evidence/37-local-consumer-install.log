@@ -1,0 +1,4 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+added 1 package in 200ms
+PASS: local npm installation resolves the package entrypoint and seeded station list

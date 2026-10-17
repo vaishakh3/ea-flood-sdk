@@ -1,0 +1,3 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[13:08:43.786] INFO: sdkgen                 doctor-start         
+[13:08:43.825] INFO: sdkgen                 doctor-end           .sdk matches the scaffold (0 additive)

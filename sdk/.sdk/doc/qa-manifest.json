@@ -1,0 +1,14 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "One station in the API&#39;s JSON envelope",
+      "Station list in the API&#39;s JSON envelope.",
+      "Unofficial, deliberately limited OpenAPI description of station listing and lookup, authored for a Voxgig SDK generator evaluation from the Environment Agency reference. This uses Environment Agency flood and river level data from the real-time data API (Beta)."
+    ]
+  }
+}

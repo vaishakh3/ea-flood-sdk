@@ -1,0 +1,49 @@
+# Project overlay — YOURS. The scaffold creates this file once and never
+# overwrites it.
+#
+# Most of model/ is toolchain-derived and is deliberately regenerated so that
+# toolchain fixes propagate; this file, the guide, and the target, feature and
+# edition indexes are kept. Put anything here that is a decision about THIS
+# project rather than a fact about the API.
+#
+# Included LAST by sdk.aontu, after target/target-index.aontu, because a key
+# under main.kit.target.<t> can only refine a target that has already been
+# defined. Declared earlier, the model build fails with "Cannot unify value:
+# nil with value: string / key ext value was: nil", which names nothing that
+# would lead you here.
+#
+# The release version each generated manifest declares (package.json,
+# pyproject.toml, the gemspec, the rockspec) and that the port Makefiles tag:
+#
+#   main: kit: target: ts: publish: version: '1.2.3'
+#
+# Per target, because ports publish to different registries on different
+# clocks. Set every target to the same value for a lockstep repo.
+#
+# A published package name that does not follow the derivation:
+#
+#   main: kit: target: ts: publish: registry: package: '@scope/name'
+
+# Entity records are the unwrapped items, not their API metadata envelope.
+# The standard type mapper narrows oneOf labels incorrectly to string.
+# Omit the inaccurate label field; the evaluation includes an exact consumer type.
+main: kit: entity: station: fields: {
+  context: a: false
+  meta: a: false
+  items: a: false
+  label: a: false
+  '@id': { n: '@id', h: 'Station URI', t: '`$STRING`', r: false, fo: 'uri' }
+}
+
+# Public source destination. This is not an npm publication.
+main: kit: repo: path: 'vaishakh3/ea-flood-sdk'
+main: kit: author: { name: 'Vaishakh Suresh', url: 'https://github.com/vaishakh3' }
+main: kit: target: ts: {
+  author: { name: 'Vaishakh Suresh', url: 'https://github.com/vaishakh3' }
+  publish: registry: { package: '@vaishakh3/ea-flood-sdk', state: 'pending', active: false }
+}
+
+# Keep reviewed, repository-layout-aware docs and avoid stock publish workflows.
+# The SDK code, tests and manifests remain generated. No component is forked.
+main: kit: phase: top: active: false
+main: kit: target: ts: phase: readme: active: false

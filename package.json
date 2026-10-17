@@ -1,0 +1,35 @@
+{
+  "name": "ea-flood-sdk-evaluation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Voxgig-generated TypeScript SDK evaluation for Environment Agency station listing and lookup",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.19.0"
+  },
+  "scripts": {
+    "setup": "npm ci --prefix sdk/.sdk && npm ci --prefix sdk/ts",
+    "generate": "node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk",
+    "build": "npm run build --prefix sdk/ts",
+    "test:generated": "npm test --prefix sdk/ts",
+    "test:contract": "node --test test/contract.test.cjs",
+    "test:types": "node sdk/ts/node_modules/typescript/bin/tsc --strict --noEmit --skipLibCheck --target ES2022 --module NodeNext --moduleResolution NodeNext --typeRoots sdk/ts/node_modules/@types test/consumer-types.ts",
+    "test:spec": "node scripts/validate-spec.cjs",
+    "test:live": "node --use-env-proxy examples/live-smoke.cjs",
+    "doctor": "cd sdk/.sdk && npx --no-install voxgig-sdkgen doctor",
+    "test": "npm run test:spec && npm run test:generated && npm run test:contract && npm run test:types",
+    "verify": "npm run generate && npm test && npm run doctor && npm run test:regeneration",
+    "test:regeneration": "node scripts/check-regeneration.cjs"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-parser": "13.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishakh3/ea-flood-sdk.git"
+  },
+  "author": {
+    "name": "Vaishakh Suresh",
+    "url": "https://github.com/vaishakh3"
+  }
+}

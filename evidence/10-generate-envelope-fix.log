@@ -1,0 +1,50 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[13:05:29.644] INFO: model                  model-init           
+[13:05:29.649] INFO: model                  build-start          watch:config last:2026-10-17T07:35:29.648Z
+[13:05:29.649] INFO: model                  build-trigger        watch:config trigger:<config>
+[13:05:29.690] INFO: model                  root-keys            watch:config keys: sys
+[13:05:29.691] INFO: model                  build-end            watch:config
+
+[13:05:29.691] INFO: model                  build-start          watch:model last:2026-10-17T07:35:29.691Z
+[13:05:29.691] INFO: model                  build-trigger        watch:model trigger:<start>
+[13:05:29.955] INFO: model                  pre-actions          apidef
+[13:05:29.957] INFO: model/apidef           generate-start       ./def/openapi.json
+[13:05:29.970] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[13:05:29.980] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[13:05:29.980] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[13:05:29.982] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[13:05:30.017] INFO: model/apidef           generate-end         success
+
+[13:05:30.094] INFO: model                  write-model          ./model/sdk.json
+[13:05:30.095] INFO: model                  post-actions         sdkgen
+[13:05:30.096] INFO: model/sdkgen           generate-start       
+[13:05:30.158] INFO: model/jostraca         generate-agentguide-top name:EaFlood
+[13:05:30.160] INFO: model/jostraca         generate-deploy      targets: ts:npm(publish pending)
+[13:05:30.161] INFO: model/jostraca         generate-publish-workflow npm targets: ts
+[13:05:30.170] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[13:05:30.171] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[13:05:30.185] INFO: model/jostraca         generate-main        target:ts
+[13:05:30.199] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[13:05:30.199] INFO: model/jostraca         generate-agentguide  target:ts
+[13:05:30.213] INFO: model/jostraca         generate-test        target:ts
+[13:05:30.381] INFO: model/sdkgen           generate-end         
+[13:05:30.381] INFO: model                  root-keys            watch:model keys: def;main;name;origin;const;name__orig;Name;name_;name-;NAME
+[13:05:30.381] INFO: model                  build-end            watch:model
+
+[13:05:30.764] INFO: model                  model-init           
+[13:05:30.768] INFO: model                  build-start          watch:config last:2026-10-17T07:35:30.767Z
+[13:05:30.768] INFO: model                  build-trigger        watch:config trigger:<config>
+[13:05:30.813] INFO: model                  root-keys            watch:config keys: sys
+[13:05:30.813] INFO: model                  build-end            watch:config
+
+[13:05:30.814] INFO: model                  build-start          watch:model last:2026-10-17T07:35:30.814Z
+[13:05:30.814] INFO: model                  build-trigger        watch:model trigger:<start>
+[13:05:31.296] INFO: model                  pre-actions          
+[13:05:31.320] INFO: model                  post-actions         
+[13:05:31.320] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[13:05:31.321] INFO: model                  build-end            watch:model
+

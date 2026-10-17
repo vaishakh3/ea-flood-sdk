@@ -1,0 +1,15 @@
+✔ list unwraps items and preserves actual station data including unknown fields (16.863246ms)
+✔ load unwraps the single-object items envelope (4.591209ms)
+✔ empty list and zero limit are valid (3.677926ms)
+✔ lookup uses the @id final segment, not the display stationReference (2.213838ms)
+✔ path values are encoded, preventing path/query injection (2.31613ms)
+✔ HTML 404 is rejected rather than exposed as station data (3.540283ms)
+✔ direct preserves the full metadata envelope and HTTP status (2.604868ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 146.671041

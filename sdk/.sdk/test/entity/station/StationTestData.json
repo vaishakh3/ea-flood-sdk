@@ -1,0 +1,77 @@
+{
+  "existing": {
+    "station": {
+      "STATION00": {
+        "@id": "s78",
+        "catchmentName": "s79",
+        "context": "s7a",
+        "id": "STATION00",
+        "items": {},
+        "label": "s7d",
+        "lat": 126,
+        "long": 127,
+        "meta": {},
+        "riverName": "s81",
+        "stationReference": "s82",
+        "town": "s83"
+      },
+      "STATION01": {
+        "@id": "sf0",
+        "catchmentName": "sf1",
+        "context": "sf2",
+        "id": "STATION01",
+        "items": {},
+        "label": "sf5",
+        "lat": 246,
+        "long": 247,
+        "meta": {},
+        "riverName": "sf9",
+        "stationReference": "sfa",
+        "town": "sfb"
+      },
+      "STATION02": {
+        "@id": "s168",
+        "catchmentName": "s169",
+        "context": "s16a",
+        "id": "STATION02",
+        "items": {},
+        "label": "s16d",
+        "lat": 366,
+        "long": 367,
+        "meta": {},
+        "riverName": "s171",
+        "stationReference": "s172",
+        "town": "s173"
+      }
+    }
+  },
+  "new": {
+    "station": {
+      "station_ref01": {
+        "@id": "s1e0",
+        "catchmentName": "s1e1",
+        "context": "s1e2",
+        "items": {},
+        "label": "s1e5",
+        "lat": 486,
+        "long": 487,
+        "meta": {},
+        "riverName": "s1e9",
+        "stationReference": "s1ea",
+        "town": "s1eb"
+      }
+    }
+  },
+  "requests": {
+    "GET /id/stations": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /id/stations/{id}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

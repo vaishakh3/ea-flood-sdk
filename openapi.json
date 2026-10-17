@@ -1,0 +1,195 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Environment Agency Flood Monitoring Stations",
+    "version": "0.1.0",
+    "description": "Unofficial, deliberately limited OpenAPI description of station listing and lookup, authored for a Voxgig SDK generator evaluation from the Environment Agency reference. This uses Environment Agency flood and river level data from the real-time data API (Beta)."
+  },
+  "servers": [
+    {
+      "url": "https://environment.data.gov.uk/flood-monitoring"
+    }
+  ],
+  "security": [],
+  "externalDocs": {
+    "url": "https://environment.data.gov.uk/flood-monitoring/doc/reference"
+  },
+  "paths": {
+    "/id/stations": {
+      "get": {
+        "operationId": "listStations",
+        "tags": [
+          "Station"
+        ],
+        "summary": "List monitoring stations",
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "description": "Maximum number of returned stations."
+          },
+          {
+            "name": "_offset",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Text contained in a station label."
+          },
+          {
+            "name": "parameter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Measurement parameter, for example level or flow."
+          },
+          {
+            "name": "riverName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Station list in the API's JSON envelope.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "meta": {
+                      "type": "object",
+                      "additionalProperties": true
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Station"
+                      }
+                    }
+                  },
+                  "required": [
+                    "items"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/id/stations/{id}": {
+      "get": {
+        "operationId": "getStation",
+        "tags": [
+          "Station"
+        ],
+        "summary": "Load one monitoring station",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Station identifier returned in the final segment of @id."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "One station in the API's JSON envelope.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "meta": {
+                      "type": "object",
+                      "additionalProperties": true
+                    },
+                    "items": {
+                      "$ref": "#/components/schemas/Station"
+                    }
+                  },
+                  "required": [
+                    "items"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Station not found."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Station": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri"
+          },
+          "stationReference": {
+            "type": "string"
+          },
+          "label": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "lat": {
+            "type": "number"
+          },
+          "long": {
+            "type": "number"
+          },
+          "riverName": {
+            "type": "string"
+          },
+          "catchmentName": {
+            "type": "string"
+          },
+          "town": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

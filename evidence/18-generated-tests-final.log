@@ -1,0 +1,330 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+> @voxgig-sdk/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (15.111676ms)
+✔ README example (15.942987ms)
+clean: swept 718 surface(s), 0 leak(s)
+▶ clean
+  ✔ no credential leaves the SDK in any form (135.423937ms)
+  ✔ the sweep can see a leak: clean switched off shows the credential (5.600439ms)
+✔ clean (142.11488ms)
+▶ definition
+  ✔ station.list GET /id/stations (14.016575ms)
+  ✔ station.load GET /id/stations/{id} (4.06788ms)
+✔ definition (18.951239ms)
+▶ StationDirect
+  ✔ direct-exists (8.416688ms)
+  ✔ direct-load-station (5.288237ms)
+  ✔ direct-list-station (3.225655ms)
+✔ StationDirect (17.867625ms)
+▶ StationEntity
+  ✔ instance (10.114059ms)
+  ✔ stream-error (11.720717ms)
+  ✔ stream-ctrl (5.759795ms)
+  ✔ unexpected (4.071296ms)
+  ﹣ validate (0.287896ms) # feature not present in this SDK: validate
+  ✔ basic (9.241242ms)
+✔ StationEntity (42.581068ms)
+▶ exists
+  ✔ test-mode (7.417378ms)
+✔ exists (8.354005ms)
+▶ feature
+  ✔ at least the test feature is present (0.730982ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.312312ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.153117ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.237601ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.19597ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.08139ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.281837ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.123844ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (29.92419ms)
+  ✔ abort (32.165377ms)
+✔ feature (34.156324ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.550375ms)
+  ✔ this SDK has an operation the corpus can drive (0.360233ms)
+  ﹣ cost (2.403998ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✔ FeatureCorpus (27.32246ms)
+▶ netsim
+  ✔ offline simulation fails the request (11.35821ms)
+  ✔ failStatus simulation surfaces the error status (6.136182ms)
+  ✔ latency simulation delays the request (64.011523ms)
+  ✔ a plain test SDK still works with no net simulation (2.184253ms)
+✔ netsim (85.130269ms)
+▶ omni
+  ✔ runset passes a correct subject (8.839994ms)
+  ✔ runset FAILS a wrong result, with OmniError (3.311937ms)
+  ✔ an expected error is matched, an unexpected one fails (2.35096ms)
+✔ omni (15.614265ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (0.929005ms)
+  ✔ makePoint rejects an operation with no endpoints (0.168249ms)
+  ✔ makePoint returns the single point (3.366032ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.126968ms)
+  ✔ an allow list names whole operations, in any case (0.180517ms)
+  ✔ an allow list names whole methods (0.503114ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.226055ms)
+✔ pipeline:makePoint + makeSpec (6.893723ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (12.625392ms)
+✔ pipeline:direct (12.888861ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.35093ms)
+  ✔ a 4xx response sets result.err and copies headers (0.529333ms)
+  ✔ a 2xx response parses the body and marks ok (2.935756ms)
+  ✔ records to ctrl.explain when explain is on (0.137934ms)
+  ✔ a body-parse exception is captured on result.err (0.521382ms)
+  ✔ short-circuits when a feature already supplied the response (0.228188ms)
+✔ pipeline:makeResponse (5.070996ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.253525ms)
+  ✔ list op wraps resdata into entity instances (0.189641ms)
+  ✔ an empty list yields an empty resdata array (0.194779ms)
+  ✔ short-circuits on a preset result (0.112256ms)
+✔ pipeline:makeResult (0.893182ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.436086ms)
+  ✔ a null transport result becomes a response error (0.431008ms)
+  ✔ an Error transport result is carried on the response (0.173106ms)
+  ✔ a normal transport response is wrapped (0.153558ms)
+  ✔ records the fetchdef to ctrl.explain (0.180657ms)
+  ✔ a fetchdef error surfaces as a response error (0.131645ms)
+  ✔ short-circuits a feature-supplied request (0.23616ms)
+✔ pipeline:makeRequest (2.193246ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.250731ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.304762ms)
+✔ pipeline:makeFetchDef (0.821747ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.430677ms)
+  ✔ done throws the error when not ok (0.73674ms)
+  ✔ done cleans ctrl.explain on success (0.187317ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.255919ms)
+  ✔ makeError records to ctrl.explain (1.745544ms)
+✔ pipeline:makeError + done (3.527801ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.403417ms)
+  ✔ __before__ inserts ahead of the named feature (0.204873ms)
+  ✔ __after__ inserts behind the named feature (0.159315ms)
+  ✔ __replace__ swaps the named feature (0.122932ms)
+✔ pipeline:featureAdd ordering (1.084505ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (1.801846ms)
+  ✔ array form preserves the explicit developer-specified order (1.707798ms)
+  ✔ map form with no test orders names deterministically (1.585357ms)
+✔ pipeline:feature order (5.223291ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (4.477186ms)
+  ✔ a config option does not reach the caller's maps (2.637473ms)
+✔ pipeline:makeOptions (7.287987ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.296449ms)
+  ✔ the probe finds the credential this SDK places (0.112106ms)
+  ✔ the apikey is placed where this API puts it (0.143793ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.277661ms)
+  ✔ an empty apikey drops the credential (0.104524ms)
+  ✔ a public API (no auth block) drops the credential (0.062172ms)
+  ✔ a missing apikey option drops the credential (0.054561ms)
+  ✔ HTTP Basic sends the key with a blank password (0.146597ms)
+✔ pipeline:prepareAuth (1.449705ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.394944ms)
+  ✔ an action is never a query parameter (0.19595ms)
+  ✔ a query argument goes out under its orig (0.150483ms)
+✔ pipeline:prepareQuery (0.838601ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.10114ms)
+  ✔ resultBody skips parsing when the body is absent (0.2025ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.667227ms)
+✔ pipeline:result helpers (1.059799ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:196) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (759.180463ms)
+  ✔ root README.md — every runnable example executes in test mode (74.33693ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (2052.216359ms)
+  ✔ ts/README.md — every runnable example executes in test mode (41.927666ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1145.269306ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (9.674199ms)
+✔ README examples (4084.295997ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.671734ms)
+  ✔ every empty section declares why it is deferred (0.208609ms)
+  ✔ every deferral gives a real reason (0.618275ms)
+  ✔ a deferred section that gained cases is promoted (0.198244ms)
+  ✔ every section has a basic.set list (0.154418ms)
+✔ Corpus (2.836769ms)
+▶ Custom
+  ✔ basic (9.860784ms)
+✔ Custom (10.689781ms)
+▶ PrimaryUtility
+  ✔ exists (1.052989ms)
+  ✔ context-basic (1.379211ms)
+  ✔ method-basic (0.983015ms)
+  ✖ headers-basic (1.051567ms)
+  ✔ auth-basic (3.069703ms)
+  ✔ params-basic (0.74299ms)
+  ✔ query-basic (0.529234ms)
+  ✔ body-basic (3.790159ms)
+  ✔ findparam-basic (0.451598ms)
+  ✔ fullurl-basic (0.576133ms)
+  ✔ operator-basic (0.169902ms)
+  ✔ options-basic (6.644199ms)
+  ✔ spec-basic (2.149651ms)
+  ✔ reqform-basic (0.261387ms)
+  ✔ resform-basic (0.493591ms)
+  ✔ resbasic-basic (0.704563ms)
+  ✔ resheaders-basic (0.274136ms)
+  ✔ resbody-basic (0.267166ms)
+  ✔ resbody-empty (9.098517ms)
+  ✔ request-basic (2.032418ms)
+  ✔ response-basic (0.437397ms)
+  ✔ done-basic (3.789609ms)
+  ✔ error-basic (2.660147ms)
+  ✔ makePoint-basic (0.678785ms)
+  ✔ makeFetchDef (0.309188ms)
+  ✔ makeFetchDef-with-body (0.292543ms)
+  ✔ featureAdd (0.180347ms)
+  ✔ featureHook (0.136081ms)
+  ✔ featureInit (0.09467ms)
+  ✔ featureInit-inactive (0.199465ms)
+  ✔ fetcher-live (1.469685ms)
+  ✔ fetcher-blocked-test-mode (1.329728ms)
+  ✔ makeError-no-throw (0.286373ms)
+  ✔ path-basic (0.223351ms)
+  ✔ clean-corpus (0.205243ms)
+  ✔ clean (0.141719ms)
+✖ PrimaryUtility (61.695799ms)
+▶ struct
+  ✔ exists (2.268237ms)
+  ✔ minor-isnode (0.669782ms)
+  ✔ minor-ismap (0.265744ms)
+  ✔ minor-islist (0.242799ms)
+  ✔ minor-iskey (0.249278ms)
+  ✔ minor-strkey (0.330439ms)
+  ✔ minor-isempty (0.33077ms)
+  ✔ minor-isfunc (1.303539ms)
+  ✔ minor-clone (0.423316ms)
+  ✔ minor-edge-clone (1.179886ms)
+  ✔ minor-filter (0.213766ms)
+  ✔ minor-flatten (0.214187ms)
+  ✔ minor-escre (0.163733ms)
+  ✔ minor-escurl (0.342377ms)
+  ✔ minor-stringify (0.706746ms)
+  ✔ minor-edge-stringify (6.675391ms)
+  ✔ minor-jsonify (0.572047ms)
+  ✔ minor-edge-jsonify (0.082562ms)
+  ✔ minor-pathify (0.997427ms)
+  ✔ minor-items (0.477687ms)
+  ✔ minor-edge-items (0.22972ms)
+  ✔ minor-getelem (0.45255ms)
+  ✔ minor-edge-getelem (0.086208ms)
+  ✔ minor-getprop (0.560029ms)
+  ✔ minor-edge-getprop (0.193316ms)
+  ✔ minor-setprop (0.529053ms)
+  ✔ minor-edge-setprop (0.14856ms)
+  ✔ minor-delprop (0.404128ms)
+  ✔ minor-edge-delprop (0.117233ms)
+  ✔ nullsem (1.930397ms)
+  ✔ minor-haskey (0.285663ms)
+  ✔ minor-keysof (0.117104ms)
+  ✔ minor-edge-keysof (0.073048ms)
+  ✔ minor-join (0.539439ms)
+  ✔ minor-typename (0.234607ms)
+  ✔ minor-typify (0.201879ms)
+  ✔ minor-edge-typify (0.166777ms)
+  ✔ minor-size (0.146046ms)
+  ✔ minor-slice (0.532608ms)
+  ✔ minor-pad (0.341796ms)
+  ✔ minor-setpath (0.516093ms)
+  ✔ minor-edge-setpath (0.388395ms)
+  ✔ walk-log (0.404438ms)
+  ✔ walk-basic (0.523505ms)
+  ✔ walk-depth (0.23668ms)
+  ✔ walk-copy (0.380563ms)
+  ✔ merge-basic (0.735979ms)
+  ✔ merge-cases (1.041922ms)
+  ✔ merge-array (0.359321ms)
+  ✔ merge-integrity (0.325532ms)
+  ✔ merge-depth (0.43226ms)
+  ✔ merge-special (0.356668ms)
+  ✔ getpath-basic (0.624685ms)
+  ✔ getpath-relative (0.328316ms)
+  ✔ getpath-special (0.249159ms)
+  ✔ getpath-handler (0.149662ms)
+  ✔ inject-basic (0.175099ms)
+  ✔ inject-string (0.859142ms)
+  ✔ inject-deep (1.701679ms)
+  ✔ transform-basic (0.200687ms)
+  ✔ transform-paths (1.690913ms)
+  ✔ transform-cmds (3.051667ms)
+  ✔ transform-each (7.028463ms)
+  ✔ transform-pack (2.960992ms)
+  ✔ transform-ref (4.156592ms)
+  ✔ transform-format (2.162891ms)
+  ✔ transform-apply (0.565156ms)
+  ✔ transform-edge-apply (0.170723ms)
+  ✔ transform-modify (0.539648ms)
+  ✔ transform-extra (0.218354ms)
+  ✔ transform-funcval (0.179375ms)
+  ✔ validate-basic (4.072108ms)
+  ✔ validate-child (2.999209ms)
+  ✔ validate-one (2.453632ms)
+  ✔ validate-exact (2.562643ms)
+  ✔ validate-invalid (0.676851ms)
+  ✔ validate-special (1.684564ms)
+  ✔ validate-edge (0.402115ms)
+  ✔ validate-custom (0.411138ms)
+  ✔ select-basic (2.448294ms)
+  ✔ select-operators (13.507312ms)
+  ✔ select-edge (7.977487ms)
+  ✔ select-alts (2.75653ms)
+  ✔ json-builder (0.249829ms)
+✔ struct (116.294484ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 211
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 9
+ℹ todo 0
+ℹ duration_ms 6505.652416
+
+✖ failing tests:
+
+test at test/utility/PrimaryUtility.test.ts:93:7
+✖ headers-basic (1.051567ms)
+  OmniError: omni: primary[0]: result mismatch
+    expected: {"content-type":"application/json"}
+    actual:   {"accept":"application/json","content-type":"application/json"}
+    entry:    {"out":{"content-type":"application/json"}}
+      at fail (<PROJECT>/sdk/ts/test/vendor/omni/Runner.ts:421:10)
+      at checkresult (<PROJECT>/sdk/ts/test/vendor/omni/Runner.ts:473:11)
+      at runentry (<PROJECT>/sdk/ts/test/vendor/omni/Runner.ts:667:5)
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -1,0 +1,65 @@
+✔ list unwraps items and preserves actual station data including unknown fields (13.681203ms)
+✖ load unwraps the single-object items envelope (5.862135ms)
+✔ empty list and zero limit are valid (2.803929ms)
+✔ lookup uses the @id final segment, not the display stationReference (1.871466ms)
+✔ path values are encoded, preventing path/query injection (3.109051ms)
+✔ HTML 404 is rejected rather than exposed as station data (3.718135ms)
+✔ direct preserves the full metadata envelope and HTTP status (2.153965ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.928795
+
+✖ failing tests:
+
+test at test/contract.test.cjs:40:1
+✖ load unwraps the single-object items envelope (5.862135ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   '@context': 'https://example.org/context',
+  +   items: {
+  +     '@id': 'http://environment.data.gov.uk/flood-monitoring/id/stations/example_1',
+  +     futureField: {
+  +       retained: true
+  +     },
+  +     label: [
+  +       'Example station',
+  +       'Alternative label'
+  +     ],
+  +     lat: 51.75,
+  +     long: -1.25,
+  +     riverName: 'River Example',
+  +     stationReference: 'example 1'
+  -   '@id': 'http://environment.data.gov.uk/flood-monitoring/id/stations/example_1',
+  -   futureField: {
+  -     retained: true
+      },
+  +   meta: {
+  +     publisher: 'Environment Agency'
+  +   }
+  -   label: [
+  -     'Example station',
+  -     'Alternative label'
+  -   ],
+  -   lat: 51.75,
+  -   long: -1.25,
+  -   riverName: 'River Example',
+  -   stationReference: 'example 1'
+    }
+  
+      at TestContext.<anonymous> (<PROJECT>/test/contract.test.cjs:43:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { '@context': 'https://example.org/context', meta: { publisher: 'Environment Agency' }, items: { '@id': 'http://environment.data.gov.uk/flood-monitoring/id/stations/example_1', stationReference: 'example 1', label: [Array], lat: 51.75, long: -1.25, riverName: 'River Example', futureField: [Object] } },
+    expected: { '@id': 'http://environment.data.gov.uk/flood-monitoring/id/stations/example_1', stationReference: 'example 1', label: [ 'Example station', 'Alternative label' ], lat: 51.75, long: -1.25, riverName: 'River Example', futureField: { retained: true } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

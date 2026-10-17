@@ -1,0 +1,55 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-voxgig-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[17:11:27.278] INFO: model                  model-init           
+[17:11:27.281] INFO: model                  build-start          watch:config last:2026-10-17T11:41:27.281Z
+[17:11:27.282] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:11:27.316] INFO: model                  root-keys            watch:config keys: sys
+[17:11:27.316] INFO: model                  build-end            watch:config
+
+[17:11:27.316] INFO: model                  build-start          watch:model last:2026-10-17T11:41:27.316Z
+[17:11:27.316] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:11:27.549] INFO: model                  pre-actions          apidef
+[17:11:27.551] INFO: model/apidef           generate-start       ./def/openapi.json
+[17:11:27.561] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[17:11:27.571] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[17:11:27.572] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[17:11:27.573] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[17:11:27.605] INFO: model/apidef           generate-end         success
+
+[17:11:27.607] INFO: model                  write-model          ./model/sdk.json
+[17:11:27.608] INFO: model                  post-actions         sdkgen
+[17:11:27.609] INFO: model/sdkgen           generate-start       
+[17:11:27.656] INFO: model/jostraca         generate-agentguide-top name:EaFlood
+[17:11:27.657] INFO: model/jostraca         generate-deploy      targets: ts:npm(publish pending)
+[17:11:27.658] INFO: model/jostraca         generate-publish-workflow npm targets: ts
+[17:11:27.667] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[17:11:27.668] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[17:11:27.682] INFO: model/jostraca         generate-main        target:ts
+[17:11:27.694] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[17:11:27.695] INFO: model/jostraca         generate-agentguide  target:ts
+[17:11:27.708] INFO: model/jostraca         generate-test        target:ts
+[17:11:27.831] INFO: model/sdkgen           generate-end         
+[17:11:27.831] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[17:11:27.831] INFO: model                  build-end            watch:model
+
+[17:11:28.199] INFO: model                  model-init           
+[17:11:28.202] INFO: model                  build-start          watch:config last:2026-10-17T11:41:28.202Z
+[17:11:28.203] INFO: model                  build-trigger        watch:config trigger:<config>
+[17:11:28.237] INFO: model                  root-keys            watch:config keys: sys
+[17:11:28.237] INFO: model                  build-end            watch:config
+
+[17:11:28.237] INFO: model                  build-start          watch:model last:2026-10-17T11:41:28.237Z
+[17:11:28.237] INFO: model                  build-trigger        watch:model trigger:<start>
+[17:11:28.629] INFO: model                  pre-actions          
+[17:11:28.645] INFO: model                  post-actions         
+[17:11:28.645] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[17:11:28.646] INFO: model                  build-end            watch:model
+

@@ -1,0 +1,35 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-voxgig-evaluation@0.1.0 test:live
+> node --use-env-proxy examples/live-smoke.cjs
+
+[DOMException [TimeoutError]: EaFloodSDK: list: The operation was aborted due to timeout] {
+  result: {
+    ok: false,
+    status: -1,
+    statusText: '',
+    headers: {},
+    resdata: [],
+    resmatch: { _limit: 2, parameter: 'level' }
+  },
+  spec: {
+    parts: [ 'id', 'stations' ],
+    headers: {
+      accept: 'application/json',
+      'content-type': 'application/json',
+      'user-agent': 'Mozilla/5.0 (compatible; EaFloodSDK/1.0)'
+    },
+    alias: {},
+    base: 'https://environment.data.gov.uk/flood-monitoring',
+    prefix: '',
+    suffix: '',
+    params: {},
+    query: { _limit: 2, parameter: 'level' },
+    step: 'resform',
+    method: 'GET',
+    url: 'https://environment.data.gov.uk/flood-monitoring/id/stations?_limit=2&parameter=level',
+    path: 'id/stations',
+    authquery: []
+  },
+  status: -1
+}

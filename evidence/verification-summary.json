@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-17",
+  "environment": {
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "os": "Linux"
+  },
+  "generatedTests": {
+    "passed": 212,
+    "failed": 0,
+    "skipped": 9
+  },
+  "independentContractTests": {
+    "passed": 7,
+    "failed": 0,
+    "transport": "mock"
+  },
+  "openapiValidation": "passed",
+  "consumerTypeChecks": "passed",
+  "doctor": "passed: no template or component drift",
+  "regeneration": {
+    "passed": true,
+    "filesCompared": 96,
+    "scope": "TypeScript source/tests/docs/manifests"
+  },
+  "liveSmoke": {
+    "final": "passed",
+    "requests": [
+      {
+        "method": "GET",
+        "path": "/id/stations?_limit=2&parameter=level",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "path": "/id/stations/1029TH",
+        "status": 200
+      }
+    ],
+    "priorTimeout": "one later run timed out after 15 seconds; retained in 27-live-final.log"
+  },
+  "cleanCopyVerification": "passed after locked installs from populated npm cache",
+  "sourceDestination": "https://github.com/vaishakh3/ea-flood-sdk",
+  "npmPublication": "not performed",
+  "historicalRun": "Original evaluation before repository metadata changes; see 33-public-verification.log for public-tree checks."
+}
