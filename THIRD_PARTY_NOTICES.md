@@ -1,6 +1,6 @@
 # Third-party notices
 
-The generated SDK, vendored templates and generator components originate from the MIT-licensed Voxgig toolchain. Preserve their existing license and copyright notices. The root LICENSE retains the generated Voxgig notice; project-specific additions are provided under the same MIT terms for review.
+The generated SDK, vendored templates and generator components originate from the MIT-licensed Voxgig toolchain. Preserve their existing license and copyright notices. The root LICENSE retains the generated Voxgig notice; project-specific additions are provided under the same MIT terms, with their additional copyright notice in the root LICENSE and project-owned source templates.
 
 The Environment Agency API, sample responses and provider documentation are separate from the SDK source. They are covered by the Open Government Licence v3.0 where stated by the provider:
 https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

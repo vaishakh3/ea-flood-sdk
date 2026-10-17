@@ -45,6 +45,9 @@ class Config {
 
     'SERVERBLOCK''AUTHBLOCK'headers: 'HEADERS',
 
+    // Project default: station envelopes must be validated before conversion.
+    feature: { envelope: { active: true } },
+
     entity: {
       // #EntityConfigs
     }

@@ -27,3 +27,11 @@ Sanitized historical logs: 15-generate-types.log, 18-generated-tests-final.log, 
 - 34–36: clean public-tree locked dependency installs, full verification, and bounded live smoke.
 - 37: local consumer installation and runtime import passed.
 - 38: final full verification after reviewed documentation corrections, exit 0; 212 generated passes, 9 skips, 7 contracts, schema/type checks, doctor and stable regeneration.
+
+## Final QA after public-source review
+
+39 records a clean clone of public commit 204b5d2, an initially empty npm cache, all three locked installs and the original README workflow. 40 preserves intermediate hardening failures: the stock corpus used synthetic non-API payloads; the new guard initially lost HTTP status; the scaffold checker initially exposed a misplaced handwritten type. These were corrected, not counted as passes.
+
+41 is the final passing verification: 212 generated passes / 9 skips, 40 independent passes, OpenAPI/type checks, exact reviewed-fork check and 100-file repeat generation. 42–43 are the final live positive/edge cases; 44 is the exact root README example executed live with exit 0; 45 checks an installed consumer and the packaged handwritten type. 46 preserves raw doctor's expected exit 1 for the single documented configuration-fragment fork. The wrapper check does not pretend the upstream doctor is clean.
+
+The new logs replace absolute workspace prefixes with `<PROJECT>`/`<QA>` only. Public provider output and failed assertions otherwise remain intact. `final-qa-summary.json` is the current summary; earlier numbered evidence and summaries describe earlier stages.

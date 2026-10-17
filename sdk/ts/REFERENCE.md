@@ -48,7 +48,7 @@ const client = EaFloodSDK.test()
 
 ### Instance Methods
 
-#### `Station(data?: object)`
+#### `Station(entopts?: object)`
 
 Create a new `Station` entity instance.
 
@@ -56,7 +56,7 @@ Create a new `Station` entity instance.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `data` | `object` | Initial entity data. |
+| `entopts` | `object` | Per-entity options; this does not seed record data. |
 
 **Returns:** `StationEntity` instance.
 
@@ -90,7 +90,7 @@ Make a direct HTTP request to any API endpoint.
 | `fetchargs.ctrl.signal` | `AbortSignal` | Aborts the request in flight: `ok` is then `false` and `err.code` is `request_aborted`. |
 
 **Returns:** `Promise<{ ok, status, headers, data }>`. On a failure
-`ok` is `false` and `err` holds the error.
+`ok` is `false`. HTTP failures include `status` and parsed `data`; `err` is optional. Invalid arguments can still reject during preparation.
 
 #### `prepare(fetchargs?: object)`
 
@@ -111,8 +111,7 @@ Every entity operation takes an optional `ctrl` object after its match or
 data, and an `AbortSignal` in `ctrl.signal` cancels the request in flight.
 The operation then rejects with an error whose `code` is
 `request_aborted` and whose `cause` is the signal's reason. A request
-whose signal has already aborted is not sent. `stream()` takes the signal
-as `callopts.signal`, and ends when it aborts.
+whose signal has already aborted is not sent. No default timeout is enabled: pass a fresh `AbortSignal.timeout(15000)` as `ctrl.signal` for a 15-second deadline.
 
 
 ---
@@ -125,17 +124,15 @@ const station = client.Station()
 
 ### Fields
 
+These are the generated optional declarations, not a complete runtime schema. `id` is generic SDK state, not the provider identifier; use `@id`. The provider can return `label` as a string or array. That field is intentionally omitted here and is available in the separate `StationRecord` consumer type. The default envelope guard checks container/record shapes, not every field.
+
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
 | `@id` | `string` | No |  |
 | `catchmentName` | `string` | No |  |
-| `context` | `string` | No |  |
 | `id` | `string` | No |  |
-| `items` | `Record<string, any>` | Yes |  |
-| `label` | `string` | No |  |
 | `lat` | `number` | No |  |
 | `long` | `number` | No |  |
-| `meta` | `Record<string, any>` | No |  |
 | `riverName` | `string` | No |  |
 | `stationReference` | `string` | No |  |
 | `town` | `string` | No |  |
@@ -190,7 +187,8 @@ Return a copy of the entity options.
 
 | Feature | Version | Description |
 | --- | --- | --- |
-| `test` | 0.0.1 | Test transport |
+| `test` | 0.0.1 | Opt-in offline test transport |
+| `envelope` | 0.0.1 | Default-on station list/load container validation |
 
 
 Features are activated via the `feature` option:
@@ -206,9 +204,7 @@ const client = new EaFloodSDK({
 
 ### Configuring features
 
-Each feature is inactive until switched on, and an SDK with no feature
-configured does no feature work at all. Every option below keeps its default
-unless you name it.
+The `test` transport is opt-in. The project-owned `envelope` guard is enabled by default for normal calls and rejects malformed successful list/load containers; explicit offline test mode bypasses it for synthetic fixtures. The guard does not validate every field. It can be explicitly disabled with `feature.envelope.active: false`, which removes this protection. No automatic retry or timeout feature is enabled.
 
 The array form of \`feature\` is significant: several features wrap the
 transport, and the order you list them in is the order they nest.

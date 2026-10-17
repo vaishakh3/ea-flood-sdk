@@ -1,0 +1,27 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:live:edges
+> node --use-env-proxy examples/live-edge-smoke.cjs
+
+{
+  "checkedAt": "2026-10-17T13:36:55.566Z",
+  "passed": true,
+  "checks": [
+    "zero-limit empty list",
+    "nonexistent station rejected as 404"
+  ],
+  "requests": [
+    {
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/stations?_limit=0",
+      "status": 200,
+      "contentType": "application/json",
+      "elapsedMs": 6384
+    },
+    {
+      "url": "https://environment.data.gov.uk/flood-monitoring/id/stations/voxgig-sdk-evaluation-nonexistent-station",
+      "status": 404,
+      "contentType": "text/html",
+      "elapsedMs": 224
+    }
+  ]
+}

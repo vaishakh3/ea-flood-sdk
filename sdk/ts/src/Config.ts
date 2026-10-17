@@ -1,11 +1,13 @@
 
 import { BaseFeature } from './feature/base/BaseFeature'
+import { EnvelopeFeature } from './feature/envelope/EnvelopeFeature'
 import { TestFeature } from './feature/test/TestFeature'
 
 
 
 const FEATURE_CLASS: Record<string, typeof BaseFeature> = {
-   test: TestFeature,
+   envelope: EnvelopeFeature,
+ test: TestFeature,
 
 }
 
@@ -41,7 +43,15 @@ class Config {
 
 
   feature = {
-     test:     {
+     envelope:     {
+      "options": {
+        "active": true
+      },
+      "optspec": {},
+      "strict": false,
+      "transport": "none"
+    },
+ test:     {
       "options": {
         "active": false
       },
@@ -62,6 +72,9 @@ class Config {
     headers: {
       "content-type": "application/json"
     },
+
+    // Project default: station envelopes must be validated before conversion.
+    feature: { envelope: { active: true } },
 
     entity: {
       

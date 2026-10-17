@@ -1,0 +1,1664 @@
+=== DEVELOPMENT ATTEMPT: 04-raw-doctor.log ===
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 doctor
+> cd sdk/.sdk && npx --no-install voxgig-sdkgen doctor
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[18:58:50.864] INFO: sdkgen                 doctor-start         
+[18:58:50.871] INFO: envelope/sdkgen        package-item-unclaimed node_modules/@voxgig/sdkgen/project/sdkgen-package.json: feature `envelope` is not listed in `provides.feature`, so the copy records no `package` provenance — add it to the manifest if the package supplies it
+[18:58:50.907] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/fragment/Config.fragment.ts
+[18:58:50.907] INFO: sdkgen                 doctor-end           .sdk has drifted: 1 forked, 0 edited, 0 stale, 0 missing, 0 outdated, 0 unresolved
+
+.sdk has drifted from the scaffold: 1 forked, 0 edited, 0 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.
+
+
+=== DEVELOPMENT ATTEMPT: 05-expanded-verification.log ===
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 verify
+> npm run generate && npm test && npm run doctor && npm run test:regeneration
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[19:01:47.132] INFO: model                  model-init           
+[19:01:47.135] INFO: model                  build-start          watch:config last:2026-10-17T13:31:47.135Z
+[19:01:47.136] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:01:47.168] INFO: model                  root-keys            watch:config keys: sys
+[19:01:47.169] INFO: model                  build-end            watch:config
+
+[19:01:47.169] INFO: model                  build-start          watch:model last:2026-10-17T13:31:47.169Z
+[19:01:47.169] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:01:47.412] INFO: model                  pre-actions          apidef
+[19:01:47.413] INFO: model/apidef           generate-start       ./def/openapi.json
+[19:01:47.427] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[19:01:47.441] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[19:01:47.442] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[19:01:47.443] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[19:01:47.475] INFO: model/apidef           generate-end         success
+
+[19:01:47.476] INFO: model                  post-actions         sdkgen
+[19:01:47.477] INFO: model/sdkgen           generate-start       
+[19:01:47.517] WARN: model/sdkgen           generate-copies      target ts: 2 file(s) in .sdk differ from what @voxgig/sdkgen 4.35.0 installs: changed in this project, or copied before sdkgen recorded its copies. `npx voxgig-sdkgen doctor` lists them; `npx voxgig-sdkgen package update @voxgig/sdkgen --no-fetch` refreshes them, and refuses before it overwrites a local edit.
+[19:01:47.530] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[19:01:47.531] INFO: model/jostraca         generate-feature     target:ts, feature: envelope
+[19:01:47.531] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[19:01:47.546] INFO: model/jostraca         generate-main        target:ts
+[19:01:47.548] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:envelope
+[19:01:47.548] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[19:01:47.549] INFO: model/jostraca         generate-agentguide  target:ts
+[19:01:47.562] INFO: model/jostraca         generate-test        target:ts
+[19:01:47.711] INFO: model/sdkgen           generate-end         
+[19:01:47.712] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[19:01:47.712] INFO: model                  build-end            watch:model
+
+[19:01:48.061] INFO: model                  model-init           
+[19:01:48.064] INFO: model                  build-start          watch:config last:2026-10-17T13:31:48.064Z
+[19:01:48.065] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:01:48.097] INFO: model                  root-keys            watch:config keys: sys
+[19:01:48.097] INFO: model                  build-end            watch:config
+
+[19:01:48.098] INFO: model                  build-start          watch:model last:2026-10-17T13:31:48.098Z
+[19:01:48.098] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:01:48.494] INFO: model                  pre-actions          
+[19:01:48.512] INFO: model                  post-actions         
+[19:01:48.512] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[19:01:48.513] INFO: model                  build-end            watch:model
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test
+> npm run test:spec && npm run test:generated && npm run test:contract && npm run test:types
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:spec
+> node scripts/validate-spec.cjs
+
+OpenAPI 3.0.3: validated two unauthenticated GET endpoints
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:generated
+> npm test --prefix sdk/ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+
+> @vaishakh3/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (11.111006ms)
+✔ README example (11.836113ms)
+▶ clean
+  ﹣ no credential leaves the SDK in any form (14.631503ms) # no operation of this SDK completes against a plain 200; nothing to sweep
+  ﹣ the sweep can see a leak: clean switched off shows the credential (4.126216ms) # no operation of this SDK completes against a plain 200; nothing to sweep
+✔ clean (19.668881ms)
+▶ definition
+  ✔ station.list GET /id/stations (13.38372ms)
+  ✔ station.load GET /id/stations/{id} (2.97059ms)
+✔ definition (17.206526ms)
+▶ StationDirect
+  ✔ direct-exists (7.576538ms)
+  ✔ direct-load-station (4.055651ms)
+  ✔ direct-list-station (2.208589ms)
+✔ StationDirect (14.901704ms)
+▶ StationEntity
+  ✔ instance (7.691349ms)
+  ✔ stream-error (11.349941ms)
+  ✔ stream-ctrl (4.068791ms)
+  ✔ unexpected (3.342953ms)
+  ﹣ validate (0.280356ms) # feature not present in this SDK: validate
+  ✔ basic (8.006097ms)
+✔ StationEntity (35.893299ms)
+▶ exists
+  ✔ test-mode (6.942808ms)
+✔ exists (7.711799ms)
+▶ feature
+  ✔ at least the test feature is present (0.684717ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.221079ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.086309ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.089343ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.084085ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.063103ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.071026ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.102963ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (33.165189ms)
+  ✔ abort (34.698726ms)
+✔ feature (36.610644ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.473082ms)
+  ✖ this SDK has an operation the corpus can drive (0.53853ms)
+  ﹣ cost (1.586585ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✖ FeatureCorpus (22.458363ms)
+▶ netsim
+  ✔ offline simulation fails the request (10.609742ms)
+  ✔ failStatus simulation surfaces the error status (2.880737ms)
+  ✔ latency simulation delays the request (63.070806ms)
+  ✔ a plain test SDK still works with no net simulation (2.105836ms)
+✔ netsim (79.831962ms)
+▶ omni
+  ✔ runset passes a correct subject (7.858778ms)
+  ✔ runset FAILS a wrong result, with OmniError (3.09811ms)
+  ✔ an expected error is matched, an unexpected one fails (2.278223ms)
+✔ omni (14.247312ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (0.875109ms)
+  ✔ makePoint rejects an operation with no endpoints (0.26919ms)
+  ✔ makePoint returns the single point (0.433784ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.129422ms)
+  ✔ an allow list names whole operations, in any case (0.184434ms)
+  ✔ an allow list names whole methods (0.390029ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.130133ms)
+✔ pipeline:makePoint + makeSpec (3.56952ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (9.311694ms)
+✔ pipeline:direct (9.57816ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.304051ms)
+  ✔ a 4xx response sets result.err and copies headers (0.507483ms)
+  ✔ a 2xx response parses the body and marks ok (0.617207ms)
+  ✔ records to ctrl.explain when explain is on (0.184934ms)
+  ✔ a body-parse exception is captured on result.err (0.213117ms)
+  ✔ short-circuits when a feature already supplied the response (0.096353ms)
+✔ pipeline:makeResponse (2.236741ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.191424ms)
+  ✔ list op wraps resdata into entity instances (0.120629ms)
+  ✔ an empty list yields an empty resdata array (0.16841ms)
+  ✔ short-circuits on a preset result (0.083524ms)
+✔ pipeline:makeResult (0.683325ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.337912ms)
+  ✔ a null transport result becomes a response error (0.4173ms)
+  ✔ an Error transport result is carried on the response (0.2086ms)
+  ✔ a normal transport response is wrapped (0.154379ms)
+  ✔ records the fetchdef to ctrl.explain (0.143813ms)
+  ✔ a fetchdef error surfaces as a response error (0.130524ms)
+  ✔ short-circuits a feature-supplied request (0.08736ms)
+✔ pipeline:makeRequest (1.723649ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.126538ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.284793ms)
+✔ pipeline:makeFetchDef (0.515886ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.172827ms)
+  ✔ done throws the error when not ok (1.928984ms)
+  ✔ done cleans ctrl.explain on success (0.183062ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.264212ms)
+  ✔ makeError records to ctrl.explain (0.317362ms)
+✔ pipeline:makeError + done (3.02396ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.175872ms)
+  ✔ __before__ inserts ahead of the named feature (0.089062ms)
+  ✔ __after__ inserts behind the named feature (0.181089ms)
+  ✔ __replace__ swaps the named feature (0.136362ms)
+✔ pipeline:featureAdd ordering (0.700751ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (2.083654ms)
+  ✔ array form preserves the explicit developer-specified order (1.957696ms)
+  ✔ map form with no test orders names deterministically (1.54951ms)
+✔ pipeline:feature order (5.736006ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (4.268537ms)
+  ✔ a config option does not reach the caller's maps (1.521088ms)
+✔ pipeline:makeOptions (5.899238ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.198024ms)
+  ✔ the probe finds the credential this SDK places (0.101782ms)
+  ✔ the apikey is placed where this API puts it (0.090204ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.156383ms)
+  ✔ an empty apikey drops the credential (0.071075ms)
+  ✔ a public API (no auth block) drops the credential (0.05384ms)
+  ✔ a missing apikey option drops the credential (0.054191ms)
+  ✔ HTTP Basic sends the key with a blank password (0.177093ms)
+✔ pipeline:prepareAuth (1.083579ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.259686ms)
+  ✔ an action is never a query parameter (0.083013ms)
+  ✔ a query argument goes out under its orig (0.136783ms)
+✔ pipeline:prepareQuery (0.591348ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.142301ms)
+  ✔ resultBody skips parsing when the body is absent (0.116363ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.552761ms)
+✔ pipeline:result helpers (0.899665ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:281) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (604.155305ms)
+  ✔ root README.md — every runnable example executes in test mode (60.443694ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (1742.272718ms)
+  ✔ ts/README.md — every runnable example executes in test mode (35.432245ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1030.747294ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (8.625016ms)
+✔ README examples (3483.142167ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.701141ms)
+  ✔ every empty section declares why it is deferred (0.167369ms)
+  ✔ every deferral gives a real reason (0.202351ms)
+  ✔ a deferred section that gained cases is promoted (0.183041ms)
+  ✔ every section has a basic.set list (0.14825ms)
+✔ Corpus (2.324311ms)
+▶ Custom
+  ✔ basic (7.512093ms)
+✔ Custom (8.541632ms)
+▶ PrimaryUtility
+  ✔ exists (1.022007ms)
+  ✔ context-basic (1.328673ms)
+  ✔ method-basic (0.890042ms)
+  ✔ headers-basic (0.760859ms)
+  ✔ auth-basic (3.312068ms)
+  ✔ params-basic (0.658377ms)
+  ✔ query-basic (0.611949ms)
+  ✔ body-basic (0.766167ms)
+  ✔ findparam-basic (1.5759ms)
+  ✔ fullurl-basic (0.562596ms)
+  ✔ operator-basic (0.164915ms)
+  ✔ options-basic (4.125425ms)
+  ✔ spec-basic (2.137674ms)
+  ✔ reqform-basic (0.418942ms)
+  ✔ resform-basic (0.297301ms)
+  ✔ resbasic-basic (0.647922ms)
+  ✔ resheaders-basic (0.322559ms)
+  ✔ resbody-basic (0.408496ms)
+  ✔ resbody-empty (7.804427ms)
+  ✔ request-basic (1.677401ms)
+  ✔ response-basic (0.518169ms)
+  ✔ done-basic (3.492586ms)
+  ✔ error-basic (2.57297ms)
+  ✔ makePoint-basic (0.524769ms)
+  ✔ makeFetchDef (0.275069ms)
+  ✔ makeFetchDef-with-body (0.194649ms)
+  ✔ featureAdd (0.104184ms)
+  ✔ featureHook (0.165035ms)
+  ✔ featureInit (0.168941ms)
+  ✔ featureInit-inactive (0.144315ms)
+  ✔ fetcher-live (1.451355ms)
+  ✔ fetcher-blocked-test-mode (1.875955ms)
+  ✔ makeError-no-throw (0.346184ms)
+  ✔ path-basic (0.318884ms)
+  ✔ clean-corpus (0.209932ms)
+  ✔ clean (0.199396ms)
+✔ PrimaryUtility (54.970688ms)
+▶ struct
+  ✔ exists (1.889375ms)
+  ✔ minor-isnode (0.70086ms)
+  ✔ minor-ismap (0.314587ms)
+  ✔ minor-islist (0.258884ms)
+  ✔ minor-iskey (0.282479ms)
+  ✔ minor-strkey (0.223932ms)
+  ✔ minor-isempty (0.254368ms)
+  ✔ minor-isfunc (0.326214ms)
+  ✔ minor-clone (0.445051ms)
+  ✔ minor-edge-clone (0.874068ms)
+  ✔ minor-filter (0.295569ms)
+  ✔ minor-flatten (0.355017ms)
+  ✔ minor-escre (0.163883ms)
+  ✔ minor-escurl (0.177133ms)
+  ✔ minor-stringify (0.459913ms)
+  ✔ minor-edge-stringify (6.478509ms)
+  ✔ minor-jsonify (0.500664ms)
+  ✔ minor-edge-jsonify (0.083444ms)
+  ✔ minor-pathify (0.887588ms)
+  ✔ minor-items (0.34376ms)
+  ✔ minor-edge-items (0.167388ms)
+  ✔ minor-getelem (0.467765ms)
+  ✔ minor-edge-getelem (0.120308ms)
+  ✔ minor-getprop (0.499952ms)
+  ✔ minor-edge-getprop (0.140148ms)
+  ✔ minor-setprop (0.272555ms)
+  ✔ minor-edge-setprop (0.129322ms)
+  ✔ minor-delprop (0.349539ms)
+  ✔ minor-edge-delprop (0.134519ms)
+  ✔ nullsem (1.701316ms)
+  ✔ minor-haskey (0.320926ms)
+  ✔ minor-keysof (0.110534ms)
+  ✔ minor-edge-keysof (0.065498ms)
+  ✔ minor-join (0.418832ms)
+  ✔ minor-typename (0.180518ms)
+  ✔ minor-typify (0.158265ms)
+  ✔ minor-edge-typify (0.118275ms)
+  ✔ minor-size (0.132757ms)
+  ✔ minor-slice (0.55907ms)
+  ✔ minor-pad (0.328948ms)
+  ✔ minor-setpath (0.524068ms)
+  ✔ minor-edge-setpath (0.123353ms)
+  ✔ walk-log (0.347596ms)
+  ✔ walk-basic (0.523968ms)
+  ✔ walk-depth (0.256371ms)
+  ✔ walk-copy (0.23551ms)
+  ✔ merge-basic (0.122832ms)
+  ✔ merge-cases (0.731046ms)
+  ✔ merge-array (0.33711ms)
+  ✔ merge-integrity (0.256731ms)
+  ✔ merge-depth (0.449498ms)
+  ✔ merge-special (0.254378ms)
+  ✔ getpath-basic (0.449367ms)
+  ✔ getpath-relative (0.27652ms)
+  ✔ getpath-special (0.496087ms)
+  ✔ getpath-handler (0.153598ms)
+  ✔ inject-basic (0.136282ms)
+  ✔ inject-string (0.662394ms)
+  ✔ inject-deep (1.730459ms)
+  ✔ transform-basic (0.234158ms)
+  ✔ transform-paths (1.77144ms)
+  ✔ transform-cmds (2.713228ms)
+  ✔ transform-each (7.714204ms)
+  ✔ transform-pack (4.133147ms)
+  ✔ transform-ref (3.985318ms)
+  ✔ transform-format (2.450268ms)
+  ✔ transform-apply (0.571258ms)
+  ✔ transform-edge-apply (0.232806ms)
+  ✔ transform-modify (0.255179ms)
+  ✔ transform-extra (0.236501ms)
+  ✔ transform-funcval (0.233217ms)
+  ✔ validate-basic (3.011882ms)
+  ✔ validate-child (2.689173ms)
+  ✔ validate-one (2.379423ms)
+  ✔ validate-exact (2.059508ms)
+  ✔ validate-invalid (0.558109ms)
+  ✔ validate-special (1.5895ms)
+  ✔ validate-edge (0.521745ms)
+  ✔ validate-custom (0.300476ms)
+  ✔ select-basic (2.078697ms)
+  ✔ select-operators (10.974985ms)
+  ✔ select-edge (8.542524ms)
+  ✔ select-alts (1.710239ms)
+  ✔ json-builder (0.456388ms)
+✔ struct (106.860993ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 209
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 11
+ℹ todo 0
+ℹ duration_ms 5487.512982
+
+✖ failing tests:
+
+test at test/feature/Corpus.test.ts:201:7
+✖ this SDK has an operation the corpus can drive (0.53853ms)
+  AssertionError [ERR_ASSERTION]: no declared operation completed against a plain 200 — the corpus cannot exercise a feature without one
+      at TestContext.<anonymous> (<PROJECT>/sdk/ts/test/feature/Corpus.test.ts:202:7)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at async Suite.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+
+=== DEVELOPMENT ATTEMPT: 06-expanded-verification.log ===
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 verify
+> npm run generate && npm test && npm run doctor && npm run test:regeneration
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[19:02:49.243] INFO: model                  model-init           
+[19:02:49.246] INFO: model                  build-start          watch:config last:2026-10-17T13:32:49.246Z
+[19:02:49.246] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:02:49.286] INFO: model                  root-keys            watch:config keys: sys
+[19:02:49.286] INFO: model                  build-end            watch:config
+
+[19:02:49.286] INFO: model                  build-start          watch:model last:2026-10-17T13:32:49.286Z
+[19:02:49.286] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:02:49.556] INFO: model                  pre-actions          apidef
+[19:02:49.557] INFO: model/apidef           generate-start       ./def/openapi.json
+[19:02:49.570] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[19:02:49.583] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[19:02:49.583] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[19:02:49.585] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[19:02:49.621] INFO: model/apidef           generate-end         success
+
+[19:02:49.623] INFO: model                  post-actions         sdkgen
+[19:02:49.624] INFO: model/sdkgen           generate-start       
+[19:02:49.667] WARN: model/sdkgen           generate-copies      target ts: 2 file(s) in .sdk differ from what @voxgig/sdkgen 4.35.0 installs: changed in this project, or copied before sdkgen recorded its copies. `npx voxgig-sdkgen doctor` lists them; `npx voxgig-sdkgen package update @voxgig/sdkgen --no-fetch` refreshes them, and refuses before it overwrites a local edit.
+[19:02:49.679] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[19:02:49.680] INFO: model/jostraca         generate-feature     target:ts, feature: envelope
+[19:02:49.680] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[19:02:49.698] INFO: model/jostraca         generate-main        target:ts
+[19:02:49.700] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:envelope
+[19:02:49.700] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[19:02:49.700] INFO: model/jostraca         generate-agentguide  target:ts
+[19:02:49.718] INFO: model/jostraca         generate-test        target:ts
+[19:02:49.876] INFO: model/sdkgen           generate-end         
+[19:02:49.877] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[19:02:49.877] INFO: model                  build-end            watch:model
+
+[19:02:50.252] INFO: model                  model-init           
+[19:02:50.256] INFO: model                  build-start          watch:config last:2026-10-17T13:32:50.255Z
+[19:02:50.256] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:02:50.292] INFO: model                  root-keys            watch:config keys: sys
+[19:02:50.293] INFO: model                  build-end            watch:config
+
+[19:02:50.293] INFO: model                  build-start          watch:model last:2026-10-17T13:32:50.293Z
+[19:02:50.293] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:02:50.765] INFO: model                  pre-actions          
+[19:02:50.784] INFO: model                  post-actions         
+[19:02:50.785] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[19:02:50.785] INFO: model                  build-end            watch:model
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test
+> npm run test:spec && npm run test:generated && npm run test:contract && npm run test:types
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:spec
+> node scripts/validate-spec.cjs
+
+OpenAPI 3.0.3: validated two unauthenticated GET endpoints
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:generated
+> npm test --prefix sdk/ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+
+> @vaishakh3/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (13.964174ms)
+✔ README example (15.068754ms)
+clean: swept 718 surface(s), 0 leak(s)
+▶ clean
+  ✔ no credential leaves the SDK in any form (117.384391ms)
+  ✔ the sweep can see a leak: clean switched off shows the credential (5.735806ms)
+✔ clean (124.114363ms)
+▶ definition
+  ✔ station.list GET /id/stations (15.75963ms)
+  ✔ station.load GET /id/stations/{id} (3.764509ms)
+✔ definition (20.455953ms)
+▶ StationDirect
+  ✔ direct-exists (7.081434ms)
+  ✔ direct-load-station (4.378878ms)
+  ✔ direct-list-station (2.870331ms)
+✔ StationDirect (15.609573ms)
+▶ StationEntity
+  ✔ instance (7.155094ms)
+  ✔ stream-error (11.177767ms)
+  ✔ stream-ctrl (5.077629ms)
+  ✔ unexpected (3.620506ms)
+  ﹣ validate (0.368978ms) # feature not present in this SDK: validate
+  ✔ basic (8.920305ms)
+✔ StationEntity (37.671494ms)
+▶ exists
+  ✔ test-mode (7.209925ms)
+✔ exists (7.972738ms)
+▶ feature
+  ✔ at least the test feature is present (0.565179ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.31615ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.094571ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.068902ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.091916ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.063134ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.070094ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.125036ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (33.780857ms)
+  ✔ abort (35.799895ms)
+✔ feature (37.240124ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.50496ms)
+  ✔ this SDK has an operation the corpus can drive (0.217052ms)
+  ﹣ cost (1.822075ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✔ FeatureCorpus (27.118315ms)
+▶ netsim
+  ✔ offline simulation fails the request (10.480842ms)
+  ✔ failStatus simulation surfaces the error status (2.347486ms)
+  ✔ latency simulation delays the request (62.845012ms)
+  ✔ a plain test SDK still works with no net simulation (2.496237ms)
+✔ netsim (79.429176ms)
+▶ omni
+  ✔ runset passes a correct subject (7.514628ms)
+  ✔ runset FAILS a wrong result, with OmniError (2.598098ms)
+  ✔ an expected error is matched, an unexpected one fails (2.047ms)
+✔ omni (13.124337ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (1.178991ms)
+  ✔ makePoint rejects an operation with no endpoints (0.28274ms)
+  ✔ makePoint returns the single point (0.198585ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.253016ms)
+  ✔ an allow list names whole operations, in any case (0.18856ms)
+  ✔ an allow list names whole methods (0.533212ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.139056ms)
+✔ pipeline:makePoint + makeSpec (3.951747ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (10.263038ms)
+✔ pipeline:direct (10.549214ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.341537ms)
+  ✔ a 4xx response sets result.err and copies headers (0.509337ms)
+  ✔ a 2xx response parses the body and marks ok (0.715943ms)
+  ✔ records to ctrl.explain when explain is on (0.20929ms)
+  ✔ a body-parse exception is captured on result.err (0.224984ms)
+  ✔ short-circuits when a feature already supplied the response (0.097574ms)
+✔ pipeline:makeResponse (2.400094ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.305965ms)
+  ✔ list op wraps resdata into entity instances (0.130674ms)
+  ✔ an empty list yields an empty resdata array (0.118005ms)
+  ✔ short-circuits on a preset result (0.077164ms)
+✔ pipeline:makeResult (0.810594ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.328438ms)
+  ✔ a null transport result becomes a response error (0.506132ms)
+  ✔ an Error transport result is carried on the response (0.449798ms)
+  ✔ a normal transport response is wrapped (0.18861ms)
+  ✔ records the fetchdef to ctrl.explain (0.184995ms)
+  ✔ a fetchdef error surfaces as a response error (0.142442ms)
+  ✔ short-circuits a feature-supplied request (0.089203ms)
+✔ pipeline:makeRequest (2.127108ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.12122ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.287047ms)
+✔ pipeline:makeFetchDef (0.533732ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.182421ms)
+  ✔ done throws the error when not ok (1.734716ms)
+  ✔ done cleans ctrl.explain on success (0.191345ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.243702ms)
+  ✔ makeError records to ctrl.explain (0.333896ms)
+✔ pipeline:makeError + done (2.84938ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.200889ms)
+  ✔ __before__ inserts ahead of the named feature (0.096333ms)
+  ✔ __after__ inserts behind the named feature (0.149682ms)
+  ✔ __replace__ swaps the named feature (0.16804ms)
+✔ pipeline:featureAdd ordering (0.778235ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (2.135761ms)
+  ✔ array form preserves the explicit developer-specified order (1.790689ms)
+  ✔ map form with no test orders names deterministically (1.557292ms)
+✔ pipeline:feature order (5.624381ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (4.602584ms)
+  ✔ a config option does not reach the caller's maps (1.32688ms)
+✔ pipeline:makeOptions (6.047259ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.184945ms)
+  ✔ the probe finds the credential this SDK places (0.111926ms)
+  ✔ the apikey is placed where this API puts it (0.095912ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.117865ms)
+  ✔ an empty apikey drops the credential (0.062042ms)
+  ✔ a public API (no auth block) drops the credential (0.057005ms)
+  ✔ a missing apikey option drops the credential (0.054811ms)
+  ✔ HTTP Basic sends the key with a blank password (0.136783ms)
+✔ pipeline:prepareAuth (1.087475ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.270632ms)
+  ✔ an action is never a query parameter (0.133708ms)
+  ✔ a query argument goes out under its orig (0.143272ms)
+✔ pipeline:prepareQuery (0.630456ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.096614ms)
+  ✔ resultBody skips parsing when the body is absent (0.076183ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.555054ms)
+✔ pipeline:result helpers (0.826637ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:280) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (607.942886ms)
+  ✔ root README.md — every runnable example executes in test mode (63.966256ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (1776.817259ms)
+  ✔ ts/README.md — every runnable example executes in test mode (40.060812ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1044.475152ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (11.22069ms)
+✔ README examples (3545.778609ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.734511ms)
+  ✔ every empty section declares why it is deferred (0.218174ms)
+  ✔ every deferral gives a real reason (0.158015ms)
+  ✔ a deferred section that gained cases is promoted (0.128321ms)
+  ✔ every section has a basic.set list (0.147339ms)
+✔ Corpus (2.376789ms)
+▶ Custom
+  ✔ basic (8.368966ms)
+✔ Custom (9.201942ms)
+▶ PrimaryUtility
+  ✔ exists (1.503823ms)
+  ✔ context-basic (1.466057ms)
+  ✔ method-basic (1.12453ms)
+  ✔ headers-basic (0.921939ms)
+  ✔ auth-basic (3.631863ms)
+  ✔ params-basic (0.536536ms)
+  ✔ query-basic (0.627982ms)
+  ✔ body-basic (0.822631ms)
+  ✔ findparam-basic (0.469938ms)
+  ✔ fullurl-basic (0.557578ms)
+  ✔ operator-basic (1.066333ms)
+  ✔ options-basic (4.800217ms)
+  ✔ spec-basic (2.642033ms)
+  ✔ reqform-basic (0.447855ms)
+  ✔ resform-basic (0.575355ms)
+  ✔ resbasic-basic (1.01705ms)
+  ✔ resheaders-basic (0.32353ms)
+  ✔ resbody-basic (0.283601ms)
+  ✔ resbody-empty (7.975152ms)
+  ✔ request-basic (1.755236ms)
+  ✔ response-basic (0.468065ms)
+  ✔ done-basic (3.353619ms)
+  ✔ error-basic (2.569576ms)
+  ✔ makePoint-basic (0.548985ms)
+  ✔ makeFetchDef (0.295168ms)
+  ✔ makeFetchDef-with-body (0.211914ms)
+  ✔ featureAdd (0.110644ms)
+  ✔ featureHook (0.239796ms)
+  ✔ featureInit (0.132496ms)
+  ✔ featureInit-inactive (0.085147ms)
+  ✔ fetcher-live (2.00713ms)
+  ✔ fetcher-blocked-test-mode (2.045257ms)
+  ✔ makeError-no-throw (0.390179ms)
+  ✔ path-basic (0.370911ms)
+  ✔ clean-corpus (0.306415ms)
+  ✔ clean (0.210473ms)
+✔ PrimaryUtility (59.621516ms)
+▶ struct
+  ✔ exists (1.803859ms)
+  ✔ minor-isnode (2.419913ms)
+  ✔ minor-ismap (0.416849ms)
+  ✔ minor-islist (0.201599ms)
+  ✔ minor-iskey (0.317341ms)
+  ✔ minor-strkey (0.37746ms)
+  ✔ minor-isempty (0.345433ms)
+  ✔ minor-isfunc (0.252886ms)
+  ✔ minor-clone (0.489537ms)
+  ✔ minor-edge-clone (0.773308ms)
+  ✔ minor-filter (0.334337ms)
+  ✔ minor-flatten (0.218534ms)
+  ✔ minor-escre (0.120649ms)
+  ✔ minor-escurl (0.253286ms)
+  ✔ minor-stringify (0.443228ms)
+  ✔ minor-edge-stringify (7.387248ms)
+  ✔ minor-jsonify (0.531329ms)
+  ✔ minor-edge-jsonify (0.082663ms)
+  ✔ minor-pathify (1.457784ms)
+  ✔ minor-items (0.35726ms)
+  ✔ minor-edge-items (0.155621ms)
+  ✔ minor-getelem (0.459222ms)
+  ✔ minor-edge-getelem (0.091867ms)
+  ✔ minor-getprop (0.710294ms)
+  ✔ minor-edge-getprop (0.129071ms)
+  ✔ minor-setprop (0.537077ms)
+  ✔ minor-edge-setprop (0.319249ms)
+  ✔ minor-delprop (0.466001ms)
+  ✔ minor-edge-delprop (0.140839ms)
+  ✔ nullsem (2.159086ms)
+  ✔ minor-haskey (0.294167ms)
+  ✔ minor-keysof (0.115672ms)
+  ✔ minor-edge-keysof (0.070575ms)
+  ✔ minor-join (0.662814ms)
+  ✔ minor-typename (0.213898ms)
+  ✔ minor-typify (0.159707ms)
+  ✔ minor-edge-typify (0.163833ms)
+  ✔ minor-size (0.202861ms)
+  ✔ minor-slice (0.66016ms)
+  ✔ minor-pad (0.404872ms)
+  ✔ minor-setpath (0.589064ms)
+  ✔ minor-edge-setpath (0.171434ms)
+  ✔ walk-log (0.43079ms)
+  ✔ walk-basic (0.582194ms)
+  ✔ walk-depth (0.231714ms)
+  ✔ walk-copy (0.23566ms)
+  ✔ merge-basic (0.136483ms)
+  ✔ merge-cases (0.753379ms)
+  ✔ merge-array (0.352023ms)
+  ✔ merge-integrity (0.268739ms)
+  ✔ merge-depth (0.445621ms)
+  ✔ merge-special (0.29643ms)
+  ✔ getpath-basic (0.629835ms)
+  ✔ getpath-relative (0.402567ms)
+  ✔ getpath-special (0.364421ms)
+  ✔ getpath-handler (0.156101ms)
+  ✔ inject-basic (0.140959ms)
+  ✔ inject-string (0.694681ms)
+  ✔ inject-deep (2.006649ms)
+  ✔ transform-basic (0.307477ms)
+  ✔ transform-paths (1.89953ms)
+  ✔ transform-cmds (2.954737ms)
+  ✔ transform-each (7.942112ms)
+  ✔ transform-pack (4.27709ms)
+  ✔ transform-ref (5.029117ms)
+  ✔ transform-format (1.506016ms)
+  ✔ transform-apply (0.514004ms)
+  ✔ transform-edge-apply (0.170233ms)
+  ✔ transform-modify (0.271783ms)
+  ✔ transform-extra (0.263962ms)
+  ✔ transform-funcval (0.226957ms)
+  ✔ validate-basic (3.633535ms)
+  ✔ validate-child (2.757694ms)
+  ✔ validate-one (3.222114ms)
+  ✔ validate-exact (1.731981ms)
+  ✔ validate-invalid (0.782311ms)
+  ✔ validate-special (1.780373ms)
+  ✔ validate-edge (0.470338ms)
+  ✔ validate-custom (0.284974ms)
+  ✔ select-basic (2.147458ms)
+  ✔ select-operators (17.026921ms)
+  ✔ select-edge (7.015717ms)
+  ✔ select-alts (1.570112ms)
+  ✔ json-builder (0.312835ms)
+✔ struct (125.492501ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 212
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 9
+ℹ todo 0
+ℹ duration_ms 5861.346399
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:contract
+> node --test test/*.test.cjs
+
+✔ list unwraps items and preserves actual station data including unknown fields (19.27561ms)
+✔ load unwraps the single-object items envelope (5.817107ms)
+✔ empty list and zero limit are valid (3.715757ms)
+✔ lookup uses the @id final segment, not the display stationReference (3.52922ms)
+✔ path values are encoded, preventing path/query injection (3.773192ms)
+✔ HTML 404 is rejected rather than exposed as station data (5.40159ms)
+✔ direct preserves the full metadata envelope and HTTP status (4.465591ms)
+✔ root README example uses valid calls and decodes the lookup URI once (17.512962ms)
+✔ root README example exits nonzero on a request error (5.756397ms)
+✔ reviewed station field tables match the generated declarations (1.62279ms)
+✖ list rejects malformed successful envelope {} (20.482742ms)
+✖ list rejects malformed successful envelope {"items":null} (4.194778ms)
+✖ list rejects malformed successful envelope {"items":{}} (3.644462ms)
+✖ list rejects malformed successful envelope {"items":"abc"} (3.55652ms)
+✖ list rejects malformed successful envelope {"items":[null]} (3.712973ms)
+✖ list rejects malformed successful envelope {"items":[7]} (3.507407ms)
+✖ list rejects malformed successful envelope {"items":[[]]} (3.880301ms)
+✔ list preserves HTTP 404 errors (3.671822ms)
+✔ list preserves HTTP 429 errors (3.220441ms)
+✔ list preserves HTTP 500 errors (3.666004ms)
+✔ list rejects malformed JSON (3.055567ms)
+✔ list rejects successful HTML (1.758191ms)
+✔ list pre-aborted signal prevents transmission (2.212916ms)
+✔ list caller timeout terminates a stalled transport (21.541584ms)
+✖ load rejects malformed successful envelope {} (2.357951ms)
+✖ load rejects malformed successful envelope {"items":null} (1.49487ms)
+✖ load rejects malformed successful envelope {"items":[]} (1.345928ms)
+✖ load rejects malformed successful envelope {"items":"abc"} (2.160848ms)
+✖ load rejects malformed successful envelope {"items":7} (1.268823ms)
+✔ load preserves HTTP 404 errors (1.311467ms)
+✔ load preserves HTTP 429 errors (1.345698ms)
+✔ load preserves HTTP 500 errors (1.135956ms)
+✔ load rejects malformed JSON (1.163458ms)
+✔ load rejects successful HTML (1.689589ms)
+✔ load pre-aborted signal prevents transmission (1.096558ms)
+✔ load caller timeout terminates a stalled transport (21.230583ms)
+✔ empty and whitespace lookup IDs fail without sending (1.392708ms)
+✔ list returns new records; load populates and returns its calling entity (4.151784ms)
+✔ direct HTTP failures expose status/data and may omit err (3.815796ms)
+✔ direct deliberately preserves unvalidated response envelopes (1.236896ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 28
+ℹ fail 12
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 242.976335
+
+✖ failing tests:
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {} (20.482742ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":null} (4.194778ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":{}} (3.644462ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":"abc"} (3.55652ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":[null]} (3.712973ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":[7]} (3.507407ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ list rejects malformed successful envelope {"items":[[]]} (3.880301ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items array of station objects
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items array of station objects
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.list (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:155:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ load rejects malformed successful envelope {} (2.357951ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items station object
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items station object
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.load (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:61:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ load rejects malformed successful envelope {"items":null} (1.49487ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items station object
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items station object
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.load (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:61:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ load rejects malformed successful envelope {"items":[]} (1.345928ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items station object
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items station object
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.load (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:61:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ load rejects malformed successful envelope {"items":"abc"} (2.160848ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items station object
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items station object
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.load (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:61:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/robustness.test.cjs:18:31
+✖ load rejects malformed successful envelope {"items":7} (1.268823ms)
+  AssertionError [ERR_ASSERTION]: The validation function is expected to return "true". Received false
+  
+  Caught error:
+  
+  Error: Expected an Environment Agency items station object
+      at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: Expected an Environment Agency items station object
+        at Context.error (<PROJECT>/sdk/ts/dist/Context.js:84:16)
+        at EnvelopeFeature.PreResult (<PROJECT>/sdk/ts/dist/feature/envelope/EnvelopeFeature.js:34:23)
+        at featureHook (<PROJECT>/sdk/ts/dist/utility/FeatureHookUtility.js:14:29)
+        at StationEntity.load (<PROJECT>/sdk/ts/dist/entity/StationEntity.js:61:20)
+        at async waitForActual (node:assert:646:5)
+        at async strict.rejects (node:assert:769:25)
+        at async TestContext.<anonymous> (<PROJECT>/test/robustness.test.cjs:20:5)
+        at async Test.run (node:internal/test_runner/test:1389:7)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:960:7),
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+
+=== DEVELOPMENT ATTEMPT: 07-expanded-verification.log ===
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 verify
+> npm run generate && npm test && npm run doctor && npm run test:regeneration
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 generate
+> node scripts/sync-spec.cjs && npm run generate --prefix sdk/.sdk
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> build-ea-flood-sdk@0.0.1 generate
+> node build/docgen.js && tsc --build src && voxgig-model model/sdk.aontu && voxgig-model test/test.aontu
+
+[19:04:24.333] INFO: model                  model-init           
+[19:04:24.338] INFO: model                  build-start          watch:config last:2026-10-17T13:34:24.337Z
+[19:04:24.338] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:04:24.382] INFO: model                  root-keys            watch:config keys: sys
+[19:04:24.382] INFO: model                  build-end            watch:config
+
+[19:04:24.383] INFO: model                  build-start          watch:model last:2026-10-17T13:34:24.383Z
+[19:04:24.383] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:04:24.656] INFO: model                  pre-actions          apidef
+[19:04:24.657] INFO: model/apidef           generate-start       ./def/openapi.json
+[19:04:24.669] INFO: model/apidef           root-keys            openapi, info, servers, security, externalDocs, paths, components
+[19:04:24.679] INFO: model/apidef           heuristic01          entities=1 paths=2 methods=2 tags=1 cmps=1 entity-paths=2 entity-ops=2
+[19:04:24.679] INFO: model/apidef           metrics              epr=0.500  emr=0.500  (entity=1 paths=2 methods=2)
+[19:04:24.681] INFO: model/apidef           generate-guide       ./model/guide/guide.aontu
+[19:04:24.712] INFO: model/apidef           generate-end         success
+
+[19:04:24.714] INFO: model                  post-actions         sdkgen
+[19:04:24.715] INFO: model/sdkgen           generate-start       
+[19:04:24.755] WARN: model/sdkgen           generate-copies      target ts: 2 file(s) in .sdk differ from what @voxgig/sdkgen 4.35.0 installs: changed in this project, or copied before sdkgen recorded its copies. `npx voxgig-sdkgen doctor` lists them; `npx voxgig-sdkgen package update @voxgig/sdkgen --no-fetch` refreshes them, and refuses before it overwrites a local edit.
+[19:04:24.766] INFO: model/jostraca         generate-entity      target:ts, entity: station
+[19:04:24.767] INFO: model/jostraca         generate-feature     target:ts, feature: envelope
+[19:04:24.768] INFO: model/jostraca         generate-feature     target:ts, feature: test
+[19:04:24.783] INFO: model/jostraca         generate-main        target:ts
+[19:04:24.785] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:envelope
+[19:04:24.785] INFO: model/jostraca         generate-agentguide-feature target:ts, feature:test
+[19:04:24.785] INFO: model/jostraca         generate-agentguide  target:ts
+[19:04:24.798] INFO: model/jostraca         generate-test        target:ts
+[19:04:24.952] INFO: model/sdkgen           generate-end         
+[19:04:24.952] INFO: model                  root-keys            watch:model keys: def;main;name;origin;name__orig;Name;name_;name-;NAME;const
+[19:04:24.952] INFO: model                  build-end            watch:model
+
+[19:04:25.320] INFO: model                  model-init           
+[19:04:25.323] INFO: model                  build-start          watch:config last:2026-10-17T13:34:25.323Z
+[19:04:25.324] INFO: model                  build-trigger        watch:config trigger:<config>
+[19:04:25.360] INFO: model                  root-keys            watch:config keys: sys
+[19:04:25.360] INFO: model                  build-end            watch:config
+
+[19:04:25.360] INFO: model                  build-start          watch:model last:2026-10-17T13:34:25.360Z
+[19:04:25.361] INFO: model                  build-trigger        watch:model trigger:<start>
+[19:04:25.807] INFO: model                  pre-actions          
+[19:04:25.824] INFO: model                  post-actions         
+[19:04:25.824] INFO: model                  root-keys            watch:model keys: feature;primary;struct
+[19:04:25.825] INFO: model                  build-end            watch:model
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test
+> npm run test:spec && npm run test:generated && npm run test:contract && npm run test:types
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:spec
+> node scripts/validate-spec.cjs
+
+OpenAPI 3.0.3: validated two unauthenticated GET endpoints
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:generated
+> npm test --prefix sdk/ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 pretest
+> npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> @vaishakh3/ea-flood-sdk@0.0.1 build
+> node -e "for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })" dist dist-test && tsc --build src test
+
+
+> @vaishakh3/ea-flood-sdk@0.0.1 test
+> node --enable-source-maps --test-concurrency=1 --test "dist-test/**/*.test.js"
+
+▶ README example
+  ✔ lead-language quickstart runs in test mode (14.209691ms)
+✔ README example (15.099059ms)
+clean: swept 718 surface(s), 0 leak(s)
+▶ clean
+  ✔ no credential leaves the SDK in any form (152.39888ms)
+  ✔ the sweep can see a leak: clean switched off shows the credential (6.637567ms)
+✔ clean (159.978684ms)
+▶ definition
+  ✔ station.list GET /id/stations (14.951082ms)
+  ✔ station.load GET /id/stations/{id} (4.246219ms)
+✔ definition (20.207247ms)
+▶ StationDirect
+  ✔ direct-exists (7.258091ms)
+  ✔ direct-load-station (7.241506ms)
+  ✔ direct-list-station (2.615909ms)
+✔ StationDirect (18.248323ms)
+▶ StationEntity
+  ✔ instance (9.034485ms)
+  ✔ stream-error (14.39972ms)
+  ✔ stream-ctrl (5.36802ms)
+  ✔ unexpected (4.924326ms)
+  ﹣ validate (0.338508ms) # feature not present in this SDK: validate
+  ✔ basic (10.316301ms)
+✔ StationEntity (45.781561ms)
+▶ exists
+  ✔ test-mode (13.080213ms)
+✔ exists (14.013518ms)
+▶ feature
+  ✔ at least the test feature is present (0.832825ms)
+  ▶ abort
+    ﹣ a caller abort cancels a request the timeout feature wraps (0.369243ms) # this SDK was generated without the timeout feature
+    ﹣ the deadline still fires while the caller signal stays live (0.187115ms) # this SDK was generated without the timeout feature
+    ﹣ an aborted request is not retried (0.075081ms) # this SDK was generated without the retry feature
+    ﹣ an abort whose reason is not an Error is not retried either (0.11564ms) # this SDK was generated without the retry feature
+    ﹣ an abort during the retry backoff ends it (0.073939ms) # this SDK was generated without the retry feature
+    ﹣ an abort during simulated latency ends the request before the transport (0.06765ms) # this SDK was generated without the netsim feature
+    ﹣ an abort while waiting for a rate-limit token ends the wait (0.1085ms) # this SDK was generated without the ratelimit feature
+    ✔ the test transport aborts a request in flight (34.839919ms)
+  ✔ abort (37.028951ms)
+✔ feature (38.909598ms)
+▶ FeatureCorpus
+  ✔ the corpus carries a feature section (0.604349ms)
+  ✔ this SDK has an operation the corpus can drive (0.165253ms)
+  ﹣ cost (1.601117ms) # this SDK was generated without the cost feature
+  ℹ feature.cost: inert (this SDK does not generate the feature)
+✔ FeatureCorpus (24.508375ms)
+▶ netsim
+  ✔ offline simulation fails the request (12.872943ms)
+  ✔ failStatus simulation surfaces the error status (3.072361ms)
+  ✔ latency simulation delays the request (63.477242ms)
+  ✔ a plain test SDK still works with no net simulation (2.545896ms)
+✔ netsim (83.211612ms)
+▶ omni
+  ✔ runset passes a correct subject (7.926444ms)
+  ✔ runset FAILS a wrong result, with OmniError (2.747313ms)
+  ✔ an expected error is matched, an unexpected one fails (2.25593ms)
+✔ omni (13.918022ms)
+▶ pipeline:makePoint + makeSpec
+  ✔ makePoint rejects a disallowed operation (1.135484ms)
+  ✔ makePoint rejects an operation with no endpoints (0.265149ms)
+  ✔ makePoint returns the single point (0.531919ms)
+  ✔ makePoint short-circuits a feature-supplied point (0.56658ms)
+  ✔ an allow list names whole operations, in any case (0.271498ms)
+  ✔ an allow list names whole methods (0.490759ms)
+  ✔ makeSpec short-circuits a feature-supplied spec (0.300951ms)
+✔ pipeline:makePoint + makeSpec (5.250022ms)
+▶ pipeline:direct
+  ✔ direct and graphql answer a method allow.method refuses with a result map (13.128665ms)
+✔ pipeline:direct (13.455864ms)
+▶ pipeline:makeResponse
+  ✔ guards missing spec / response / result (0.397963ms)
+  ✔ a 4xx response sets result.err and copies headers (0.966226ms)
+  ✔ a 2xx response parses the body and marks ok (0.726485ms)
+  ✔ records to ctrl.explain when explain is on (0.269955ms)
+  ✔ a body-parse exception is captured on result.err (0.447105ms)
+  ✔ short-circuits when a feature already supplied the response (0.116591ms)
+✔ pipeline:makeResponse (3.714291ms)
+▶ pipeline:makeResult
+  ✔ guards missing spec / result (0.19747ms)
+  ✔ list op wraps resdata into entity instances (0.187555ms)
+  ✔ an empty list yields an empty resdata array (0.16392ms)
+  ✔ short-circuits on a preset result (0.202516ms)
+✔ pipeline:makeResult (0.897074ms)
+▶ pipeline:makeRequest
+  ✔ guards a missing spec (0.399726ms)
+  ✔ a null transport result becomes a response error (0.576244ms)
+  ✔ an Error transport result is carried on the response (0.22522ms)
+  ✔ a normal transport response is wrapped (0.253401ms)
+  ✔ records the fetchdef to ctrl.explain (0.155438ms)
+  ✔ a fetchdef error surfaces as a response error (0.133576ms)
+  ✔ short-circuits a feature-supplied request (0.090422ms)
+✔ pipeline:makeRequest (2.124162ms)
+▶ pipeline:makeFetchDef
+  ✔ guards a missing spec (0.215055ms)
+  ✔ serialises an object body to JSON and inits a missing result (0.428568ms)
+✔ pipeline:makeFetchDef (0.779362ms)
+▶ pipeline:makeError + done
+  ✔ done returns resdata on success (0.2185ms)
+  ✔ done throws the error when not ok (1.127812ms)
+  ✔ done cleans ctrl.explain on success (0.259981ms)
+  ✔ makeError returns resdata instead of throwing when ctrl.throw is false (0.289484ms)
+  ✔ makeError records to ctrl.explain (0.453124ms)
+✔ pipeline:makeError + done (3.55621ms)
+▶ pipeline:featureAdd ordering
+  ✔ appends by default (0.187645ms)
+  ✔ __before__ inserts ahead of the named feature (0.222536ms)
+  ✔ __after__ inserts behind the named feature (0.222035ms)
+  ✔ __replace__ swaps the named feature (0.331626ms)
+✔ pipeline:featureAdd ordering (1.11925ms)
+▶ pipeline:feature order
+  ✔ map form is ordered test-first (test is the base transport) (3.362356ms)
+  ✔ array form preserves the explicit developer-specified order (2.666186ms)
+  ✔ map form with no test orders names deterministically (2.021767ms)
+✔ pipeline:feature order (8.280967ms)
+▶ pipeline:makeOptions
+  ✔ clients built from one options object keep its maps and see its edits (5.047646ms)
+  ✔ a config option does not reach the caller's maps (1.369456ms)
+✔ pipeline:makeOptions (6.603905ms)
+▶ pipeline:prepareAuth
+  ✔ guards a missing spec (0.208906ms)
+  ✔ the probe finds the credential this SDK places (0.103261ms)
+  ✔ the apikey is placed where this API puts it (0.097022ms)
+  ✔ a raw apikey (empty prefix) goes in as-is (0.172332ms)
+  ✔ an empty apikey drops the credential (0.10254ms)
+  ✔ a public API (no auth block) drops the credential (0.062802ms)
+  ✔ a missing apikey option drops the credential (0.057334ms)
+  ✔ HTTP Basic sends the key with a blank password (0.156689ms)
+✔ pipeline:prepareAuth (1.142283ms)
+▶ pipeline:prepareQuery
+  ✔ a path parameter stays out of the query (0.264808ms)
+  ✔ an action is never a query parameter (0.082521ms)
+  ✔ a query argument goes out under its orig (0.141428ms)
+✔ pipeline:prepareQuery (0.598557ms)
+▶ pipeline:result helpers
+  ✔ resultHeaders with no forEach yields an empty map (0.112816ms)
+  ✔ resultBody skips parsing when the body is absent (0.084444ms)
+  ✔ resultBody masks a registered value in the agent and across the preview bound (0.533952ms)
+✔ pipeline:result helpers (0.881963ms)
+README examples [root README.md]: total=4 executed=4 typechecked=0 illustration=0
+README examples [ts/README.md]: total=18 executed=14 typechecked=1 illustration=3
+README examples [ts/REFERENCE.md]: total=6 executed=5 typechecked=0 illustration=1
+(node:280) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+▶ README examples
+  ✔ root README.md — every example type-checks or is a known illustration (691.848643ms)
+  ✔ root README.md — every runnable example executes in test mode (63.721668ms)
+  ✔ ts/README.md — every example type-checks or is a known illustration (1794.485814ms)
+  ✔ ts/README.md — every runnable example executes in test mode (35.378092ms)
+  ✔ ts/REFERENCE.md — every example type-checks or is a known illustration (1060.968678ms)
+  ✔ ts/REFERENCE.md — every runnable example executes in test mode (9.317591ms)
+✔ README examples (3657.06707ms)
+▶ Corpus
+  ✔ the corpus is not empty (0.665565ms)
+  ✔ every empty section declares why it is deferred (0.164831ms)
+  ✔ every deferral gives a real reason (0.187214ms)
+  ✔ a deferred section that gained cases is promoted (0.126075ms)
+  ✔ every section has a basic.set list (0.137251ms)
+✔ Corpus (2.178031ms)
+▶ Custom
+  ✔ basic (9.074946ms)
+✔ Custom (9.935867ms)
+▶ PrimaryUtility
+  ✔ exists (1.039343ms)
+  ✔ context-basic (1.142854ms)
+  ✔ method-basic (0.830787ms)
+  ✔ headers-basic (0.630584ms)
+  ✔ auth-basic (2.898537ms)
+  ✔ params-basic (0.646868ms)
+  ✔ query-basic (0.483989ms)
+  ✔ body-basic (0.731151ms)
+  ✔ findparam-basic (0.586349ms)
+  ✔ fullurl-basic (0.625747ms)
+  ✔ operator-basic (1.160951ms)
+  ✔ options-basic (5.188241ms)
+  ✔ spec-basic (3.581938ms)
+  ✔ reqform-basic (0.501615ms)
+  ✔ resform-basic (0.295213ms)
+  ✔ resbasic-basic (0.787994ms)
+  ✔ resheaders-basic (0.304977ms)
+  ✔ resbody-basic (0.339878ms)
+  ✔ resbody-empty (8.820062ms)
+  ✔ request-basic (1.779827ms)
+  ✔ response-basic (0.404222ms)
+  ✔ done-basic (4.186503ms)
+  ✔ error-basic (2.19776ms)
+  ✔ makePoint-basic (0.565439ms)
+  ✔ makeFetchDef (0.261043ms)
+  ✔ makeFetchDef-with-body (0.222356ms)
+  ✔ featureAdd (0.110592ms)
+  ✔ featureHook (0.135068ms)
+  ✔ featureInit (0.129049ms)
+  ✔ featureInit-inactive (0.087998ms)
+  ✔ fetcher-live (1.468662ms)
+  ✔ fetcher-blocked-test-mode (1.686591ms)
+  ✔ makeError-no-throw (0.302212ms)
+  ✔ path-basic (0.335912ms)
+  ✔ clean-corpus (0.209137ms)
+  ✔ clean (0.164351ms)
+✔ PrimaryUtility (59.724132ms)
+▶ struct
+  ✔ exists (1.549951ms)
+  ✔ minor-isnode (0.681238ms)
+  ✔ minor-ismap (0.268403ms)
+  ✔ minor-islist (0.242084ms)
+  ✔ minor-iskey (0.228525ms)
+  ✔ minor-strkey (0.237488ms)
+  ✔ minor-isempty (1.343348ms)
+  ✔ minor-isfunc (0.278869ms)
+  ✔ minor-clone (0.410472ms)
+  ✔ minor-edge-clone (0.801754ms)
+  ✔ minor-filter (0.25289ms)
+  ✔ minor-flatten (0.33434ms)
+  ✔ minor-escre (0.153345ms)
+  ✔ minor-escurl (0.173354ms)
+  ✔ minor-stringify (0.431522ms)
+  ✔ minor-edge-stringify (6.539821ms)
+  ✔ minor-jsonify (0.501966ms)
+  ✔ minor-edge-jsonify (0.111844ms)
+  ✔ minor-pathify (1.004782ms)
+  ✔ minor-items (0.36126ms)
+  ✔ minor-edge-items (0.253722ms)
+  ✔ minor-getelem (0.439434ms)
+  ✔ minor-edge-getelem (0.086987ms)
+  ✔ minor-getprop (0.55311ms)
+  ✔ minor-edge-getprop (0.087318ms)
+  ✔ minor-setprop (0.364784ms)
+  ✔ minor-edge-setprop (0.138983ms)
+  ✔ minor-delprop (0.561924ms)
+  ✔ minor-edge-delprop (0.216548ms)
+  ✔ nullsem (1.777153ms)
+  ✔ minor-haskey (0.344424ms)
+  ✔ minor-keysof (0.164501ms)
+  ✔ minor-edge-keysof (0.074599ms)
+  ✔ minor-join (0.528574ms)
+  ✔ minor-typename (0.174135ms)
+  ✔ minor-typify (0.166774ms)
+  ✔ minor-edge-typify (0.202206ms)
+  ✔ minor-size (0.144011ms)
+  ✔ minor-slice (0.556455ms)
+  ✔ minor-pad (0.33465ms)
+  ✔ minor-setpath (0.557847ms)
+  ✔ minor-edge-setpath (0.107868ms)
+  ✔ walk-log (0.356873ms)
+  ✔ walk-basic (0.492202ms)
+  ✔ walk-depth (0.229827ms)
+  ✔ walk-copy (0.233982ms)
+  ✔ merge-basic (0.128959ms)
+  ✔ merge-cases (0.722568ms)
+  ✔ merge-array (0.349482ms)
+  ✔ merge-integrity (0.267993ms)
+  ✔ merge-depth (0.419054ms)
+  ✔ merge-special (0.283325ms)
+  ✔ getpath-basic (0.477099ms)
+  ✔ getpath-relative (0.272078ms)
+  ✔ getpath-special (0.304206ms)
+  ✔ getpath-handler (0.151262ms)
+  ✔ inject-basic (0.138563ms)
+  ✔ inject-string (0.612828ms)
+  ✔ inject-deep (1.459839ms)
+  ✔ transform-basic (0.195637ms)
+  ✔ transform-paths (1.517854ms)
+  ✔ transform-cmds (2.393346ms)
+  ✔ transform-each (10.551459ms)
+  ✔ transform-pack (3.176214ms)
+  ✔ transform-ref (4.328312ms)
+  ✔ transform-format (2.814303ms)
+  ✔ transform-apply (0.597546ms)
+  ✔ transform-edge-apply (0.164191ms)
+  ✔ transform-modify (0.365495ms)
+  ✔ transform-extra (0.266561ms)
+  ✔ transform-funcval (0.187685ms)
+  ✔ validate-basic (3.556441ms)
+  ✔ validate-child (2.395339ms)
+  ✔ validate-one (2.575443ms)
+  ✔ validate-exact (2.177741ms)
+  ✔ validate-invalid (0.62791ms)
+  ✔ validate-special (2.052838ms)
+  ✔ validate-edge (0.439293ms)
+  ✔ validate-custom (0.372025ms)
+  ✔ select-basic (2.072998ms)
+  ✔ select-operators (12.684794ms)
+  ✔ select-edge (7.329468ms)
+  ✔ select-alts (2.240232ms)
+  ✔ json-builder (0.322001ms)
+✔ struct (111.729124ms)
+ℹ tests 221
+ℹ suites 29
+ℹ pass 212
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 9
+ℹ todo 0
+ℹ duration_ms 6226.19388
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:contract
+> node --test test/*.test.cjs
+
+✔ list unwraps items and preserves actual station data including unknown fields (22.890166ms)
+✔ load unwraps the single-object items envelope (5.896378ms)
+✔ empty list and zero limit are valid (3.263541ms)
+✔ lookup uses the @id final segment, not the display stationReference (2.155728ms)
+✔ path values are encoded, preventing path/query injection (3.756193ms)
+✔ HTML 404 is rejected rather than exposed as station data (5.510544ms)
+✔ direct preserves the full metadata envelope and HTTP status (4.540833ms)
+✔ root README example uses valid calls and decodes the lookup URI once (17.383378ms)
+✔ root README example exits nonzero on a request error (4.496478ms)
+✔ reviewed station field tables match the generated declarations (1.627644ms)
+✔ list rejects malformed successful envelope {} (19.760731ms)
+✔ list rejects malformed successful envelope {"items":null} (7.783173ms)
+✔ list rejects malformed successful envelope {"items":{}} (4.214554ms)
+✔ list rejects malformed successful envelope {"items":"abc"} (3.395525ms)
+✔ list rejects malformed successful envelope {"items":[null]} (3.53579ms)
+✔ list rejects malformed successful envelope {"items":[7]} (3.502492ms)
+✔ list rejects malformed successful envelope {"items":[[]]} (4.090333ms)
+✔ list preserves HTTP 404 errors (3.626413ms)
+✔ list preserves HTTP 429 errors (2.379486ms)
+✔ list preserves HTTP 500 errors (2.200084ms)
+✔ list rejects malformed JSON (2.031716ms)
+✔ list rejects successful HTML (1.941785ms)
+✔ list pre-aborted signal prevents transmission (1.97279ms)
+✔ list caller timeout terminates a stalled transport (22.027823ms)
+✔ load rejects malformed successful envelope {} (2.089261ms)
+✔ load rejects malformed successful envelope {"items":null} (1.489372ms)
+✔ load rejects malformed successful envelope {"items":[]} (1.271994ms)
+✔ load rejects malformed successful envelope {"items":"abc"} (2.111894ms)
+✔ load rejects malformed successful envelope {"items":7} (1.202692ms)
+✔ load preserves HTTP 404 errors (1.411748ms)
+✔ load preserves HTTP 429 errors (1.857761ms)
+✔ load preserves HTTP 500 errors (1.465437ms)
+✔ load rejects malformed JSON (1.625492ms)
+✔ load rejects successful HTML (1.758196ms)
+✔ load pre-aborted signal prevents transmission (1.158307ms)
+✔ load caller timeout terminates a stalled transport (21.810624ms)
+✔ empty and whitespace lookup IDs fail without sending (1.966641ms)
+✔ list returns new records; load populates and returns its calling entity (3.921275ms)
+✔ direct HTTP failures expose status/data and may omit err (4.799535ms)
+✔ direct deliberately preserves unvalidated response envelopes (1.190781ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 237.384779
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 test:types
+> node sdk/ts/node_modules/typescript/bin/tsc --strict --noEmit --skipLibCheck --target ES2022 --module NodeNext --moduleResolution NodeNext --typeRoots sdk/ts/node_modules/@types test/consumer-types.ts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 doctor
+> node scripts/check-scaffold.cjs
+
+[19:04:37.680] INFO: sdkgen                 doctor-start         
+[19:04:37.687] INFO: envelope/sdkgen        package-item-unclaimed node_modules/@voxgig/sdkgen/project/sdkgen-package.json: feature `envelope` is not listed in `provides.feature`, so the copy records no `package` provenance — add it to the manifest if the package supplies it
+[19:04:37.728] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/fragment/Config.fragment.ts
+[19:04:37.729] INFO: sdkgen                 doctor-finding       STALE (no longer written by `target add`): tm/ts/src/StationRecord.ts
+[19:04:37.729] INFO: sdkgen                 doctor-end           .sdk has drifted: 1 forked, 0 edited, 1 stale, 0 missing, 0 outdated, 0 unresolved
+
+.sdk has drifted from the scaffold: 1 forked, 0 edited, 1 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+node:assert:885
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /1 forked, 0 edited, 0 stale, 0 missing, 0 outdated, 0 unresolved/. Input:
+
+'[19:04:37.680] INFO: sdkgen                 doctor-start         \n' +
+  '[19:04:37.687] INFO: envelope/sdkgen        package-item-unclaimed node_modules/@voxgig/sdkgen/project/sdkgen-package.json: feature `envelope` is not listed in `provides.feature`, so the copy records no `package` provenance — add it to the manifest if the package supplies it\n' +
+  '[19:04:37.728] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/fragment/Config.fragment.ts\n' +
+  '[19:04:37.729] INFO: sdkgen                 doctor-finding       STALE (no longer written by `target add`): tm/ts/src/StationRecord.ts\n' +
+  '[19:04:37.729] INFO: sdkgen                 doctor-end           .sdk has drifted: 1 forked, 0 edited, 1 stale, 0 missing, 0 outdated, 0 unresolved\n' +
+  '\n' +
+  '.sdk has drifted from the scaffold: 1 forked, 0 edited, 1 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.\n' +
+  'npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.\n'
+
+    at Object.<anonymous> (<PROJECT>/scripts/check-scaffold.cjs:18:8)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '[19:04:37.680] INFO: sdkgen                 doctor-start         \n' +
+    '[19:04:37.687] INFO: envelope/sdkgen        package-item-unclaimed node_modules/@voxgig/sdkgen/project/sdkgen-package.json: feature `envelope` is not listed in `provides.feature`, so the copy records no `package` provenance — add it to the manifest if the package supplies it\n' +
+    '[19:04:37.728] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/fragment/Config.fragment.ts\n' +
+    '[19:04:37.729] INFO: sdkgen                 doctor-finding       STALE (no longer written by `target add`): tm/ts/src/StationRecord.ts\n' +
+    '[19:04:37.729] INFO: sdkgen                 doctor-end           .sdk has drifted: 1 forked, 0 edited, 1 stale, 0 missing, 0 outdated, 0 unresolved\n' +
+    '\n' +
+    '.sdk has drifted from the scaffold: 1 forked, 0 edited, 1 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.\n' +
+    'npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.\n',
+  expected: /1 forked, 0 edited, 0 stale, 0 missing, 0 outdated, 0 unresolved/,
+  operator: 'match',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

@@ -63,6 +63,7 @@ Build-from-source entries are not marked as published in the project model. Foll
 
 Features supply behaviour around API calls, such as request handling, diagnostics, or local testing. Inclusion in this project does not mean a feature is enabled at runtime. Check the selected SDK’s supported features and configuration defaults, then enable the behaviour your application needs.
 
+- `envelope`: Validates list/load response containers before entity conversion
 - `test`: In-memory mock transport for testing without a live server
 
 Start with the default client configuration. Add request limits and diagnostics as needed, test error paths, and review retry behaviour before using operations that change data. A retry can repeat an operation unless the API provides a suitable guarantee.

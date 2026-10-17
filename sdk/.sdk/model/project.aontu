@@ -44,6 +44,17 @@ main: kit: target: ts: {
 }
 
 # Keep reviewed, repository-layout-aware docs and avoid stock publish workflows.
-# The SDK code, tests and manifests remain generated. No component is forked.
+# SDK code, tests and manifests remain generated; the documented config fragment enables the default guard.
 main: kit: phase: top: active: false
 main: kit: target: ts: phase: readme: active: false
+
+# Project-owned additive feature: fail closed on malformed successful envelopes.
+main: kit: feature: envelope: {
+  name: key()
+  title: 'Environment Agency station envelope validation'
+  description: 'Validates list/load response containers before entity conversion'
+  version: '0.0.1'
+  active: true
+  config: options: active: true
+  hook: { PrePoint: active: true, PreResult: active: true }
+}

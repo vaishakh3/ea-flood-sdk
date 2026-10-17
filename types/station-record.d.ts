@@ -1,12 +1,2 @@
-/** Consumer-side type for this API subset; manually authored, not generated. */
-export interface StationRecord {
-  '@id'?: string
-  stationReference?: string
-  label?: string | string[]
-  lat?: number
-  long?: number
-  riverName?: string
-  catchmentName?: string
-  town?: string
-  [field: string]: unknown
-}
+/** Compatibility re-export; the canonical handwritten type is generated from the project template. */
+export type { StationRecord } from '../sdk/ts/src/feature/envelope/StationRecord'

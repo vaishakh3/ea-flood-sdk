@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-17",
+  "startingRemoteCommit": "204b5d2f87482b3e0e05d2eccc02dca22063190d",
+  "cleanCheckout": true,
+  "freshEmptyNpmCacheInstall": true,
+  "finalFullVerificationExitCode": 0,
+  "generatedTests": {
+    "passed": 212,
+    "failed": 0,
+    "skipped": 9
+  },
+  "independentTests": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0,
+    "scope": "HTTP contracts, malformed envelopes, errors, cancellation/deadlines and documentation"
+  },
+  "regeneration": {
+    "filesCompared": 100,
+    "identical": true
+  },
+  "scaffoldCheck": {
+    "rawDoctorExitCode": 1,
+    "expectedFork": "src/cmp/ts/fragment/Config.fragment.ts",
+    "exactReviewedDifferenceVerified": true,
+    "unexpectedDrift": false
+  },
+  "live": {
+    "listStatus": 200,
+    "loadStatus": 200,
+    "zeroLimitStatus": 200,
+    "zeroLimitResult": [],
+    "nonexistentLookupStatus": 404,
+    "nonexistentLookupContentType": "text/html",
+    "checkedAt": "2026-10-17T13:36:55.566Z"
+  },
+  "readmeExampleLiveExitCode": 0,
+  "installedConsumerRuntimeAndTypes": "passed",
+  "credentialsRequired": false,
+  "scope": "Two read-only station endpoints; five modeled list filters",
+  "limitations": [
+    "Not the entire Environment Agency API",
+    "Object/container validation, not complete field schema validation",
+    "Explicit offline test mode bypasses the envelope guard for synthetic fixtures",
+    "No automatic retries or default request timeout",
+    "Raw doctor intentionally flags one documented default-feature customization",
+    "No human hands-on time was measured"
+  ]
+}

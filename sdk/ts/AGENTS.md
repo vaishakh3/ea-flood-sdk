@@ -37,6 +37,7 @@ component.* After editing a component run `npm run build` before
 
 ## Features in this target
 
+- [`envelope`](./src/feature/envelope/AGENTS.md) — Environment Agency station envelope validation
 - [`test`](./src/feature/test/AGENTS.md) — Test transport
 
 Each feature's runtime and its own guide live in `src/feature/<name>/`.

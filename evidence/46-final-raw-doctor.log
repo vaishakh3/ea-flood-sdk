@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ea-flood-sdk-evaluation@0.1.0 doctor:raw
+> cd sdk/.sdk && npx --no-install voxgig-sdkgen doctor
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[19:08:22.638] INFO: sdkgen                 doctor-start         
+[19:08:22.644] INFO: envelope/sdkgen        package-item-unclaimed node_modules/@voxgig/sdkgen/project/sdkgen-package.json: feature `envelope` is not listed in `provides.feature`, so the copy records no `package` provenance — add it to the manifest if the package supplies it
+[19:08:22.674] INFO: sdkgen                 doctor-finding       FORKED (will be reverted by `target add`): src/cmp/ts/fragment/Config.fragment.ts
+[19:08:22.674] INFO: sdkgen                 doctor-end           .sdk has drifted: 1 forked, 0 edited, 0 stale, 0 missing, 0 outdated, 0 unresolved
+
+.sdk has drifted from the scaffold: 1 forked, 0 edited, 0 stale, 0 missing. Run `voxgig-sdkgen target add <lang>` to resync, and move any project decision into .sdk/model/.
+
+Raw doctor exit code: 1 (expected 1 for the documented single fork)

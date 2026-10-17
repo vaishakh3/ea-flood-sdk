@@ -56,6 +56,18 @@ const OPTSPEC = {
       "`$OPEN`": true,
       "active": false
     },
+    "envelope": [
+      "`$ONE`",
+      {
+        "`$OPEN`": true,
+        "active": [
+          "`$ONE`",
+          "`$BOOLEAN`",
+          "`$NIL`"
+        ]
+      },
+      "`$NIL`"
+    ],
     "test": [
       "`$ONE`",
       {

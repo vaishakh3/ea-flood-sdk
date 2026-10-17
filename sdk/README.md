@@ -12,9 +12,7 @@ This is an unofficial SDK for the Environment Agency Flood Monitoring Stations p
 
 Learn more about Voxgig SDKs at [voxgig.com/sdk](https://voxgig.com/sdk/).
 
-> **Features:** `test` — opt-in,
-> inactive until switched on, and configured per client. See the Features
-> section of any SDK README below for what each one does.
+> **Features:** `test` is opt-in. The project-owned `envelope` guard is enabled by default for station list/load. No automatic retry or timeout is enabled.
 
 ## Entities, not endpoints
 
@@ -114,9 +112,9 @@ When the entity interface does not cover an endpoint, use `direct`:
 **TypeScript:**
 ```ts
 const result = await client.direct({
-  path: '/api/resource/{id}',
+  path: '/id/stations',
   method: 'GET',
-  params: { id: 'example' },
+  query: { _limit: 1 },
 })
 if (result.ok) {
   console.log(result.data)
@@ -173,7 +171,7 @@ customizable without forking any upstream tool:
   bundled languages, and `voxgig-sdkgen doctor` reports any drift from
   what a resync would write.
 
-For this publication, top-level and target README generation are disabled in `project.aontu` to preserve reviewed install/support documentation. No generator template or component was forked. The model still regenerates SDK code, tests and package metadata.
+For this publication, top-level and target README generation are disabled in `project.aontu` to preserve reviewed install/support documentation. A single documented configuration-fragment customization enables the project-owned envelope guard by default; all emitted SDK runtime files are generated. The model still regenerates SDK code, tests and package metadata.
 
 ### Project map
 

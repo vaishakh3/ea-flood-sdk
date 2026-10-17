@@ -81,15 +81,13 @@ try {
 }
 ```
 
-The low-level `direct()` method does **not** throw — it returns the
-result envelope. Branch on `ok`; on failure `status` holds the HTTP status
-(for error responses) and `err` holds the error:
+The low-level `direct()` method returns transport and HTTP failures in a result envelope. Branch on `ok`, then inspect `status` and `data` for an HTTP failure. `err` is optional and may be absent for a JSON HTTP error. Invalid arguments can still reject during request preparation:
 
 ```ts
 const result = await client.direct({
-  path: '/api/resource/{id}',
+  path: '/id/stations',
   method: 'GET',
-  params: { id: 'example_id' },
+  query: { _limit: 1 },
 })
 
 if (!result.ok) {
@@ -106,9 +104,9 @@ For endpoints not covered by entity methods:
 
 ```ts
 const result = await client.direct({
-  path: '/api/resource/{id}',
+  path: '/id/stations',
   method: 'GET',
-  params: { id: 'example' },
+  query: { _limit: 1 },
 })
 
 if (result.ok) {
@@ -121,9 +119,9 @@ if (result.ok) {
 
 ```ts
 const fetchdef = await client.prepare({
-  path: '/api/resource/{id}',
-  method: 'DELETE',
-  params: { id: 'example' },
+  path: '/id/stations',
+  method: 'GET',
+  query: { _limit: 1 },
 })
 
 // Inspect before sending
@@ -151,19 +149,16 @@ const client = new EaFloodSDK({ headers: { accept: 'application/json' } })
 const testClient = client.tester()
 ```
 
-### Retain entity state across calls
+### Read returned entity records
 
-Entity instances remember their last match and data:
+`list()` returns new entities and does not store the returned rows on the calling entity. Use each returned entity's `data()`. `load()` updates and returns the entity on which it was called. `data()` returns a copy.
 
 ```ts
-const entity = client.Station()
-
-// First call runs the operation and stores its result
-await entity.list()
-
-// Subsequent calls reuse the stored state
-const data = entity.data()
-console.log(data.id)
+const query = client.Station()
+const stations = await query.list({ limit: 1 })
+for (const station of stations) {
+  console.log(station.data()['@id'])
+}
 ```
 
 ### Add custom middleware
@@ -230,7 +225,7 @@ new EaFloodSDK(options?: {
 | `utility()` | `Utility` | Deep copy of the SDK utility object. |
 | `prepare(fetchargs?)` | `Promise<FetchDef>` | Build an HTTP request definition without sending it. |
 | `direct(fetchargs?)` | `Promise<DirectResult>` | Build and send an HTTP request. |
-| `Station(data?)` | `StationEntity` | Create a Station entity instance. |
+| `Station(entopts?)` | `StationEntity` | Create a Station entity instance with optional per-entity options. |
 | `tester(testopts?, sdkopts?)` | `EaFloodSDK` | Create a test-mode client instance. |
 
 #### Static methods
@@ -281,7 +276,7 @@ The `direct()` method returns:
 }
 ```
 
-On error, `ok` is `false` and an `err` property contains the error.
+For an HTTP failure, `ok` is false and `status`/`data` carry the response; `err` is optional. For a transport failure, `err` carries the error and status/data may be absent. Invalid arguments may reject before a result exists.
 
 ### FetchDef shape
 
@@ -304,13 +299,9 @@ The `prepare()` method returns:
 | --- | --- |
 | `@id` |  |
 | `catchmentName` |  |
-| `context` |  |
 | `id` |  |
-| `items` |  |
-| `label` |  |
 | `lat` |  |
 | `long` |  |
-| `meta` |  |
 | `riverName` |  |
 | `stationReference` |  |
 | `town` |  |
@@ -337,17 +328,15 @@ Create an instance: `const station = client.Station()`
 
 #### Fields
 
+All declarations below are optional. `id` is generic SDK state; use the provider URI `@id` for lookup. Runtime `label` may be a string or string array and is intentionally absent from these generated declarations. Use the handwritten `StationRecord` type from `@vaishakh3/ea-flood-sdk/dist/feature/envelope/StationRecord.js` when needed; it is not full runtime field validation.
+
 | Field | Type | Description |
 | --- | --- | --- |
 | `@id` | `string` |  |
 | `catchmentName` | `string` |  |
-| `context` | `string` |  |
 | `id` | `string` |  |
-| `items` | `Record<string, any>` |  |
-| `label` | `string` |  |
 | `lat` | `number` |  |
 | `long` | `number` |  |
-| `meta` | `Record<string, any>` |  |
 | `riverName` | `string` |  |
 | `stationReference` | `string` |  |
 | `town` | `string` |  |
@@ -366,9 +355,7 @@ const stations = await client.Station().list()
 
 ## Features
 
-This SDK ships 1 optional features. Each is **inactive until you
-switch it on**, so an SDK you have not configured behaves exactly as if none of
-them existed — no retries, no cache, no logging, no measurable overhead.
+This SDK includes the opt-in `test` transport and the project-owned `envelope` guard, enabled by default. The guard rejects missing/incorrect `items` containers and non-object station records before conversion. It is not full field-schema validation. No automatic retry, cache or timeout feature is enabled.
 
 Activate a feature by name in the client options, alongside the options shown
 above:
@@ -438,7 +425,7 @@ ea-flood/
 ├── src/
 │   ├── EaFloodSDK.ts        # Main SDK class
 │   ├── entity/             # Entity implementations
-│   ├── feature/            # Built-in features (Base, Test, Log)
+│   ├── feature/            # Built-in features (Base, Test, Envelope)
 │   └── utility/            # Utility functions
 ├── test/                   # Test suites
 └── dist/                   # Compiled output
@@ -452,25 +439,20 @@ import { EaFloodSDK } from '@vaishakh3/ea-flood-sdk'
 
 ### Entity state
 
-Entity instances are stateful. After a successful `list`, the entity
-stores the returned data and match criteria internally. Subsequent
-calls on the same instance can rely on this state.
+A successful `load()` stores the returned station record on that entity. `list()` updates the calling entity's match criteria but returns separate entities; the caller's `data()` is not the list result.
 
 ```ts
-const station = client.Station()
-await station.list()
-
-// station.data() now returns the station data from the last `list`
-// station.match() returns the last match criteria
+const query = client.Station()
+const stations = await query.list({ limit: 1 })
+console.log(stations.map((station) => station.data()))
 ```
 
-Call `make()` to create a fresh instance with the same configuration
-but no stored state.
+Call `make()` to create a fresh instance with the same configuration but no stored state.
 
 ### Direct vs entity access
 
 The entity interface handles URL construction, parameter placement,
-and response parsing automatically. Use it for standard CRUD operations.
+and response parsing automatically. Use it for the supported read-only list/load operations.
 
 The `direct` method gives full control over the HTTP request. Use it
 for non-standard endpoints, bulk operations, or any path not modelled
